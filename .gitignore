@@ -1,0 +1,20 @@
+# Python TTS environment (recreate with the commands in CLAUDE.md)
+.venv-tts/
+__pycache__/
+
+# Node
+node_modules/
+
+# Personal Claude Code settings (machine-specific paths)
+.claude/settings.local.json
+
+# Regenerable media and caches
+assets/voice-samples/
+videos/*/.hyperframes/artifacts/
+videos/*/.hyperframes/frame-packets/
+videos/*/snapshots/
+content/*/qa/**/*.png
+content/*/qa/**/*.jpg
+
+# Renders are large binaries: keep them on disk or in external storage, not in git
+videos/*/renders/

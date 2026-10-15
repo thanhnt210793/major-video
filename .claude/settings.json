@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "enabledPlugins": {
+    "hyperframes@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true
+  },
+  "env": {
+    "HYPERFRAMES_SKIP_SKILLS": "1",
+    "HF_HUB_DISABLE_SYMLINKS_WARNING": "1",
+    "PYTHONIOENCODING": "utf-8"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(node scripts/validate-storyboard.mjs *)",
+      "Bash(node scripts/build-audio-meta.mjs *)",
+      "Bash(.venv-tts/Scripts/python scripts/tts_vieneu.py *)",
+      "Bash(.venv-tts/Scripts/python.exe scripts/tts_vieneu.py *)",
+      "Bash(npx hyperframes lint*)",
+      "Bash(npx hyperframes check*)",
+      "Bash(npx hyperframes snapshot*)",
+      "Bash(npx hyperframes timeline*)",
+      "Bash(npx hyperframes compositions*)",
+      "Bash(npx hyperframes catalog*)",
+      "Bash(npx hyperframes doctor*)",
+      "Bash(npx hyperframes info*)",
+      "Bash(npx hyperframes transcribe*)",
+      "Bash(npx hyperframes preview*)",
+      "Bash(npx hyperframes auth status*)",
+      "Bash(ffprobe *)",
+      "Bash(ffmpeg *)",
+      "Read(~/.claude/plugins/cache/claude-plugins-official/hyperframes/**)",
+      "WebSearch"
+    ],
+    "ask": [
+      "Bash(npx hyperframes publish*)",
+      "Bash(npx hyperframes cloud*)",
+      "Bash(npx hyperframes lambda*)",
+      "Bash(npx hyperframes feedback*)",
+      "Bash(npx hyperframes skills*)",
+      "Bash(npx skills *)",
+      "Bash(npx -y skills*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/scripts/validate-storyboard.mjs\""
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "approved": false,
+  "notes": "Proposed 2026-10-15 from the plan's navy / teal / warm off-white direction. Confirm or adjust on the first /career-build, then set approved: true.",
+  "palette": {
+    "navy": "#0F1E33",
+    "navySoft": "#1B2E4A",
+    "teal": "#14B8A6",
+    "offWhite": "#F5EFE4",
+    "warning": "#F2A93B",
+    "error": "#E5534B",
+    "success": "#3FB68B"
+  },
+  "usage": "Navy is the background, off-white is for text, teal is for accents and shapes. Don't put off-white text on teal, because the contrast is too low for WCAG AA. Warning, error and success are only for UI state indicators.",
+  "fonts": {
+    "display": { "family": "Be Vietnam Pro", "weights": [700, 800], "dir": "assets/fonts/be-vietnam-pro" },
+    "body": { "family": "Be Vietnam Pro", "weights": [400, 500, 600], "dir": "assets/fonts/be-vietnam-pro" }
+  },
+  "voice": null,
+  "voiceNotes": "Pick one narrator from assets/voice-samples/ (VieNeu preset id = file name) and keep it for every video."
+}

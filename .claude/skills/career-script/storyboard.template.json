@@ -1,0 +1,31 @@
+{
+  "title": "POV: <nghề> — <tình huống>",
+  "status": "draft",
+  "language": "vi-VN",
+  "durationSeconds": 45,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "learningObjective": "<một câu: người xem hiểu được điều gì về nghề>",
+  "closingQuestion": "<câu hỏi tương tác cuối video>",
+  "scenes": [
+    { "id": "hook", "start": 0, "duration": 4, "visual": "", "narration": "", "onScreenText": "", "assets": [], "sfx": [], "factIds": [] },
+    { "id": "pov-start", "start": 4, "duration": 7, "visual": "", "narration": "", "onScreenText": "", "assets": [], "sfx": [], "factIds": [] },
+    { "id": "observe", "start": 11, "duration": 8, "visual": "", "narration": "", "onScreenText": "", "assets": [], "sfx": [], "factIds": [] },
+    { "id": "analyze", "start": 19, "duration": 9, "visual": "", "narration": "", "onScreenText": "", "assets": [], "sfx": [], "factIds": [] },
+    { "id": "result", "start": 28, "duration": 9, "visual": "", "narration": "", "onScreenText": "", "assets": [], "sfx": [], "factIds": [] },
+    { "id": "takeaway", "start": 37, "duration": 5, "visual": "", "narration": "", "onScreenText": "", "assets": [], "sfx": [], "factIds": [] },
+    { "id": "question", "start": 42, "duration": 3, "visual": "", "narration": "", "onScreenText": "", "assets": [], "sfx": [], "factIds": [] }
+  ],
+  "research": [
+    {
+      "id": "fact-001",
+      "claim": "",
+      "sourceUrl": "",
+      "accessedAt": "",
+      "status": "unverified",
+      "confidence": "",
+      "notes": ""
+    }
+  ]
+}
