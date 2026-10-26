@@ -1,0 +1,321 @@
+{
+  "title": "POV: Bạn so sánh thu nhập 10 nhóm ngành chuyên môn — nhóm nào cao nhất? (số liệu OECD)",
+  "status": "approved",
+  "language": "vi-VN",
+  "durationSeconds": 60,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "learningObjective": "Biết 10 nhóm ngành chuyên môn lớn theo phân loại quốc tế và mức thu nhập tương đối của từng nhóm ở các nước OECD, đồng thời hiểu rằng lương chỉ là một trong nhiều yếu tố khi chọn ngành.",
+  "closingQuestion": "Bạn đang nghiêng về nhóm ngành nào?",
+  "format": "Video tổng quan dạng danh sách, khung hình POV (khác mẫu POV một nghề — theo lựa chọn của người dùng)",
+  "scenes": [
+    {
+      "id": "hook",
+      "start": 0,
+      "duration": 4,
+      "visual": "Góc nhìn thứ nhất, bàn học buổi tối: hai bàn tay minh họa cầm điện thoại lên; màn hình sáng với một ứng dụng chung chung tên 'So sánh nhóm ngành', lưới 10 biểu tượng nhóm ngành lần lượt hiện ra nhanh.",
+      "narration": "Nhóm ngành nào thu nhập cao nhất? Cùng xem 10 nhóm ngành chuyên môn lớn.",
+      "ttsNarration": "Nhóm ngành nào thu nhập cao nhất? Cùng xem mười nhóm ngành chuyên môn lớn.",
+      "onScreenText": "10 nhóm ngành chuyên môn · theo phân loại quốc tế của UNESCO",
+      "assets": [
+        "pov-hands-phone.svg",
+        "desk-night-bg.svg",
+        "phone-frame.svg",
+        "icon-group-01-education.svg",
+        "icon-group-02-arts-humanities.svg",
+        "icon-group-03-social-sciences.svg",
+        "icon-group-04-business-law.svg",
+        "icon-group-05-natural-sciences.svg",
+        "icon-group-06-ict.svg",
+        "icon-group-07-engineering.svg",
+        "icon-group-08-agriculture.svg",
+        "icon-group-09-health.svg",
+        "icon-group-10-services.svg"
+      ],
+      "sfx": [
+        "phone-unlock",
+        "soft-pop"
+      ],
+      "factIds": [
+        "fact-001"
+      ]
+    },
+    {
+      "id": "baseline",
+      "start": 4,
+      "duration": 6.4,
+      "visual": "Ngón cái chạm vào mục 'Thu nhập'; lưới biểu tượng chuyển thành biểu đồ thanh ngang còn trống, có một đường gạch đứt thẳng đứng ghi '100 = mức chung'. Một dòng chú thích hai dòng hiện lên phía trên vùng giao diện đáy của TikTok/Shorts và giữ nguyên qua tất cả các cảnh biểu đồ (từ cảnh này đến cảnh below-average-2).",
+      "narration": "Ở các nước OECD, mốc 100 là mức thu nhập chung của người trẻ có bằng cao đẳng trở lên.",
+      "ttsNarration": "Ở các nước ô e xê đê, mốc một trăm là mức thu nhập chung của người trẻ có bằng cao đẳng trở lên.",
+      "onScreenText": "100 = mức chung · Chú thích: 25–34 tuổi, làm toàn thời gian · các nước OECD, năm 2023 · không gồm Việt Nam",
+      "assets": [
+        "pov-hands-phone.svg",
+        "phone-frame.svg"
+      ],
+      "sfx": [
+        "phone-tap"
+      ],
+      "factIds": [
+        "fact-002",
+        "fact-009"
+      ]
+    },
+    {
+      "id": "top-ict",
+      "start": 10.4,
+      "duration": 4.2,
+      "visual": "Thanh đầu tiên (biểu tượng Công nghệ thông tin) dài ra vượt đường 100, dừng ở 124, màu xanh ngọc; nhãn ghi '124 (+24%)' một lần để người xem biết cách đọc chỉ số.",
+      "narration": "Công nghệ thông tin dẫn đầu, cao hơn mức chung khoảng 24%.",
+      "ttsNarration": "Công nghệ thông tin dẫn đầu, cao hơn mức chung khoảng hai mươi tư phần trăm.",
+      "onScreenText": "Công nghệ thông tin: 124 (+24%)",
+      "assets": [
+        "phone-frame.svg",
+        "icon-group-06-ict.svg"
+      ],
+      "sfx": [
+        "bar-grow"
+      ],
+      "factIds": [
+        "fact-003"
+      ]
+    },
+    {
+      "id": "above-average",
+      "start": 14.6,
+      "duration": 5.8,
+      "visual": "Hai thanh xanh ngọc dài ra vượt đường 100 (Kỹ thuật – Xây dựng 108, Kinh doanh – Luật 102), sau đó thanh thứ ba dừng ngay sát đường 100 với màu trung tính (Khoa học tự nhiên – Toán 101). Nhãn của mỗi thanh hiện cùng lúc với thanh đó.",
+      "narration": "Kỹ thuật và xây dựng, Kinh doanh và luật cũng cao hơn. Khoa học tự nhiên và toán gần ngang mức chung.",
+      "onScreenText": "Kỹ thuật – Xây dựng 108 · Kinh doanh – Luật 102 · Khoa học tự nhiên – Toán 101",
+      "assets": [
+        "phone-frame.svg",
+        "icon-group-07-engineering.svg",
+        "icon-group-04-business-law.svg",
+        "icon-group-05-natural-sciences.svg"
+      ],
+      "sfx": [
+        "bar-grow",
+        "bar-grow",
+        "bar-grow"
+      ],
+      "factIds": [
+        "fact-004"
+      ]
+    },
+    {
+      "id": "health-split",
+      "start": 20.4,
+      "duration": 9.1,
+      "visual": "Thanh 'Sức khỏe và phúc lợi' dừng đúng ở đường 100. Bên dưới hiện hai thanh ví dụ kèm nhãn nhỏ 'ví dụ trong nhóm · số liệu 6 nước' (không vẽ như các phần cộng lại thành thanh 100): 'Y khoa, Nha khoa' ở 116 và 'Điều dưỡng & ngành liên quan' ở 93.",
+      "narration": "Sức khỏe và phúc lợi ngang mức chung. Nhưng y khoa, nha khoa cao hơn khoảng 16%, còn điều dưỡng và các ngành sức khỏe liên quan thấp hơn khoảng 7%.",
+      "ttsNarration": "Sức khỏe và phúc lợi ngang mức chung. Nhưng y khoa, nha khoa cao hơn khoảng mười sáu phần trăm, còn điều dưỡng và các ngành sức khỏe liên quan thấp hơn khoảng bảy phần trăm.",
+      "onScreenText": "Sức khỏe & phúc lợi 100 · ví dụ trong nhóm (số liệu 6 nước): Y khoa, Nha khoa 116 · Điều dưỡng & ngành liên quan 93",
+      "assets": [
+        "phone-frame.svg",
+        "icon-group-09-health.svg"
+      ],
+      "sfx": [
+        "bar-grow",
+        "soft-pop"
+      ],
+      "factIds": [
+        "fact-005"
+      ]
+    },
+    {
+      "id": "below-average-1",
+      "start": 29.5,
+      "duration": 5.5,
+      "visual": "Hai thanh dừng trước đường 100, màu trắng ngà/xám (không dùng màu đỏ): Khoa học xã hội – Báo chí 97, Nghệ thuật – Nhân văn 86.",
+      "narration": "Khoa học xã hội, báo chí hơi thấp hơn. Nghệ thuật và nhân văn thấp hơn khoảng 14%.",
+      "ttsNarration": "Khoa học xã hội, báo chí hơi thấp hơn. Nghệ thuật và nhân văn thấp hơn khoảng mười bốn phần trăm.",
+      "onScreenText": "Khoa học xã hội – Báo chí 97 · Nghệ thuật – Nhân văn 86",
+      "assets": [
+        "phone-frame.svg",
+        "icon-group-03-social-sciences.svg",
+        "icon-group-02-arts-humanities.svg"
+      ],
+      "sfx": [
+        "bar-grow",
+        "bar-grow"
+      ],
+      "factIds": [
+        "fact-006"
+      ]
+    },
+    {
+      "id": "below-average-2",
+      "start": 35,
+      "duration": 6.3,
+      "visual": "Ba thanh xám cuối cùng hoàn thành biểu đồ: 'Dịch vụ' (nhãn phụ nhỏ 'du lịch, khách sạn…') 85, Giáo dục 82, Nông – Lâm – Thủy sản, Thú y 81. Khung hình lùi ra nhẹ để thấy đủ 10 thanh.",
+      "narration": "Dịch vụ, Giáo dục, rồi Nông lâm thủy sản và thú y ở cuối bảng, thấp hơn khoảng 15 đến 19%.",
+      "ttsNarration": "Dịch vụ, Giáo dục, rồi Nông lâm thủy sản và thú y ở cuối bảng, thấp hơn khoảng mười lăm đến mười chín phần trăm.",
+      "onScreenText": "Dịch vụ (du lịch, khách sạn…) 85 · Giáo dục 82 · Nông – Lâm – Thủy sản, Thú y 81",
+      "assets": [
+        "phone-frame.svg",
+        "icon-group-10-services.svg",
+        "icon-group-01-education.svg",
+        "icon-group-08-agriculture.svg"
+      ],
+      "sfx": [
+        "bar-grow",
+        "bar-grow",
+        "bar-grow"
+      ],
+      "factIds": [
+        "fact-007"
+      ]
+    },
+    {
+      "id": "vietnam",
+      "start": 41.3,
+      "duration": 8.1,
+      "visual": "Ngón cái vuốt sang thẻ thứ hai có tiêu đề 'Việt Nam 2024 · theo bằng cấp': hai biểu tượng người với hai thanh, nhãn 'Chưa có bằng, chứng chỉ nghề: 1' và 'Đại học trở lên: gấp ≈ 1,6 lần'. Nhãn nguồn nhỏ 'Nguồn: Cục Thống kê'.",
+      "narration": "Còn ở Việt Nam, người làm công ăn lương từ đại học trở lên có thu nhập gấp khoảng 1,6 lần người chưa có bằng hay chứng chỉ nghề, chuyên môn.",
+      "ttsNarration": "Còn ở Việt Nam, người làm công ăn lương từ đại học trở lên có thu nhập gấp khoảng một phẩy sáu lần người chưa có bằng hay chứng chỉ nghề, chuyên môn.",
+      "onScreenText": "Việt Nam 2024 · theo bằng cấp: đại học trở lên ≈ gấp 1,6 lần",
+      "assets": [
+        "pov-hands-phone.svg",
+        "phone-frame.svg",
+        "icon-person.svg"
+      ],
+      "sfx": [
+        "swipe"
+      ],
+      "factIds": [
+        "fact-008"
+      ]
+    },
+    {
+      "id": "takeaway",
+      "start": 49.4,
+      "duration": 6.8,
+      "visual": "Câu thứ nhất: vuốt về biểu đồ 10 thanh, có con dấu 'Số liệu OECD · không gồm Việt Nam'. Câu thứ hai: điện thoại nghiêng xuống, trên bàn hiện một tờ giấy nhớ với bốn mục lần lượt được đánh dấu.",
+      "narration": "Bảng nhóm ngành là số liệu nước ngoài, không phải Việt Nam. Lương còn tùy công việc và kinh nghiệm, đừng chọn ngành chỉ vì lương.",
+      "onScreenText": "Sở thích · Năng lực · Nhu cầu xã hội · Thu nhập",
+      "assets": [
+        "phone-frame.svg",
+        "desk-night-bg.svg",
+        "sticky-note-checklist.svg"
+      ],
+      "sfx": [
+        "swipe",
+        "pen-tick"
+      ],
+      "factIds": [
+        "fact-009"
+      ]
+    },
+    {
+      "id": "question",
+      "start": 56.2,
+      "duration": 3.8,
+      "visual": "Quay lại điện thoại: lưới 10 biểu tượng nhóm ngành và một ô bình luận có con trỏ nhấp nháy; hai tay giữ điện thoại yên.",
+      "narration": "Bạn đang nghiêng về nhóm ngành nào? Bình luận cho mình biết nhé!",
+      "onScreenText": "Bạn nghiêng về nhóm nào? Bình luận nhé!",
+      "assets": [
+        "pov-hands-phone.svg",
+        "phone-frame.svg",
+        "comment-box.svg"
+      ],
+      "sfx": [
+        "notification"
+      ],
+      "factIds": [
+        "fact-010"
+      ]
+    }
+  ],
+  "research": [
+    {
+      "id": "fact-001",
+      "claim": "Bảng phân loại ISCED-F 2013 của Viện Thống kê UNESCO (UIS) có 11 lĩnh vực rộng: 10 lĩnh vực chuyên môn (01 Giáo dục … 10 Dịch vụ) và 00 'Chương trình và văn bằng chung' (các chương trình ít hoặc không chuyên sâu).",
+      "sourceUrl": "https://curriculum.pn.psu.ac.th/curriculumn_2022/documents/course/7.pdf",
+      "accessedAt": "2026-10-16",
+      "status": "verified",
+      "confidence": "high",
+      "notes": "Bản sao được lưu trữ của sổ tay UIS (2014), DOI 10.15220/978-92-9189-150-4-en (đường dẫn PDF chính thức chuyển hướng về trang chủ UIS). Trích dẫn: 'There are 11 broad fields, 29 narrow fields and about 80 detailed fields of education and training'; nhóm 00 gồm các chương trình 'with little or no specialisation'. Danh sách 11 lĩnh vực cũng có trên Eurostat: https://ec.europa.eu/eurostat/statistics-explained/index.php?title=International_Standard_Classification_of_Education_(ISCED). UIS là đơn vị quản lý: https://www.uis.unesco.org/en/methods-and-tools/isced. Nhóm 00 còn gồm '003 Personal skills and development'. Video không đưa nhóm 00 vì ở bậc đại học chỉ có số liệu của 2 nước (LUX, MEX). Danh mục riêng của Việt Nam (24 lĩnh vực, Thông tư 74/2026/TT-BGDĐT, hiệu lực 12/10/2026) không dùng trong video."
+    },
+    {
+      "id": "fact-002",
+      "claim": "Trong chỉ số 'thu nhập tương đối theo lĩnh vực đào tạo' của OECD, mốc 100 là thu nhập của toàn bộ người 25–34 tuổi làm toàn thời gian có trình độ sau phổ thông (ISCED 5–8: từ cao đẳng đến tiến sĩ); trung bình OECD, số liệu năm 2023.",
+      "sourceUrl": "https://sdmx.oecd.org/public/rest/data/OECD.EDU.IMEP,DSD_EAG_LSO_EA@DF_LSO_EARN_FIELD,/OECD._T.Y25T34.ISCED11A_5T8..EARN_RELATIVE.........FT..?startPeriod=2023&endPeriod=2023",
+      "accessedAt": "2026-10-16",
+      "status": "verified",
+      "confidence": "high",
+      "notes": "Đã mở qua API SDMX của OECD (CSV): 'Total (excluding unknown)' = 100; đơn vị 'Percentage of earnings of workers with tertiary educational attainment'; ISCED11A_5T8; toàn thời gian (FT). Bộ dữ liệu DF_LSO_EARN_FIELD dùng cho Education at a Glance 2025 (chỉ báo A4: 'Data on earnings are before income tax for most countries'; 'based on full-time full-year workers'). OECD không nói rõ là số trung bình (mean) hay trung vị, nên lời dẫn dùng 'mức thu nhập chung' thay vì 'trung bình'. 'Cao đẳng trở lên' tương ứng ISCED 5–8 (gồm cả thạc sĩ, tiến sĩ). Các năm có trong bộ dữ liệu: 2019, 2020, 2022, 2023; năm 2023 là mới nhất trong API tính đến 16/10/2026."
+    },
+    {
+      "id": "fact-003",
+      "claim": "Người tốt nghiệp nhóm Công nghệ thông tin, 25–34 tuổi, làm toàn thời gian có thu nhập bằng 124% mức chung (trung bình OECD, 2023) — cao nhất trong 10 lĩnh vực chuyên môn năm đó.",
+      "sourceUrl": "https://sdmx.oecd.org/public/rest/data/OECD.EDU.IMEP,DSD_EAG_LSO_EA@DF_LSO_EARN_FIELD,/OECD._T.Y25T34.ISCED11A_5T8..EARN_RELATIVE.........FT..?startPeriod=2023&endPeriod=2023",
+      "accessedAt": "2026-10-16",
+      "status": "verified",
+      "confidence": "high",
+      "notes": "F06 = 123,87 → 124 (+24%). Gọi là 'Công nghệ thông tin' vì ISCED 06 gồm sử dụng máy tính, thiết kế và quản trị cơ sở dữ liệu/mạng, phát triển phần mềm; còn ngành 'truyền thông' (báo chí, sản xuất truyền thông) thuộc ISCED 02/03. Thứ hạng chỉ đúng cho năm 2023 (năm 2022: F06 108,62, F07 110,47). Chênh lệch giữa các nước năm 2023: từ 102,7 (Mexico) đến 170,1 (Estonia)."
+    },
+    {
+      "id": "fact-004",
+      "claim": "Trung bình OECD năm 2023, 25–34 tuổi, toàn thời gian: Kỹ thuật, sản xuất và xây dựng 108; Kinh doanh, quản lý và luật 102; Khoa học tự nhiên, toán và thống kê 101 (gần như ngang mức chung).",
+      "sourceUrl": "https://sdmx.oecd.org/public/rest/data/OECD.EDU.IMEP,DSD_EAG_LSO_EA@DF_LSO_EARN_FIELD,/OECD._T.Y25T34.ISCED11A_5T8..EARN_RELATIVE.........FT..?startPeriod=2023&endPeriod=2023",
+      "accessedAt": "2026-10-16",
+      "status": "verified",
+      "confidence": "high",
+      "notes": "F07 = 108,33; F04 = 102,43; F05 = 100,997. Tên rút gọn trong video: 'Kỹ thuật và xây dựng', 'Kinh doanh và luật', 'Khoa học tự nhiên và toán'. Các giá trị gần 100 thay đổi theo năm (F05 năm 2022 là 96,14), nên lời dẫn nói F05 'gần ngang mức chung'."
+    },
+    {
+      "id": "fact-005",
+      "claim": "Trung bình OECD năm 2023, 25–34 tuổi, toàn thời gian: nhóm Sức khỏe và phúc lợi ≈ 100. Ví dụ trong nhóm (số liệu 6 nước): Y khoa và Nha khoa 116; Điều dưỡng và các ngành sức khỏe liên quan (ISCED 0913–0917) 93.",
+      "sourceUrl": "https://sdmx.oecd.org/public/rest/data/OECD.EDU.IMEP,DSD_EAG_LSO_EA@DF_LSO_EARN_FIELD,/OECD._T.Y25T34.ISCED11A_5T8..EARN_RELATIVE.........FT..?startPeriod=2023&endPeriod=2023",
+      "accessedAt": "2026-10-16",
+      "status": "verified",
+      "confidence": "medium",
+      "notes": "F09 = 99,97 (13 nước) → 'ngang mức chung'. F0911_0912 = 115,81 → 116, 'khoảng 16%'. F0913T0917 = 93,496 → 93; 100 − 93,496 = 6,50 → 'khoảng 7%'. Hai nhóm con chỉ có số liệu của 6 nước (EST, LVA, MEX, NOR, SWE, CHE), nên được trình bày như ví dụ, không phải các phần của thanh 100. Theo sổ tay UIS, ISCED 0913–0917 gồm điều dưỡng và hộ sinh, kỹ thuật chẩn đoán và điều trị, trị liệu và phục hồi chức năng, dược, y học cổ truyền và bổ trợ. Lời dẫn nói 'điều dưỡng và các ngành sức khỏe liên quan' chứ không nêu tên ngành Dược: OECD đặt tên chuỗi số liệu là 'Health (nursing and associate health fields)' và chủ yếu là điều dưỡng, nên nhắc Dược sẽ gợi ý sai rằng dược sĩ thu nhập dưới mức chung. Các nhóm con biến động mạnh (Y khoa và Nha khoa năm 2022 là 161,05)."
+    },
+    {
+      "id": "fact-006",
+      "claim": "Trung bình OECD năm 2023, 25–34 tuổi, toàn thời gian: Khoa học xã hội, báo chí và thông tin 97; Nghệ thuật và nhân văn 86.",
+      "sourceUrl": "https://sdmx.oecd.org/public/rest/data/OECD.EDU.IMEP,DSD_EAG_LSO_EA@DF_LSO_EARN_FIELD,/OECD._T.Y25T34.ISCED11A_5T8..EARN_RELATIVE.........FT..?startPeriod=2023&endPeriod=2023",
+      "accessedAt": "2026-10-16",
+      "status": "verified",
+      "confidence": "high",
+      "notes": "F03 = 96,90; F02 = 86,34 (−14%). Education at a Glance 2025: 'The lowest earnings tend to be associated with qualifications in the fields of arts and humanities and of education.'"
+    },
+    {
+      "id": "fact-007",
+      "claim": "Trung bình OECD năm 2023, 25–34 tuổi, toàn thời gian: Dịch vụ 85; Giáo dục 82; Nông, lâm, thủy sản và thú y 81 — ba lĩnh vực chuyên môn thấp nhất (thấp hơn mức chung 15–19%).",
+      "sourceUrl": "https://sdmx.oecd.org/public/rest/data/OECD.EDU.IMEP,DSD_EAG_LSO_EA@DF_LSO_EARN_FIELD,/OECD._T.Y25T34.ISCED11A_5T8..EARN_RELATIVE.........FT..?startPeriod=2023&endPeriod=2023",
+      "accessedAt": "2026-10-16",
+      "status": "verified",
+      "confidence": "high",
+      "notes": "F10 = 84,81 (−15%); F01 = 82,38 (−18%); F08 = 80,79 (−19%; 11 nước). Ví dụ 'du lịch, khách sạn' trên màn hình lấy từ ISCED-F nhóm 10: 1013 Khách sạn, nhà hàng và dịch vụ ăn uống; 1015 Du lịch, lữ hành và giải trí (sổ tay UIS, nguồn của fact-001)."
+    },
+    {
+      "id": "fact-008",
+      "claim": "Ở Việt Nam năm 2024, lao động làm công ăn lương có trình độ đại học trở lên có thu nhập bình quân tháng gấp khoảng 1,6 lần lao động làm công ăn lương không có trình độ chuyên môn kỹ thuật (11.777,9 so với 7.367,6 nghìn đồng).",
+      "sourceUrl": "https://www.nso.gov.vn/wp-content/uploads/2026/05/02-Sach-Bao-cao-lao-dong-viec-lam-2024.pdf.pdf",
+      "accessedAt": "2026-10-16",
+      "status": "verified",
+      "confidence": "high",
+      "notes": "Cục Thống kê, 'Báo cáo Điều tra lao động việc làm năm 2024', Biểu 3.3 ('Thu nhập từ việc làm bình quân/tháng của lao động làm công ăn lương chia theo giới tính và trình độ chuyên môn kỹ thuật, năm 2024'), trang in 36 (trang PDF 37). Báo cáo viết: 'Chênh lệch thu nhập giữa nhóm có trình độ “Đại học trở lên” với nhóm “Không có trình độ chuyên môn kỹ thuật” khoảng 1,6 lần.' Cơ quan hiện ký tên 'Cục Thống kê' (nhãn trên màn hình dùng tên này). 'Chưa có bằng hay chứng chỉ nghề, chuyên môn' là cách nói dễ hiểu của 'không có trình độ chuyên môn kỹ thuật' (chỉ tiêu của Cục Thống kê yêu cầu đã hoàn thành khóa đào tạo và được cấp bằng hoặc chứng chỉ; người học nghề tự do vẫn tính là không có). Đây là số liệu theo trình độ, KHÔNG phải theo ngành học — thẻ trên màn hình ghi 'theo bằng cấp'. Phần báo cáo đã đọc không nói rõ thu nhập trước hay sau thuế."
+    },
+    {
+      "id": "fact-009",
+      "claim": "Số liệu theo lĩnh vực đào tạo là trung bình của các nước thành viên OECD có số liệu năm 2023 (13 nước với đa số lĩnh vực, ít hơn với một số lĩnh vực), không gồm Việt Nam.",
+      "sourceUrl": "https://sdmx.oecd.org/public/rest/data/OECD.EDU.IMEP,DSD_EAG_LSO_EA@DF_LSO_EARN_FIELD,/OECD._T.Y25T34.ISCED11A_5T8..EARN_RELATIVE.........FT..?startPeriod=2023&endPeriod=2023",
+      "accessedAt": "2026-10-16",
+      "status": "verified",
+      "confidence": "medium",
+      "notes": "Các nước có số liệu năm 2023: AUT, CHE, CHL, CRI, DNK, EST, KOR, LUX, LVA, MEX, NOR, SWE, USA, cùng ROU (không phải thành viên OECD). Độ phủ khác nhau theo lĩnh vực: 13 nước với Công nghệ thông tin và Sức khỏe & phúc lợi, 11 nước với Nông lâm thủy sản, 6 nước với nhóm con y khoa/nha khoa và điều dưỡng, 2 nước với nhóm 00. Theo phép tính của người kiểm chứng, giá trị OECD bằng trung bình cộng không trọng số của 13 nước thành viên, không tính ROU; API không ghi rõ điều này. Video nói 'các nước OECD' và 'số liệu OECD', không nêu số nước. 'Lương còn tùy công việc và kinh nghiệm' là lời lưu ý chung, không phải số liệu."
+    },
+    {
+      "id": "fact-010",
+      "claim": "Bạn học sinh so sánh các nhóm ngành trên điện thoại là tình huống hư cấu để dẫn chuyện.",
+      "sourceUrl": "",
+      "accessedAt": "",
+      "status": "simulation",
+      "confidence": "",
+      "notes": "Chỉ là khung hình POV; ứng dụng trong video là tự tạo, chung chung, không được giống sản phẩm có thật."
+    }
+  ]
+}

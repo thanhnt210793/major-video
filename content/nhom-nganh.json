@@ -1,0 +1,16 @@
+{
+  "_about": "Career-group folders. A video lives in content/<id>/<name>/, videos/<id>/<name>/ and kichban/<id>/. Add a group here before using its folder; scripts/validate-storyboard.mjs checks storyboard paths against this list. safetySensitive groups follow CLAUDE.md's rules for safety-sensitive careers.",
+  "groups": [
+    { "id": "it", "name": "Công nghệ thông tin", "covers": "lập trình, an ninh mạng, dữ liệu, AI, làm game", "safetySensitive": false },
+    { "id": "yte", "name": "Y tế và sức khoẻ", "covers": "bác sĩ, điều dưỡng, dược sĩ, kỹ thuật viên xét nghiệm, cấp cứu", "safetySensitive": true },
+    { "id": "giaovien", "name": "Giáo dục", "covers": "giáo viên các cấp, giáo viên mầm non, tư vấn học đường", "safetySensitive": false },
+    { "id": "nganhang", "name": "Tài chính và ngân hàng", "covers": "giao dịch viên, kế toán, kiểm toán, chứng khoán, bảo hiểm", "safetySensitive": false },
+    { "id": "marketing", "name": "Marketing và truyền thông", "covers": "marketing, quảng cáo, sáng tạo nội dung, báo chí, quan hệ công chúng", "safetySensitive": false },
+    { "id": "thietke", "name": "Thiết kế và kiến trúc", "covers": "thiết kế đồ hoạ, UI/UX, kiến trúc, nội thất, hoạt hình", "safetySensitive": false },
+    { "id": "logistics", "name": "Logistics và thương mại điện tử", "covers": "điều phối kho, vận tải, giao hàng, vận hành sàn thương mại điện tử, xuất nhập khẩu", "safetySensitive": false },
+    { "id": "hangkhong", "name": "Hàng không, du lịch và khách sạn", "covers": "tiếp viên, phi công, kiểm soát không lưu, hướng dẫn viên, lễ tân, đầu bếp", "safetySensitive": true },
+    { "id": "kythuat", "name": "Kỹ thuật và sản xuất", "covers": "kỹ sư điện, ô tô, cơ khí, xây dựng, tự động hoá, các nghề kỹ thuật học trường nghề", "safetySensitive": true },
+    { "id": "luat", "name": "Luật", "covers": "luật sư, công chứng viên, thẩm phán, pháp chế doanh nghiệp", "safetySensitive": false },
+    { "id": "tongquan", "name": "Tổng quan nhiều ngành", "covers": "video so sánh hoặc giới thiệu nhiều nhóm ngành cùng lúc", "safetySensitive": false }
+  ]
+}

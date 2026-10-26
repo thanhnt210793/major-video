@@ -1,0 +1,62 @@
+[
+  {
+    "key": "1A",
+    "voice": "Thiền Tâm Đức",
+    "text": "Khách lớn đang chờ đấy. Bao giờ thì xong?",
+    "file": "1A.wav"
+  },
+  {
+    "key": "1B",
+    "voice": "Phạm Tuyên",
+    "text": "Khách lớn đang chờ đấy. Bao giờ thì xong?",
+    "file": "1B.wav"
+  },
+  {
+    "key": "1C",
+    "voice": "Đức Trí",
+    "text": "Khách lớn đang chờ đấy. Bao giờ thì xong?",
+    "file": "1C.wav"
+  },
+  {
+    "key": "2A",
+    "voice": "Thiện Minh",
+    "text": "Cứ quay về bản cũ đã, để khách thanh toán lại được ngay. Sửa lỗi tính sau!",
+    "file": "2A.wav"
+  },
+  {
+    "key": "2B",
+    "voice": "Thái Sơn",
+    "text": "Cứ quay về bản cũ đã, để khách thanh toán lại được ngay. Sửa lỗi tính sau!",
+    "file": "2B.wav"
+  },
+  {
+    "key": "2C",
+    "voice": "Quốc Tuấn",
+    "text": "Cứ quay về bản cũ đã, để khách thanh toán lại được ngay. Sửa lỗi tính sau!",
+    "file": "2C.wav"
+  },
+  {
+    "key": "3-take1",
+    "voice": "Hải Đăng",
+    "text": "Dò lại từng dòng đã sửa trong tuần… Ai viết dòng này vậy? Trời ơi… là mình!",
+    "file": "3-take1.wav"
+  },
+  {
+    "key": "3-take2",
+    "voice": "Hải Đăng",
+    "text": "Dò lại từng dòng đã sửa trong tuần… Ai viết dòng này vậy? Trời ơi… là mình!",
+    "file": "3-take2.wav"
+  },
+  {
+    "key": "3-take3",
+    "voice": "Hải Đăng",
+    "text": "Dò lại từng dòng đã sửa trong tuần… Ai viết dòng này vậy? Trời ơi… là mình!",
+    "file": "3-take3.wav"
+  },
+  {
+    "key": "4-take1",
+    "voice": "Hải Đăng",
+    "text": "Sếp gọi họp gấp. Cả nhóm im phăng phắc, ly trà sữa còn chưa kịp uống.",
+    "file": "4-take1.wav"
+  }
+]

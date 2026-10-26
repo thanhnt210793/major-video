@@ -1,0 +1,10 @@
+Sáng thứ Hai, mình chạy thử ứng dụng đang làm… và cả màn hình đỏ lòm.
+Chạy lại lần hai, lần ba… biết đâu nó tự hết. Vẫn lỗi y hệt.
+Đọc kỹ lỗi mới thấy: ứng dụng cần cổng 3000, mà có chương trình khác chiếm rồi. Nhưng là chương trình nào?
+Bí quá, mình quay sang than với chị Mai: “Chị ơi, em tắt hết rồi mà, từ hôm thứ Sáu…”
+“Khoan! Thứ Sáu em chạy thử xong… quên chưa tắt!”
+Kiểm tra cho chắc: đúng là chương trình của mình vẫn đang chiếm cổng.
+Tắt nó đi, chạy lại… xanh rồi!
+Đấy, chị chưa nói câu nào mà em đã tự tìm ra rồi!
+Đó là mẹo “vịt cao su”: kể từng bước cho ai đó nghe, dù chỉ là một chú vịt, nhiều khi đang kể là tự nhận ra lỗi.
+Bạn đã bao giờ mất cả buổi vì một lỗi rất nhỏ chưa?

@@ -1,0 +1,69 @@
+{
+  "scenes": {
+    "01": {
+      "sceneId": "hook",
+      "voice": "Hải Đăng",
+      "ttsText": "Sáng thứ Hai, mình chạy thử ứng dụng đang làm… và cả màn hình đỏ lòm.",
+      "file": "01.wav"
+    },
+    "02": {
+      "sceneId": "retry",
+      "voice": "Hải Đăng",
+      "ttsText": "Chạy lại lần hai, lần ba… biết đâu nó tự hết. Vẫn lỗi y hệt.",
+      "file": "02.wav"
+    },
+    "03": {
+      "sceneId": "read",
+      "voice": "Hải Đăng",
+      "ttsText": "Đọc kỹ lỗi mới thấy: ứng dụng cần cổng ba nghìn, mà có chương trình khác chiếm rồi. Nhưng là chương trình nào?",
+      "file": "03.wav"
+    },
+    "04": {
+      "sceneId": "turn",
+      "voice": "Hải Đăng",
+      "ttsText": "Bí quá, mình quay sang than với chị Mai. Chị ơi, em tắt hết rồi mà, từ hôm thứ Sáu…",
+      "file": "04.wav"
+    },
+    "05": {
+      "sceneId": "realize",
+      "voice": "Hải Đăng",
+      "ttsText": "“Khoan! Thứ Sáu em chạy thử xong… quên chưa tắt!”",
+      "file": "05.wav"
+    },
+    "06": {
+      "sceneId": "find",
+      "voice": "Hải Đăng",
+      "ttsText": "Kiểm tra cho chắc: đúng là chương trình của mình vẫn đang chiếm cổng.",
+      "file": "06.wav"
+    },
+    "07": {
+      "sceneId": "fix",
+      "voice": "Hải Đăng",
+      "ttsText": "Tắt nó đi, chạy lại… xanh rồi!",
+      "file": "07.wav"
+    },
+    "08": {
+      "sceneId": "colleague",
+      "voice": "Trúc Ly",
+      "ttsText": "Đấy, chị chưa nói câu nào mà em đã tự tìm ra rồi!",
+      "file": "08.wav"
+    },
+    "09": {
+      "sceneId": "takeaway",
+      "voice": "Hải Đăng",
+      "ttsText": "Đó là mẹo “vịt cao su”: kể từng bước cho ai đó nghe, dù chỉ là một chú vịt, nhiều khi đang kể là tự nhận ra lỗi.",
+      "file": "09.wav"
+    },
+    "10": {
+      "sceneId": "question",
+      "voice": "Hải Đăng",
+      "ttsText": "Bạn đã bao giờ mất cả buổi vì một lỗi rất nhỏ chưa?",
+      "file": "10.wav"
+    }
+  },
+  "provider": "VieNeu-TTS",
+  "sdkVersion": "3.8.3",
+  "voice": "Hải Đăng",
+  "storyboard": "content\\dev-local-port-bug\\storyboard.json",
+  "updatedAt": "2026-10-22T01:42:17+00:00"
+}

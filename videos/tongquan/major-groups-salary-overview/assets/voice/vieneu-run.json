@@ -1,0 +1,59 @@
+{
+  "scenes": {
+    "01": {
+      "sceneId": "hook",
+      "ttsText": "Nhóm ngành nào thu nhập cao nhất? Cùng xem mười nhóm ngành chuyên môn lớn.",
+      "file": "01.wav"
+    },
+    "02": {
+      "sceneId": "baseline",
+      "ttsText": "Ở các nước ô e xê đê, mốc một trăm là mức thu nhập chung của người trẻ có bằng cao đẳng trở lên.",
+      "file": "02.wav"
+    },
+    "03": {
+      "sceneId": "top-ict",
+      "ttsText": "Công nghệ thông tin dẫn đầu, cao hơn mức chung khoảng hai mươi tư phần trăm.",
+      "file": "03.wav"
+    },
+    "04": {
+      "sceneId": "above-average",
+      "ttsText": "Kỹ thuật và xây dựng, Kinh doanh và luật cũng cao hơn. Khoa học tự nhiên và toán gần ngang mức chung.",
+      "file": "04.wav"
+    },
+    "05": {
+      "sceneId": "health-split",
+      "ttsText": "Sức khỏe và phúc lợi ngang mức chung. Nhưng y khoa, nha khoa cao hơn khoảng mười sáu phần trăm, còn điều dưỡng và các ngành sức khỏe liên quan thấp hơn khoảng bảy phần trăm.",
+      "file": "05.wav"
+    },
+    "06": {
+      "sceneId": "below-average-1",
+      "ttsText": "Khoa học xã hội, báo chí hơi thấp hơn. Nghệ thuật và nhân văn thấp hơn khoảng mười bốn phần trăm.",
+      "file": "06.wav"
+    },
+    "07": {
+      "sceneId": "below-average-2",
+      "ttsText": "Dịch vụ, Giáo dục, rồi Nông lâm thủy sản và thú y ở cuối bảng, thấp hơn khoảng mười lăm đến mười chín phần trăm.",
+      "file": "07.wav"
+    },
+    "08": {
+      "sceneId": "vietnam",
+      "ttsText": "Còn ở Việt Nam, người làm công ăn lương từ đại học trở lên có thu nhập gấp khoảng một phẩy sáu lần người chưa có bằng hay chứng chỉ nghề, chuyên môn.",
+      "file": "08.wav"
+    },
+    "09": {
+      "sceneId": "takeaway",
+      "ttsText": "Bảng nhóm ngành là số liệu nước ngoài, không phải Việt Nam. Lương còn tùy công việc và kinh nghiệm, đừng chọn ngành chỉ vì lương.",
+      "file": "09.wav"
+    },
+    "10": {
+      "sceneId": "question",
+      "ttsText": "Bạn đang nghiêng về nhóm ngành nào? Bình luận cho mình biết nhé!",
+      "file": "10.wav"
+    }
+  },
+  "provider": "VieNeu-TTS",
+  "sdkVersion": "3.8.3",
+  "voice": "Hải Đăng",
+  "storyboard": "content\\major-groups-salary-overview\\storyboard.json",
+  "updatedAt": "2026-10-16T06:46:55+00:00"
+}

@@ -1,0 +1,1693 @@
+{
+  "total_duration_s": 47.5,
+  "width": 1080,
+  "height": 1920,
+  "groups": [
+    {
+      "id": "caption-group-0",
+      "frame": 1,
+      "start": 0.12,
+      "end": 0.563,
+      "text": "Sáng thứ",
+      "words": [
+        {
+          "id": "caption-word-0-0",
+          "text": "Sáng",
+          "start": 0.12,
+          "end": 0.373
+        },
+        {
+          "id": "caption-word-0-1",
+          "text": "thứ",
+          "start": 0.373,
+          "end": 0.563
+        }
+      ]
+    },
+    {
+      "id": "caption-group-1",
+      "frame": 1,
+      "start": 0.563,
+      "end": 0.753,
+      "text": "Hai,",
+      "words": [
+        {
+          "id": "caption-word-1-0",
+          "text": "Hai,",
+          "start": 0.563,
+          "end": 0.753
+        }
+      ]
+    },
+    {
+      "id": "caption-group-2",
+      "frame": 1,
+      "start": 0.753,
+      "end": 1.26,
+      "text": "mình chạy",
+      "words": [
+        {
+          "id": "caption-word-2-0",
+          "text": "mình",
+          "start": 0.753,
+          "end": 1.007
+        },
+        {
+          "id": "caption-word-2-1",
+          "text": "chạy",
+          "start": 1.007,
+          "end": 1.26
+        }
+      ]
+    },
+    {
+      "id": "caption-group-3",
+      "frame": 1,
+      "start": 1.26,
+      "end": 1.64,
+      "text": "thử ứng",
+      "words": [
+        {
+          "id": "caption-word-3-0",
+          "text": "thử",
+          "start": 1.26,
+          "end": 1.45
+        },
+        {
+          "id": "caption-word-3-1",
+          "text": "ứng",
+          "start": 1.45,
+          "end": 1.64
+        }
+      ]
+    },
+    {
+      "id": "caption-group-4",
+      "frame": 1,
+      "start": 1.64,
+      "end": 2.147,
+      "text": "dụng đang",
+      "words": [
+        {
+          "id": "caption-word-4-0",
+          "text": "dụng",
+          "start": 1.64,
+          "end": 1.893
+        },
+        {
+          "id": "caption-word-4-1",
+          "text": "đang",
+          "start": 1.893,
+          "end": 2.147
+        }
+      ]
+    },
+    {
+      "id": "caption-group-5",
+      "frame": 1,
+      "start": 2.147,
+      "end": 2.463,
+      "text": "làm… và",
+      "words": [
+        {
+          "id": "caption-word-5-0",
+          "text": "làm…",
+          "start": 2.147,
+          "end": 2.337
+        },
+        {
+          "id": "caption-word-5-1",
+          "text": "và",
+          "start": 2.337,
+          "end": 2.463
+        }
+      ]
+    },
+    {
+      "id": "caption-group-6",
+      "frame": 1,
+      "start": 2.463,
+      "end": 2.78,
+      "text": "cả màn",
+      "words": [
+        {
+          "id": "caption-word-6-0",
+          "text": "cả",
+          "start": 2.463,
+          "end": 2.59
+        },
+        {
+          "id": "caption-word-6-1",
+          "text": "màn",
+          "start": 2.59,
+          "end": 2.78
+        }
+      ]
+    },
+    {
+      "id": "caption-group-7",
+      "frame": 1,
+      "start": 2.78,
+      "end": 3.47,
+      "text": "hình đỏ lòm.",
+      "words": [
+        {
+          "id": "caption-word-7-0",
+          "text": "hình",
+          "start": 2.78,
+          "end": 3.033
+        },
+        {
+          "id": "caption-word-7-1",
+          "text": "đỏ",
+          "start": 3.033,
+          "end": 3.16
+        },
+        {
+          "id": "caption-word-7-2",
+          "text": "lòm.",
+          "start": 3.16,
+          "end": 3.35
+        }
+      ]
+    },
+    {
+      "id": "caption-group-8",
+      "frame": 2,
+      "start": 4.11,
+      "end": 4.43,
+      "text": "Chạy lại",
+      "words": [
+        {
+          "id": "caption-word-8-0",
+          "text": "Chạy",
+          "start": 4.11,
+          "end": 4.24
+        },
+        {
+          "id": "caption-word-8-1",
+          "text": "lại",
+          "start": 4.24,
+          "end": 4.43
+        }
+      ]
+    },
+    {
+      "id": "caption-group-9",
+      "frame": 2,
+      "start": 4.43,
+      "end": 4.92,
+      "text": "lần hai,",
+      "words": [
+        {
+          "id": "caption-word-9-0",
+          "text": "lần",
+          "start": 4.43,
+          "end": 4.61
+        },
+        {
+          "id": "caption-word-9-1",
+          "text": "hai,",
+          "start": 4.61,
+          "end": 4.86
+        }
+      ]
+    },
+    {
+      "id": "caption-group-10",
+      "frame": 2,
+      "start": 4.92,
+      "end": 5.48,
+      "text": "lần ba…",
+      "words": [
+        {
+          "id": "caption-word-10-0",
+          "text": "lần",
+          "start": 4.92,
+          "end": 5.1
+        },
+        {
+          "id": "caption-word-10-1",
+          "text": "ba…",
+          "start": 5.1,
+          "end": 5.36
+        }
+      ]
+    },
+    {
+      "id": "caption-group-11",
+      "frame": 2,
+      "start": 5.63,
+      "end": 5.92,
+      "text": "biết đâu",
+      "words": [
+        {
+          "id": "caption-word-11-0",
+          "text": "biết",
+          "start": 5.63,
+          "end": 5.73
+        },
+        {
+          "id": "caption-word-11-1",
+          "text": "đâu",
+          "start": 5.73,
+          "end": 5.92
+        }
+      ]
+    },
+    {
+      "id": "caption-group-12",
+      "frame": 2,
+      "start": 5.92,
+      "end": 6.17,
+      "text": "nó tự",
+      "words": [
+        {
+          "id": "caption-word-12-0",
+          "text": "nó",
+          "start": 5.92,
+          "end": 6.01
+        },
+        {
+          "id": "caption-word-12-1",
+          "text": "tự",
+          "start": 6.09,
+          "end": 6.17
+        }
+      ]
+    },
+    {
+      "id": "caption-group-13",
+      "frame": 2,
+      "start": 6.17,
+      "end": 6.71,
+      "text": "hết.",
+      "words": [
+        {
+          "id": "caption-word-13-0",
+          "text": "hết.",
+          "start": 6.17,
+          "end": 6.59
+        }
+      ]
+    },
+    {
+      "id": "caption-group-14",
+      "frame": 2,
+      "start": 6.78,
+      "end": 7.16,
+      "text": "Vẫn lỗi",
+      "words": [
+        {
+          "id": "caption-word-14-0",
+          "text": "Vẫn",
+          "start": 6.78,
+          "end": 6.88
+        },
+        {
+          "id": "caption-word-14-1",
+          "text": "lỗi",
+          "start": 6.88,
+          "end": 7.16
+        }
+      ]
+    },
+    {
+      "id": "caption-group-15",
+      "frame": 2,
+      "start": 7.16,
+      "end": 7.49,
+      "text": "y hệt.",
+      "words": [
+        {
+          "id": "caption-word-15-0",
+          "text": "y",
+          "start": 7.16,
+          "end": 7.25
+        },
+        {
+          "id": "caption-word-15-1",
+          "text": "hệt.",
+          "start": 7.25,
+          "end": 7.37
+        }
+      ]
+    },
+    {
+      "id": "caption-group-16",
+      "frame": 3,
+      "start": 8.47,
+      "end": 8.792,
+      "text": "Đọc kỹ",
+      "words": [
+        {
+          "id": "caption-word-16-0",
+          "text": "Đọc",
+          "start": 8.47,
+          "end": 8.663
+        },
+        {
+          "id": "caption-word-16-1",
+          "text": "kỹ",
+          "start": 8.663,
+          "end": 8.792
+        }
+      ]
+    },
+    {
+      "id": "caption-group-17",
+      "frame": 3,
+      "start": 8.792,
+      "end": 9.178,
+      "text": "lỗi mới",
+      "words": [
+        {
+          "id": "caption-word-17-0",
+          "text": "lỗi",
+          "start": 8.792,
+          "end": 8.985
+        },
+        {
+          "id": "caption-word-17-1",
+          "text": "mới",
+          "start": 8.985,
+          "end": 9.178
+        }
+      ]
+    },
+    {
+      "id": "caption-group-18",
+      "frame": 3,
+      "start": 9.178,
+      "end": 9.435,
+      "text": "thấy:",
+      "words": [
+        {
+          "id": "caption-word-18-0",
+          "text": "thấy:",
+          "start": 9.178,
+          "end": 9.435
+        }
+      ]
+    },
+    {
+      "id": "caption-group-19",
+      "frame": 3,
+      "start": 9.435,
+      "end": 9.885,
+      "text": "ứng dụng",
+      "words": [
+        {
+          "id": "caption-word-19-0",
+          "text": "ứng",
+          "start": 9.435,
+          "end": 9.628
+        },
+        {
+          "id": "caption-word-19-1",
+          "text": "dụng",
+          "start": 9.628,
+          "end": 9.885
+        }
+      ]
+    },
+    {
+      "id": "caption-group-20",
+      "frame": 3,
+      "start": 9.885,
+      "end": 10.335,
+      "text": "cần cổng",
+      "words": [
+        {
+          "id": "caption-word-20-0",
+          "text": "cần",
+          "start": 9.885,
+          "end": 10.078
+        },
+        {
+          "id": "caption-word-20-1",
+          "text": "cổng",
+          "start": 10.078,
+          "end": 10.335
+        }
+      ]
+    },
+    {
+      "id": "caption-group-21",
+      "frame": 3,
+      "start": 10.335,
+      "end": 10.593,
+      "text": "3000,",
+      "words": [
+        {
+          "id": "caption-word-21-0",
+          "text": "3000,",
+          "start": 10.335,
+          "end": 10.593
+        }
+      ]
+    },
+    {
+      "id": "caption-group-22",
+      "frame": 3,
+      "start": 10.593,
+      "end": 10.85,
+      "text": "mà có",
+      "words": [
+        {
+          "id": "caption-word-22-0",
+          "text": "mà",
+          "start": 10.593,
+          "end": 10.721
+        },
+        {
+          "id": "caption-word-22-1",
+          "text": "có",
+          "start": 10.721,
+          "end": 10.85
+        }
+      ]
+    },
+    {
+      "id": "caption-group-23",
+      "frame": 3,
+      "start": 10.85,
+      "end": 11.557,
+      "text": "chương trình",
+      "words": [
+        {
+          "id": "caption-word-23-0",
+          "text": "chương",
+          "start": 10.85,
+          "end": 11.236
+        },
+        {
+          "id": "caption-word-23-1",
+          "text": "trình",
+          "start": 11.236,
+          "end": 11.557
+        }
+      ]
+    },
+    {
+      "id": "caption-group-24",
+      "frame": 3,
+      "start": 11.557,
+      "end": 12.136,
+      "text": "khác chiếm",
+      "words": [
+        {
+          "id": "caption-word-24-0",
+          "text": "khác",
+          "start": 11.557,
+          "end": 11.815
+        },
+        {
+          "id": "caption-word-24-1",
+          "text": "chiếm",
+          "start": 11.815,
+          "end": 12.136
+        }
+      ]
+    },
+    {
+      "id": "caption-group-25",
+      "frame": 3,
+      "start": 12.136,
+      "end": 12.329,
+      "text": "rồi.",
+      "words": [
+        {
+          "id": "caption-word-25-0",
+          "text": "rồi.",
+          "start": 12.136,
+          "end": 12.329
+        }
+      ]
+    },
+    {
+      "id": "caption-group-26",
+      "frame": 3,
+      "start": 12.329,
+      "end": 12.78,
+      "text": "Nhưng là",
+      "words": [
+        {
+          "id": "caption-word-26-0",
+          "text": "Nhưng",
+          "start": 12.329,
+          "end": 12.651
+        },
+        {
+          "id": "caption-word-26-1",
+          "text": "là",
+          "start": 12.651,
+          "end": 12.78
+        }
+      ]
+    },
+    {
+      "id": "caption-group-27",
+      "frame": 3,
+      "start": 12.78,
+      "end": 13.8,
+      "text": "chương trình nào?",
+      "words": [
+        {
+          "id": "caption-word-27-0",
+          "text": "chương",
+          "start": 12.78,
+          "end": 13.165
+        },
+        {
+          "id": "caption-word-27-1",
+          "text": "trình",
+          "start": 13.165,
+          "end": 13.487
+        },
+        {
+          "id": "caption-word-27-2",
+          "text": "nào?",
+          "start": 13.487,
+          "end": 13.68
+        }
+      ]
+    },
+    {
+      "id": "caption-group-28",
+      "frame": 4,
+      "start": 14.77,
+      "end": 15.17,
+      "text": "Bí quá,",
+      "words": [
+        {
+          "id": "caption-word-28-0",
+          "text": "Bí",
+          "start": 14.77,
+          "end": 14.83
+        },
+        {
+          "id": "caption-word-28-1",
+          "text": "quá,",
+          "start": 14.83,
+          "end": 15.17
+        }
+      ]
+    },
+    {
+      "id": "caption-group-29",
+      "frame": 4,
+      "start": 15.17,
+      "end": 15.71,
+      "text": "mình quay",
+      "words": [
+        {
+          "id": "caption-word-29-0",
+          "text": "mình",
+          "start": 15.17,
+          "end": 15.3
+        },
+        {
+          "id": "caption-word-29-1",
+          "text": "quay",
+          "start": 15.43,
+          "end": 15.71
+        }
+      ]
+    },
+    {
+      "id": "caption-group-30",
+      "frame": 4,
+      "start": 15.71,
+      "end": 16.3,
+      "text": "sang than",
+      "words": [
+        {
+          "id": "caption-word-30-0",
+          "text": "sang",
+          "start": 15.71,
+          "end": 15.98
+        },
+        {
+          "id": "caption-word-30-1",
+          "text": "than",
+          "start": 15.98,
+          "end": 16.24
+        }
+      ]
+    },
+    {
+      "id": "caption-group-31",
+      "frame": 4,
+      "start": 16.3,
+      "end": 16.69,
+      "text": "với chị",
+      "words": [
+        {
+          "id": "caption-word-31-0",
+          "text": "với",
+          "start": 16.3,
+          "end": 16.46
+        },
+        {
+          "id": "caption-word-31-1",
+          "text": "chị",
+          "start": 16.46,
+          "end": 16.66
+        }
+      ]
+    },
+    {
+      "id": "caption-group-32",
+      "frame": 4,
+      "start": 16.69,
+      "end": 16.99,
+      "text": "Mai:",
+      "words": [
+        {
+          "id": "caption-word-32-0",
+          "text": "Mai:",
+          "start": 16.69,
+          "end": 16.99
+        }
+      ]
+    },
+    {
+      "id": "caption-group-33",
+      "frame": 4,
+      "start": 16.99,
+      "end": 17.4,
+      "text": "“Chị ơi,",
+      "words": [
+        {
+          "id": "caption-word-33-0",
+          "text": "“Chị",
+          "start": 16.99,
+          "end": 17.35
+        },
+        {
+          "id": "caption-word-33-1",
+          "text": "ơi,",
+          "start": 17.35,
+          "end": 17.4
+        }
+      ]
+    },
+    {
+      "id": "caption-group-34",
+      "frame": 4,
+      "start": 17.4,
+      "end": 17.73,
+      "text": "em tắt",
+      "words": [
+        {
+          "id": "caption-word-34-0",
+          "text": "em",
+          "start": 17.4,
+          "end": 17.53
+        },
+        {
+          "id": "caption-word-34-1",
+          "text": "tắt",
+          "start": 17.53,
+          "end": 17.68
+        }
+      ]
+    },
+    {
+      "id": "caption-group-35",
+      "frame": 4,
+      "start": 17.73,
+      "end": 18.12,
+      "text": "hết rồi",
+      "words": [
+        {
+          "id": "caption-word-35-0",
+          "text": "hết",
+          "start": 17.73,
+          "end": 17.92
+        },
+        {
+          "id": "caption-word-35-1",
+          "text": "rồi",
+          "start": 17.92,
+          "end": 18.12
+        }
+      ]
+    },
+    {
+      "id": "caption-group-36",
+      "frame": 4,
+      "start": 18.12,
+      "end": 18.25,
+      "text": "mà,",
+      "words": [
+        {
+          "id": "caption-word-36-0",
+          "text": "mà,",
+          "start": 18.12,
+          "end": 18.25
+        }
+      ]
+    },
+    {
+      "id": "caption-group-37",
+      "frame": 4,
+      "start": 18.25,
+      "end": 18.57,
+      "text": "từ hôm",
+      "words": [
+        {
+          "id": "caption-word-37-0",
+          "text": "từ",
+          "start": 18.25,
+          "end": 18.29
+        },
+        {
+          "id": "caption-word-37-1",
+          "text": "hôm",
+          "start": 18.43,
+          "end": 18.57
+        }
+      ]
+    },
+    {
+      "id": "caption-group-38",
+      "frame": 4,
+      "start": 18.57,
+      "end": 19.16,
+      "text": "thứ Sáu…”",
+      "words": [
+        {
+          "id": "caption-word-38-0",
+          "text": "thứ",
+          "start": 18.57,
+          "end": 18.76
+        },
+        {
+          "id": "caption-word-38-1",
+          "text": "Sáu…”",
+          "start": 18.77,
+          "end": 19.04
+        }
+      ]
+    },
+    {
+      "id": "caption-group-39",
+      "frame": 5,
+      "start": 20.33,
+      "end": 20.56,
+      "text": "“Khoan!",
+      "words": [
+        {
+          "id": "caption-word-39-0",
+          "text": "“Khoan!",
+          "start": 20.33,
+          "end": 20.56
+        }
+      ]
+    },
+    {
+      "id": "caption-group-40",
+      "frame": 5,
+      "start": 20.56,
+      "end": 21.11,
+      "text": "Thứ Sáu",
+      "words": [
+        {
+          "id": "caption-word-40-0",
+          "text": "Thứ",
+          "start": 20.56,
+          "end": 20.58
+        },
+        {
+          "id": "caption-word-40-1",
+          "text": "Sáu",
+          "start": 20.58,
+          "end": 21.11
+        }
+      ]
+    },
+    {
+      "id": "caption-group-41",
+      "frame": 5,
+      "start": 21.11,
+      "end": 21.54,
+      "text": "em chạy",
+      "words": [
+        {
+          "id": "caption-word-41-0",
+          "text": "em",
+          "start": 21.11,
+          "end": 21.21
+        },
+        {
+          "id": "caption-word-41-1",
+          "text": "chạy",
+          "start": 21.3,
+          "end": 21.54
+        }
+      ]
+    },
+    {
+      "id": "caption-group-42",
+      "frame": 5,
+      "start": 21.54,
+      "end": 22.31,
+      "text": "thử xong…",
+      "words": [
+        {
+          "id": "caption-word-42-0",
+          "text": "thử",
+          "start": 21.54,
+          "end": 21.75
+        },
+        {
+          "id": "caption-word-42-1",
+          "text": "xong…",
+          "start": 21.81,
+          "end": 22.19
+        }
+      ]
+    },
+    {
+      "id": "caption-group-43",
+      "frame": 5,
+      "start": 22.34,
+      "end": 22.99,
+      "text": "quên chưa tắt!”",
+      "words": [
+        {
+          "id": "caption-word-43-0",
+          "text": "quên",
+          "start": 22.34,
+          "end": 22.43
+        },
+        {
+          "id": "caption-word-43-1",
+          "text": "chưa",
+          "start": 22.46,
+          "end": 22.62
+        },
+        {
+          "id": "caption-word-43-2",
+          "text": "tắt!”",
+          "start": 22.62,
+          "end": 22.87
+        }
+      ]
+    },
+    {
+      "id": "caption-group-44",
+      "frame": 6,
+      "start": 24.2,
+      "end": 24.56,
+      "text": "Kiểm tra",
+      "words": [
+        {
+          "id": "caption-word-44-0",
+          "text": "Kiểm",
+          "start": 24.2,
+          "end": 24.35
+        },
+        {
+          "id": "caption-word-44-1",
+          "text": "tra",
+          "start": 24.46,
+          "end": 24.56
+        }
+      ]
+    },
+    {
+      "id": "caption-group-45",
+      "frame": 6,
+      "start": 24.56,
+      "end": 25.28,
+      "text": "cho chắc:",
+      "words": [
+        {
+          "id": "caption-word-45-0",
+          "text": "cho",
+          "start": 24.56,
+          "end": 24.76
+        },
+        {
+          "id": "caption-word-45-1",
+          "text": "chắc:",
+          "start": 24.76,
+          "end": 25.2
+        }
+      ]
+    },
+    {
+      "id": "caption-group-46",
+      "frame": 6,
+      "start": 25.28,
+      "end": 25.74,
+      "text": "đúng là",
+      "words": [
+        {
+          "id": "caption-word-46-0",
+          "text": "đúng",
+          "start": 25.28,
+          "end": 25.52
+        },
+        {
+          "id": "caption-word-46-1",
+          "text": "là",
+          "start": 25.52,
+          "end": 25.66
+        }
+      ]
+    },
+    {
+      "id": "caption-group-47",
+      "frame": 6,
+      "start": 25.74,
+      "end": 26,
+      "text": "chương trình",
+      "words": [
+        {
+          "id": "caption-word-47-0",
+          "text": "chương",
+          "start": 25.74,
+          "end": 25.85
+        },
+        {
+          "id": "caption-word-47-1",
+          "text": "trình",
+          "start": 25.85,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "id": "caption-group-48",
+      "frame": 6,
+      "start": 26,
+      "end": 26.34,
+      "text": "của mình",
+      "words": [
+        {
+          "id": "caption-word-48-0",
+          "text": "của",
+          "start": 26,
+          "end": 26.14
+        },
+        {
+          "id": "caption-word-48-1",
+          "text": "mình",
+          "start": 26.14,
+          "end": 26.34
+        }
+      ]
+    },
+    {
+      "id": "caption-group-49",
+      "frame": 6,
+      "start": 26.34,
+      "end": 26.66,
+      "text": "vẫn đang",
+      "words": [
+        {
+          "id": "caption-word-49-0",
+          "text": "vẫn",
+          "start": 26.34,
+          "end": 26.48
+        },
+        {
+          "id": "caption-word-49-1",
+          "text": "đang",
+          "start": 26.48,
+          "end": 26.66
+        }
+      ]
+    },
+    {
+      "id": "caption-group-50",
+      "frame": 6,
+      "start": 26.66,
+      "end": 27.34,
+      "text": "chiếm cổng.",
+      "words": [
+        {
+          "id": "caption-word-50-0",
+          "text": "chiếm",
+          "start": 26.66,
+          "end": 26.85
+        },
+        {
+          "id": "caption-word-50-1",
+          "text": "cổng.",
+          "start": 26.88,
+          "end": 27.22
+        }
+      ]
+    },
+    {
+      "id": "caption-group-51",
+      "frame": 7,
+      "start": 29.08,
+      "end": 29.4,
+      "text": "Tắt nó",
+      "words": [
+        {
+          "id": "caption-word-51-0",
+          "text": "Tắt",
+          "start": 29.08,
+          "end": 29.24
+        },
+        {
+          "id": "caption-word-51-1",
+          "text": "nó",
+          "start": 29.24,
+          "end": 29.4
+        }
+      ]
+    },
+    {
+      "id": "caption-group-52",
+      "frame": 7,
+      "start": 29.4,
+      "end": 29.71,
+      "text": "đi,",
+      "words": [
+        {
+          "id": "caption-word-52-0",
+          "text": "đi,",
+          "start": 29.4,
+          "end": 29.59
+        }
+      ]
+    },
+    {
+      "id": "caption-group-53",
+      "frame": 7,
+      "start": 29.81,
+      "end": 30.82,
+      "text": "chạy lại… xanh",
+      "words": [
+        {
+          "id": "caption-word-53-0",
+          "text": "chạy",
+          "start": 29.81,
+          "end": 29.96
+        },
+        {
+          "id": "caption-word-53-1",
+          "text": "lại…",
+          "start": 29.96,
+          "end": 30.41
+        },
+        {
+          "id": "caption-word-53-2",
+          "text": "xanh",
+          "start": 30.51,
+          "end": 30.82
+        }
+      ]
+    },
+    {
+      "id": "caption-group-54",
+      "frame": 7,
+      "start": 30.82,
+      "end": 31.11,
+      "text": "rồi!",
+      "words": [
+        {
+          "id": "caption-word-54-0",
+          "text": "rồi!",
+          "start": 30.82,
+          "end": 30.99
+        }
+      ]
+    },
+    {
+      "id": "caption-group-55",
+      "frame": 8,
+      "start": 33.26,
+      "end": 33.39,
+      "text": "Đấy,",
+      "words": [
+        {
+          "id": "caption-word-55-0",
+          "text": "Đấy,",
+          "start": 33.26,
+          "end": 33.39
+        }
+      ]
+    },
+    {
+      "id": "caption-group-56",
+      "frame": 8,
+      "start": 33.39,
+      "end": 33.86,
+      "text": "chị chưa",
+      "words": [
+        {
+          "id": "caption-word-56-0",
+          "text": "chị",
+          "start": 33.39,
+          "end": 33.59
+        },
+        {
+          "id": "caption-word-56-1",
+          "text": "chưa",
+          "start": 33.59,
+          "end": 33.86
+        }
+      ]
+    },
+    {
+      "id": "caption-group-57",
+      "frame": 8,
+      "start": 33.86,
+      "end": 34.25,
+      "text": "nói câu",
+      "words": [
+        {
+          "id": "caption-word-57-0",
+          "text": "nói",
+          "start": 33.86,
+          "end": 34.05
+        },
+        {
+          "id": "caption-word-57-1",
+          "text": "câu",
+          "start": 34.06,
+          "end": 34.25
+        }
+      ]
+    },
+    {
+      "id": "caption-group-58",
+      "frame": 8,
+      "start": 34.25,
+      "end": 34.58,
+      "text": "nào mà",
+      "words": [
+        {
+          "id": "caption-word-58-0",
+          "text": "nào",
+          "start": 34.25,
+          "end": 34.45
+        },
+        {
+          "id": "caption-word-58-1",
+          "text": "mà",
+          "start": 34.45,
+          "end": 34.58
+        }
+      ]
+    },
+    {
+      "id": "caption-group-59",
+      "frame": 8,
+      "start": 34.58,
+      "end": 34.84,
+      "text": "em đã",
+      "words": [
+        {
+          "id": "caption-word-59-0",
+          "text": "em",
+          "start": 34.58,
+          "end": 34.71
+        },
+        {
+          "id": "caption-word-59-1",
+          "text": "đã",
+          "start": 34.71,
+          "end": 34.84
+        }
+      ]
+    },
+    {
+      "id": "caption-group-60",
+      "frame": 8,
+      "start": 34.84,
+      "end": 35.14,
+      "text": "tự tìm",
+      "words": [
+        {
+          "id": "caption-word-60-0",
+          "text": "tự",
+          "start": 34.84,
+          "end": 34.92
+        },
+        {
+          "id": "caption-word-60-1",
+          "text": "tìm",
+          "start": 35.01,
+          "end": 35.14
+        }
+      ]
+    },
+    {
+      "id": "caption-group-61",
+      "frame": 8,
+      "start": 35.14,
+      "end": 35.7,
+      "text": "ra rồi!",
+      "words": [
+        {
+          "id": "caption-word-61-0",
+          "text": "ra",
+          "start": 35.14,
+          "end": 35.27
+        },
+        {
+          "id": "caption-word-61-1",
+          "text": "rồi!",
+          "start": 35.27,
+          "end": 35.58
+        }
+      ]
+    },
+    {
+      "id": "caption-group-62",
+      "frame": 9,
+      "start": 36.97,
+      "end": 37.18,
+      "text": "Đó là",
+      "words": [
+        {
+          "id": "caption-word-62-0",
+          "text": "Đó",
+          "start": 36.97,
+          "end": 37.04
+        },
+        {
+          "id": "caption-word-62-1",
+          "text": "là",
+          "start": 37.04,
+          "end": 37.18
+        }
+      ]
+    },
+    {
+      "id": "caption-group-63",
+      "frame": 9,
+      "start": 37.18,
+      "end": 37.66,
+      "text": "mẹo “vịt",
+      "words": [
+        {
+          "id": "caption-word-63-0",
+          "text": "mẹo",
+          "start": 37.18,
+          "end": 37.39
+        },
+        {
+          "id": "caption-word-63-1",
+          "text": "“vịt",
+          "start": 37.39,
+          "end": 37.56
+        }
+      ]
+    },
+    {
+      "id": "caption-group-64",
+      "frame": 9,
+      "start": 37.66,
+      "end": 38.15,
+      "text": "cao su”:",
+      "words": [
+        {
+          "id": "caption-word-64-0",
+          "text": "cao",
+          "start": 37.66,
+          "end": 37.77
+        },
+        {
+          "id": "caption-word-64-1",
+          "text": "su”:",
+          "start": 37.86,
+          "end": 38.03
+        }
+      ]
+    },
+    {
+      "id": "caption-group-65",
+      "frame": 9,
+      "start": 38.16,
+      "end": 38.46,
+      "text": "kể từng",
+      "words": [
+        {
+          "id": "caption-word-65-0",
+          "text": "kể",
+          "start": 38.16,
+          "end": 38.19
+        },
+        {
+          "id": "caption-word-65-1",
+          "text": "từng",
+          "start": 38.34,
+          "end": 38.46
+        }
+      ]
+    },
+    {
+      "id": "caption-group-66",
+      "frame": 9,
+      "start": 38.46,
+      "end": 38.89,
+      "text": "bước cho",
+      "words": [
+        {
+          "id": "caption-word-66-0",
+          "text": "bước",
+          "start": 38.46,
+          "end": 38.7
+        },
+        {
+          "id": "caption-word-66-1",
+          "text": "cho",
+          "start": 38.7,
+          "end": 38.89
+        }
+      ]
+    },
+    {
+      "id": "caption-group-67",
+      "frame": 9,
+      "start": 38.89,
+      "end": 39.13,
+      "text": "ai đó",
+      "words": [
+        {
+          "id": "caption-word-67-0",
+          "text": "ai",
+          "start": 38.89,
+          "end": 39.01
+        },
+        {
+          "id": "caption-word-67-1",
+          "text": "đó",
+          "start": 39.01,
+          "end": 39.13
+        }
+      ]
+    },
+    {
+      "id": "caption-group-68",
+      "frame": 9,
+      "start": 39.13,
+      "end": 39.58,
+      "text": "nghe,",
+      "words": [
+        {
+          "id": "caption-word-68-0",
+          "text": "nghe,",
+          "start": 39.13,
+          "end": 39.46
+        }
+      ]
+    },
+    {
+      "id": "caption-group-69",
+      "frame": 9,
+      "start": 39.64,
+      "end": 39.92,
+      "text": "dù chỉ",
+      "words": [
+        {
+          "id": "caption-word-69-0",
+          "text": "dù",
+          "start": 39.64,
+          "end": 39.7
+        },
+        {
+          "id": "caption-word-69-1",
+          "text": "chỉ",
+          "start": 39.7,
+          "end": 39.92
+        }
+      ]
+    },
+    {
+      "id": "caption-group-70",
+      "frame": 9,
+      "start": 39.92,
+      "end": 40.22,
+      "text": "là một",
+      "words": [
+        {
+          "id": "caption-word-70-0",
+          "text": "là",
+          "start": 39.92,
+          "end": 40.03
+        },
+        {
+          "id": "caption-word-70-1",
+          "text": "một",
+          "start": 40.03,
+          "end": 40.22
+        }
+      ]
+    },
+    {
+      "id": "caption-group-71",
+      "frame": 9,
+      "start": 40.22,
+      "end": 40.61,
+      "text": "chú vịt,",
+      "words": [
+        {
+          "id": "caption-word-71-0",
+          "text": "chú",
+          "start": 40.22,
+          "end": 40.42
+        },
+        {
+          "id": "caption-word-71-1",
+          "text": "vịt,",
+          "start": 40.42,
+          "end": 40.61
+        }
+      ]
+    },
+    {
+      "id": "caption-group-72",
+      "frame": 9,
+      "start": 40.61,
+      "end": 41.15,
+      "text": "nhiều khi",
+      "words": [
+        {
+          "id": "caption-word-72-0",
+          "text": "nhiều",
+          "start": 40.61,
+          "end": 40.8
+        },
+        {
+          "id": "caption-word-72-1",
+          "text": "khi",
+          "start": 40.95,
+          "end": 41.15
+        }
+      ]
+    },
+    {
+      "id": "caption-group-73",
+      "frame": 9,
+      "start": 41.15,
+      "end": 41.58,
+      "text": "đang kể",
+      "words": [
+        {
+          "id": "caption-word-73-0",
+          "text": "đang",
+          "start": 41.15,
+          "end": 41.42
+        },
+        {
+          "id": "caption-word-73-1",
+          "text": "kể",
+          "start": 41.42,
+          "end": 41.49
+        }
+      ]
+    },
+    {
+      "id": "caption-group-74",
+      "frame": 9,
+      "start": 41.58,
+      "end": 41.81,
+      "text": "là tự",
+      "words": [
+        {
+          "id": "caption-word-74-0",
+          "text": "là",
+          "start": 41.58,
+          "end": 41.68
+        },
+        {
+          "id": "caption-word-74-1",
+          "text": "tự",
+          "start": 41.68,
+          "end": 41.81
+        }
+      ]
+    },
+    {
+      "id": "caption-group-75",
+      "frame": 9,
+      "start": 41.81,
+      "end": 42.7,
+      "text": "nhận ra lỗi.",
+      "words": [
+        {
+          "id": "caption-word-75-0",
+          "text": "nhận",
+          "start": 41.81,
+          "end": 42.07
+        },
+        {
+          "id": "caption-word-75-1",
+          "text": "ra",
+          "start": 42.07,
+          "end": 42.2
+        },
+        {
+          "id": "caption-word-75-2",
+          "text": "lỗi.",
+          "start": 42.2,
+          "end": 42.58
+        }
+      ]
+    },
+    {
+      "id": "caption-group-76",
+      "frame": 10,
+      "start": 43.56,
+      "end": 43.83,
+      "text": "Bạn đã",
+      "words": [
+        {
+          "id": "caption-word-76-0",
+          "text": "Bạn",
+          "start": 43.56,
+          "end": 43.69
+        },
+        {
+          "id": "caption-word-76-1",
+          "text": "đã",
+          "start": 43.69,
+          "end": 43.78
+        }
+      ]
+    },
+    {
+      "id": "caption-group-77",
+      "frame": 10,
+      "start": 43.83,
+      "end": 44.2,
+      "text": "bao giờ",
+      "words": [
+        {
+          "id": "caption-word-77-0",
+          "text": "bao",
+          "start": 43.83,
+          "end": 44.01
+        },
+        {
+          "id": "caption-word-77-1",
+          "text": "giờ",
+          "start": 44.01,
+          "end": 44.2
+        }
+      ]
+    },
+    {
+      "id": "caption-group-78",
+      "frame": 10,
+      "start": 44.2,
+      "end": 44.52,
+      "text": "mất cả",
+      "words": [
+        {
+          "id": "caption-word-78-0",
+          "text": "mất",
+          "start": 44.2,
+          "end": 44.39
+        },
+        {
+          "id": "caption-word-78-1",
+          "text": "cả",
+          "start": 44.39,
+          "end": 44.52
+        }
+      ]
+    },
+    {
+      "id": "caption-group-79",
+      "frame": 10,
+      "start": 44.52,
+      "end": 44.91,
+      "text": "buổi vì",
+      "words": [
+        {
+          "id": "caption-word-79-0",
+          "text": "buổi",
+          "start": 44.52,
+          "end": 44.78
+        },
+        {
+          "id": "caption-word-79-1",
+          "text": "vì",
+          "start": 44.78,
+          "end": 44.9
+        }
+      ]
+    },
+    {
+      "id": "caption-group-80",
+      "frame": 10,
+      "start": 44.91,
+      "end": 45.29,
+      "text": "một lỗi",
+      "words": [
+        {
+          "id": "caption-word-80-0",
+          "text": "một",
+          "start": 44.91,
+          "end": 45.08
+        },
+        {
+          "id": "caption-word-80-1",
+          "text": "lỗi",
+          "start": 45.14,
+          "end": 45.29
+        }
+      ]
+    },
+    {
+      "id": "caption-group-81",
+      "frame": 10,
+      "start": 45.29,
+      "end": 46.09,
+      "text": "rất nhỏ chưa?",
+      "words": [
+        {
+          "id": "caption-word-81-0",
+          "text": "rất",
+          "start": 45.29,
+          "end": 45.47
+        },
+        {
+          "id": "caption-word-81-1",
+          "text": "nhỏ",
+          "start": 45.6,
+          "end": 45.67
+        },
+        {
+          "id": "caption-word-81-2",
+          "text": "chưa?",
+          "start": 45.67,
+          "end": 45.97
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1025 @@
+{
+  "bgm": null,
+  "bgm_pending": false,
+  "voices": [
+    {
+      "frame": 1,
+      "path": "assets/voice/01.wav",
+      "duration_s": 3.36,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Sáng",
+          "start": 0.12,
+          "end": 0.373
+        },
+        {
+          "id": "w1",
+          "text": "thứ",
+          "start": 0.373,
+          "end": 0.563
+        },
+        {
+          "id": "w2",
+          "text": "Hai,",
+          "start": 0.563,
+          "end": 0.753
+        },
+        {
+          "id": "w3",
+          "text": "mình",
+          "start": 0.753,
+          "end": 1.007
+        },
+        {
+          "id": "w4",
+          "text": "chạy",
+          "start": 1.007,
+          "end": 1.26
+        },
+        {
+          "id": "w5",
+          "text": "thử",
+          "start": 1.26,
+          "end": 1.45
+        },
+        {
+          "id": "w6",
+          "text": "ứng",
+          "start": 1.45,
+          "end": 1.64
+        },
+        {
+          "id": "w7",
+          "text": "dụng",
+          "start": 1.64,
+          "end": 1.893
+        },
+        {
+          "id": "w8",
+          "text": "đang",
+          "start": 1.893,
+          "end": 2.147
+        },
+        {
+          "id": "w9",
+          "text": "làm…",
+          "start": 2.147,
+          "end": 2.337
+        },
+        {
+          "id": "w10",
+          "text": "và",
+          "start": 2.337,
+          "end": 2.463
+        },
+        {
+          "id": "w11",
+          "text": "cả",
+          "start": 2.463,
+          "end": 2.59
+        },
+        {
+          "id": "w12",
+          "text": "màn",
+          "start": 2.59,
+          "end": 2.78
+        },
+        {
+          "id": "w13",
+          "text": "hình",
+          "start": 2.78,
+          "end": 3.033
+        },
+        {
+          "id": "w14",
+          "text": "đỏ",
+          "start": 3.033,
+          "end": 3.16
+        },
+        {
+          "id": "w15",
+          "text": "lòm.",
+          "start": 3.16,
+          "end": 3.35
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "path": "assets/voice/02.wav",
+      "duration_s": 3.6,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Chạy",
+          "start": 0.11,
+          "end": 0.24
+        },
+        {
+          "id": "w1",
+          "text": "lại",
+          "start": 0.24,
+          "end": 0.43
+        },
+        {
+          "id": "w2",
+          "text": "lần",
+          "start": 0.43,
+          "end": 0.61
+        },
+        {
+          "id": "w3",
+          "text": "hai,",
+          "start": 0.61,
+          "end": 0.86
+        },
+        {
+          "id": "w4",
+          "text": "lần",
+          "start": 0.92,
+          "end": 1.1
+        },
+        {
+          "id": "w5",
+          "text": "ba…",
+          "start": 1.1,
+          "end": 1.36
+        },
+        {
+          "id": "w6",
+          "text": "biết",
+          "start": 1.63,
+          "end": 1.73
+        },
+        {
+          "id": "w7",
+          "text": "đâu",
+          "start": 1.73,
+          "end": 1.92
+        },
+        {
+          "id": "w8",
+          "text": "nó",
+          "start": 1.92,
+          "end": 2.01
+        },
+        {
+          "id": "w9",
+          "text": "tự",
+          "start": 2.09,
+          "end": 2.17
+        },
+        {
+          "id": "w10",
+          "text": "hết.",
+          "start": 2.17,
+          "end": 2.59
+        },
+        {
+          "id": "w11",
+          "text": "Vẫn",
+          "start": 2.78,
+          "end": 2.88
+        },
+        {
+          "id": "w12",
+          "text": "lỗi",
+          "start": 2.88,
+          "end": 3.16
+        },
+        {
+          "id": "w13",
+          "text": "y",
+          "start": 3.16,
+          "end": 3.25
+        },
+        {
+          "id": "w14",
+          "text": "hệt.",
+          "start": 3.25,
+          "end": 3.37
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "path": "assets/voice/03.wav",
+      "duration_s": 5.52,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Đọc",
+          "start": 0.07,
+          "end": 0.263
+        },
+        {
+          "id": "w1",
+          "text": "kỹ",
+          "start": 0.263,
+          "end": 0.392
+        },
+        {
+          "id": "w2",
+          "text": "lỗi",
+          "start": 0.392,
+          "end": 0.585
+        },
+        {
+          "id": "w3",
+          "text": "mới",
+          "start": 0.585,
+          "end": 0.778
+        },
+        {
+          "id": "w4",
+          "text": "thấy:",
+          "start": 0.778,
+          "end": 1.035
+        },
+        {
+          "id": "w5",
+          "text": "ứng",
+          "start": 1.035,
+          "end": 1.228
+        },
+        {
+          "id": "w6",
+          "text": "dụng",
+          "start": 1.228,
+          "end": 1.485
+        },
+        {
+          "id": "w7",
+          "text": "cần",
+          "start": 1.485,
+          "end": 1.678
+        },
+        {
+          "id": "w8",
+          "text": "cổng",
+          "start": 1.678,
+          "end": 1.935
+        },
+        {
+          "id": "w9",
+          "text": "3000,",
+          "start": 1.935,
+          "end": 2.193
+        },
+        {
+          "id": "w10",
+          "text": "mà",
+          "start": 2.193,
+          "end": 2.321
+        },
+        {
+          "id": "w11",
+          "text": "có",
+          "start": 2.321,
+          "end": 2.45
+        },
+        {
+          "id": "w12",
+          "text": "chương",
+          "start": 2.45,
+          "end": 2.836
+        },
+        {
+          "id": "w13",
+          "text": "trình",
+          "start": 2.836,
+          "end": 3.157
+        },
+        {
+          "id": "w14",
+          "text": "khác",
+          "start": 3.157,
+          "end": 3.415
+        },
+        {
+          "id": "w15",
+          "text": "chiếm",
+          "start": 3.415,
+          "end": 3.736
+        },
+        {
+          "id": "w16",
+          "text": "rồi.",
+          "start": 3.736,
+          "end": 3.929
+        },
+        {
+          "id": "w17",
+          "text": "Nhưng",
+          "start": 3.929,
+          "end": 4.251
+        },
+        {
+          "id": "w18",
+          "text": "là",
+          "start": 4.251,
+          "end": 4.38
+        },
+        {
+          "id": "w19",
+          "text": "chương",
+          "start": 4.38,
+          "end": 4.765
+        },
+        {
+          "id": "w20",
+          "text": "trình",
+          "start": 4.765,
+          "end": 5.087
+        },
+        {
+          "id": "w21",
+          "text": "nào?",
+          "start": 5.087,
+          "end": 5.28
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "path": "assets/voice/04.wav",
+      "duration_s": 4.56,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Bí",
+          "start": 0.07,
+          "end": 0.13
+        },
+        {
+          "id": "w1",
+          "text": "quá,",
+          "start": 0.13,
+          "end": 0.47
+        },
+        {
+          "id": "w2",
+          "text": "mình",
+          "start": 0.47,
+          "end": 0.6
+        },
+        {
+          "id": "w3",
+          "text": "quay",
+          "start": 0.73,
+          "end": 1.01
+        },
+        {
+          "id": "w4",
+          "text": "sang",
+          "start": 1.01,
+          "end": 1.28
+        },
+        {
+          "id": "w5",
+          "text": "than",
+          "start": 1.28,
+          "end": 1.54
+        },
+        {
+          "id": "w6",
+          "text": "với",
+          "start": 1.6,
+          "end": 1.76
+        },
+        {
+          "id": "w7",
+          "text": "chị",
+          "start": 1.76,
+          "end": 1.96
+        },
+        {
+          "id": "w8",
+          "text": "Mai:",
+          "start": 1.99,
+          "end": 2.29
+        },
+        {
+          "id": "w9",
+          "text": "“Chị",
+          "start": 2.29,
+          "end": 2.65
+        },
+        {
+          "id": "w10",
+          "text": "ơi,",
+          "start": 2.65,
+          "end": 2.7
+        },
+        {
+          "id": "w11",
+          "text": "em",
+          "start": 2.7,
+          "end": 2.83
+        },
+        {
+          "id": "w12",
+          "text": "tắt",
+          "start": 2.83,
+          "end": 2.98
+        },
+        {
+          "id": "w13",
+          "text": "hết",
+          "start": 3.03,
+          "end": 3.22
+        },
+        {
+          "id": "w14",
+          "text": "rồi",
+          "start": 3.22,
+          "end": 3.42
+        },
+        {
+          "id": "w15",
+          "text": "mà,",
+          "start": 3.42,
+          "end": 3.55
+        },
+        {
+          "id": "w16",
+          "text": "từ",
+          "start": 3.55,
+          "end": 3.59
+        },
+        {
+          "id": "w17",
+          "text": "hôm",
+          "start": 3.73,
+          "end": 3.87
+        },
+        {
+          "id": "w18",
+          "text": "thứ",
+          "start": 3.87,
+          "end": 4.06
+        },
+        {
+          "id": "w19",
+          "text": "Sáu…”",
+          "start": 4.07,
+          "end": 4.34
+        }
+      ]
+    },
+    {
+      "frame": 5,
+      "path": "assets/voice/05.wav",
+      "duration_s": 2.8,
+      "words": [
+        {
+          "id": "w0",
+          "text": "“Khoan!",
+          "start": 0.03,
+          "end": 0.26
+        },
+        {
+          "id": "w1",
+          "text": "Thứ",
+          "start": 0.26,
+          "end": 0.28
+        },
+        {
+          "id": "w2",
+          "text": "Sáu",
+          "start": 0.28,
+          "end": 0.81
+        },
+        {
+          "id": "w3",
+          "text": "em",
+          "start": 0.81,
+          "end": 0.91
+        },
+        {
+          "id": "w4",
+          "text": "chạy",
+          "start": 1,
+          "end": 1.24
+        },
+        {
+          "id": "w5",
+          "text": "thử",
+          "start": 1.24,
+          "end": 1.45
+        },
+        {
+          "id": "w6",
+          "text": "xong…",
+          "start": 1.51,
+          "end": 1.89
+        },
+        {
+          "id": "w7",
+          "text": "quên",
+          "start": 2.04,
+          "end": 2.13
+        },
+        {
+          "id": "w8",
+          "text": "chưa",
+          "start": 2.16,
+          "end": 2.32
+        },
+        {
+          "id": "w9",
+          "text": "tắt!”",
+          "start": 2.32,
+          "end": 2.57
+        }
+      ]
+    },
+    {
+      "frame": 6,
+      "path": "assets/voice/06.wav",
+      "duration_s": 3.36,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Kiểm",
+          "start": 0.1,
+          "end": 0.25
+        },
+        {
+          "id": "w1",
+          "text": "tra",
+          "start": 0.36,
+          "end": 0.46
+        },
+        {
+          "id": "w2",
+          "text": "cho",
+          "start": 0.46,
+          "end": 0.66
+        },
+        {
+          "id": "w3",
+          "text": "chắc:",
+          "start": 0.66,
+          "end": 1.1
+        },
+        {
+          "id": "w4",
+          "text": "đúng",
+          "start": 1.18,
+          "end": 1.42
+        },
+        {
+          "id": "w5",
+          "text": "là",
+          "start": 1.42,
+          "end": 1.56
+        },
+        {
+          "id": "w6",
+          "text": "chương",
+          "start": 1.64,
+          "end": 1.75
+        },
+        {
+          "id": "w7",
+          "text": "trình",
+          "start": 1.75,
+          "end": 1.9
+        },
+        {
+          "id": "w8",
+          "text": "của",
+          "start": 1.9,
+          "end": 2.04
+        },
+        {
+          "id": "w9",
+          "text": "mình",
+          "start": 2.04,
+          "end": 2.24
+        },
+        {
+          "id": "w10",
+          "text": "vẫn",
+          "start": 2.24,
+          "end": 2.38
+        },
+        {
+          "id": "w11",
+          "text": "đang",
+          "start": 2.38,
+          "end": 2.56
+        },
+        {
+          "id": "w12",
+          "text": "chiếm",
+          "start": 2.56,
+          "end": 2.75
+        },
+        {
+          "id": "w13",
+          "text": "cổng.",
+          "start": 2.78,
+          "end": 3.12
+        }
+      ]
+    },
+    {
+      "frame": 7,
+      "path": "assets/voice/07.wav",
+      "duration_s": 2.16,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Tắt",
+          "start": 0.08,
+          "end": 0.24
+        },
+        {
+          "id": "w1",
+          "text": "nó",
+          "start": 0.24,
+          "end": 0.4
+        },
+        {
+          "id": "w2",
+          "text": "đi,",
+          "start": 0.4,
+          "end": 0.59
+        },
+        {
+          "id": "w3",
+          "text": "chạy",
+          "start": 0.81,
+          "end": 0.96
+        },
+        {
+          "id": "w4",
+          "text": "lại…",
+          "start": 0.96,
+          "end": 1.41
+        },
+        {
+          "id": "w5",
+          "text": "xanh",
+          "start": 1.51,
+          "end": 1.82
+        },
+        {
+          "id": "w6",
+          "text": "rồi!",
+          "start": 1.82,
+          "end": 1.99
+        }
+      ]
+    },
+    {
+      "frame": 8,
+      "path": "assets/voice/08.wav",
+      "duration_s": 2.64,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Đấy,",
+          "start": 0.06,
+          "end": 0.19
+        },
+        {
+          "id": "w1",
+          "text": "chị",
+          "start": 0.19,
+          "end": 0.39
+        },
+        {
+          "id": "w2",
+          "text": "chưa",
+          "start": 0.39,
+          "end": 0.66
+        },
+        {
+          "id": "w3",
+          "text": "nói",
+          "start": 0.66,
+          "end": 0.85
+        },
+        {
+          "id": "w4",
+          "text": "câu",
+          "start": 0.86,
+          "end": 1.05
+        },
+        {
+          "id": "w5",
+          "text": "nào",
+          "start": 1.05,
+          "end": 1.25
+        },
+        {
+          "id": "w6",
+          "text": "mà",
+          "start": 1.25,
+          "end": 1.38
+        },
+        {
+          "id": "w7",
+          "text": "em",
+          "start": 1.38,
+          "end": 1.51
+        },
+        {
+          "id": "w8",
+          "text": "đã",
+          "start": 1.51,
+          "end": 1.64
+        },
+        {
+          "id": "w9",
+          "text": "tự",
+          "start": 1.64,
+          "end": 1.72
+        },
+        {
+          "id": "w10",
+          "text": "tìm",
+          "start": 1.81,
+          "end": 1.94
+        },
+        {
+          "id": "w11",
+          "text": "ra",
+          "start": 1.94,
+          "end": 2.07
+        },
+        {
+          "id": "w12",
+          "text": "rồi!",
+          "start": 2.07,
+          "end": 2.38
+        }
+      ]
+    },
+    {
+      "frame": 9,
+      "path": "assets/voice/09.wav",
+      "duration_s": 5.92,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Đó",
+          "start": 0.07,
+          "end": 0.14
+        },
+        {
+          "id": "w1",
+          "text": "là",
+          "start": 0.14,
+          "end": 0.28
+        },
+        {
+          "id": "w2",
+          "text": "mẹo",
+          "start": 0.28,
+          "end": 0.49
+        },
+        {
+          "id": "w3",
+          "text": "“vịt",
+          "start": 0.49,
+          "end": 0.66
+        },
+        {
+          "id": "w4",
+          "text": "cao",
+          "start": 0.76,
+          "end": 0.87
+        },
+        {
+          "id": "w5",
+          "text": "su”:",
+          "start": 0.96,
+          "end": 1.13
+        },
+        {
+          "id": "w6",
+          "text": "kể",
+          "start": 1.26,
+          "end": 1.29
+        },
+        {
+          "id": "w7",
+          "text": "từng",
+          "start": 1.44,
+          "end": 1.56
+        },
+        {
+          "id": "w8",
+          "text": "bước",
+          "start": 1.56,
+          "end": 1.8
+        },
+        {
+          "id": "w9",
+          "text": "cho",
+          "start": 1.8,
+          "end": 1.99
+        },
+        {
+          "id": "w10",
+          "text": "ai",
+          "start": 1.99,
+          "end": 2.11
+        },
+        {
+          "id": "w11",
+          "text": "đó",
+          "start": 2.11,
+          "end": 2.23
+        },
+        {
+          "id": "w12",
+          "text": "nghe,",
+          "start": 2.23,
+          "end": 2.56
+        },
+        {
+          "id": "w13",
+          "text": "dù",
+          "start": 2.74,
+          "end": 2.8
+        },
+        {
+          "id": "w14",
+          "text": "chỉ",
+          "start": 2.8,
+          "end": 3.02
+        },
+        {
+          "id": "w15",
+          "text": "là",
+          "start": 3.02,
+          "end": 3.13
+        },
+        {
+          "id": "w16",
+          "text": "một",
+          "start": 3.13,
+          "end": 3.32
+        },
+        {
+          "id": "w17",
+          "text": "chú",
+          "start": 3.32,
+          "end": 3.52
+        },
+        {
+          "id": "w18",
+          "text": "vịt,",
+          "start": 3.52,
+          "end": 3.71
+        },
+        {
+          "id": "w19",
+          "text": "nhiều",
+          "start": 3.71,
+          "end": 3.9
+        },
+        {
+          "id": "w20",
+          "text": "khi",
+          "start": 4.05,
+          "end": 4.25
+        },
+        {
+          "id": "w21",
+          "text": "đang",
+          "start": 4.25,
+          "end": 4.52
+        },
+        {
+          "id": "w22",
+          "text": "kể",
+          "start": 4.52,
+          "end": 4.59
+        },
+        {
+          "id": "w23",
+          "text": "là",
+          "start": 4.68,
+          "end": 4.78
+        },
+        {
+          "id": "w24",
+          "text": "tự",
+          "start": 4.78,
+          "end": 4.91
+        },
+        {
+          "id": "w25",
+          "text": "nhận",
+          "start": 4.91,
+          "end": 5.17
+        },
+        {
+          "id": "w26",
+          "text": "ra",
+          "start": 5.17,
+          "end": 5.3
+        },
+        {
+          "id": "w27",
+          "text": "lỗi.",
+          "start": 5.3,
+          "end": 5.68
+        }
+      ]
+    },
+    {
+      "frame": 10,
+      "path": "assets/voice/10.wav",
+      "duration_s": 2.48,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Bạn",
+          "start": 0.06,
+          "end": 0.19
+        },
+        {
+          "id": "w1",
+          "text": "đã",
+          "start": 0.19,
+          "end": 0.28
+        },
+        {
+          "id": "w2",
+          "text": "bao",
+          "start": 0.33,
+          "end": 0.51
+        },
+        {
+          "id": "w3",
+          "text": "giờ",
+          "start": 0.51,
+          "end": 0.7
+        },
+        {
+          "id": "w4",
+          "text": "mất",
+          "start": 0.7,
+          "end": 0.89
+        },
+        {
+          "id": "w5",
+          "text": "cả",
+          "start": 0.89,
+          "end": 1.02
+        },
+        {
+          "id": "w6",
+          "text": "buổi",
+          "start": 1.02,
+          "end": 1.28
+        },
+        {
+          "id": "w7",
+          "text": "vì",
+          "start": 1.28,
+          "end": 1.4
+        },
+        {
+          "id": "w8",
+          "text": "một",
+          "start": 1.41,
+          "end": 1.58
+        },
+        {
+          "id": "w9",
+          "text": "lỗi",
+          "start": 1.64,
+          "end": 1.79
+        },
+        {
+          "id": "w10",
+          "text": "rất",
+          "start": 1.79,
+          "end": 1.97
+        },
+        {
+          "id": "w11",
+          "text": "nhỏ",
+          "start": 2.1,
+          "end": 2.17
+        },
+        {
+          "id": "w12",
+          "text": "chưa?",
+          "start": 2.17,
+          "end": 2.47
+        }
+      ]
+    }
+  ],
+  "sfx": []
+}

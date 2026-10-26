@@ -1,0 +1,124 @@
+<template>
+<style>
+
+@font-face{font-family:"Be Vietnam Pro";font-weight:400;font-style:normal;font-display:block;src:url("assets/fonts/BeVietnamPro-Regular.ttf") format("truetype");}
+@font-face{font-family:"Be Vietnam Pro";font-weight:500;font-style:normal;font-display:block;src:url("assets/fonts/BeVietnamPro-Medium.ttf") format("truetype");}
+@font-face{font-family:"Be Vietnam Pro";font-weight:600;font-style:normal;font-display:block;src:url("assets/fonts/BeVietnamPro-SemiBold.ttf") format("truetype");}
+@font-face{font-family:"Be Vietnam Pro";font-weight:700;font-style:normal;font-display:block;src:url("assets/fonts/BeVietnamPro-Bold.ttf") format("truetype");}
+@font-face{font-family:"Be Vietnam Pro";font-weight:800;font-style:normal;font-display:block;src:url("assets/fonts/BeVietnamPro-ExtraBold.ttf") format("truetype");}
+#root{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;font-family:"Be Vietnam Pro";color:#F5EFE4;}
+.f01-ground{position:absolute;inset:0;background:#0F1E33;}
+.f01-world{position:absolute;inset:0;transform-origin:50% 42%;}
+.f01-desk{position:absolute;left:0;top:-40px;}
+.f01-device{position:absolute;inset:0;}
+.f01-phone-svg,.f01-hands{position:absolute;left:0;top:0;}
+.f01-screen{position:absolute;left:196px;top:176px;width:688px;height:1388px;border-radius:74px;background:#13243B;overflow:hidden;}
+.f01-status{position:absolute;left:58px;right:58px;top:26px;display:flex;justify-content:space-between;font-size:22px;font-weight:600;color:#B8C4D3;}
+.f01-batt{width:44px;height:20px;border:2px solid #B8C4D3;border-radius:6px;position:relative;top:4px;}
+.f01-appbar{position:absolute;left:0;right:0;top:92px;padding:0 48px;}
+.f01-apptitle{font-size:42px;font-weight:800;letter-spacing:-0.01em;}
+.f01-tabs{display:flex;gap:16px;margin-top:22px;}
+.f01-tab{font-size:24px;font-weight:600;padding:10px 26px;border-radius:100px;border:2px solid rgba(20,184,166,0.35);color:#B8C4D3;}
+.f01-tab.f01-on{background:#14B8A6;border-color:#14B8A6;color:#0B1626;}
+.f01-chart{position:absolute;inset:0;}
+.f01-line{position:absolute;top:304px;height:934px;width:0;border-left:3px dashed rgba(245,239,228,0.45);}
+.f01-line-label{position:absolute;top:260px;transform:translateX(-50%);font-size:22px;font-weight:600;color:#F5EFE4;white-space:nowrap;background:#1B2E4A;padding:4px 14px;border-radius:100px;}
+.f01-row{position:absolute;left:0;right:0;height:92px;}
+.f01-rname{position:absolute;left:44px;top:0;display:flex;align-items:center;gap:12px;font-size:25px;font-weight:600;white-space:nowrap;}
+.f01-ricon{flex:none;}
+.f01-rsub{font-size:20px;font-weight:500;color:#B8C4D3;}
+.f01-bar{position:absolute;left:96px;height:30px;border-radius:6px;transform-origin:0 50%;}
+.f01-val{position:absolute;font-size:30px;font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums;padding:0 6px;background:#13243B;border-radius:6px;}
+.f01-foot{position:absolute;left:40px;right:40px;top:1262px;text-align:center;font-size:21px;line-height:1.45;font-weight:500;color:#B8C4D3;}
+.f01-home{position:absolute;left:50%;bottom:22px;width:220px;height:8px;margin-left:-110px;border-radius:4px;background:rgba(245,239,228,0.35);}
+.f01-grid{position:absolute;left:40px;right:40px;top:640px;display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.f01-cell{display:flex;align-items:center;gap:16px;padding:16px 18px;border-radius:14px;background:rgba(20,184,166,0.06);border:2px solid rgba(20,184,166,0.2);font-size:22px;font-weight:600;line-height:1.25;min-height:104px;}
+.f01-cell svg{flex:none;}
+.f01-tap{position:absolute;width:90px;height:90px;margin:-45px 0 0 -45px;border-radius:50%;border:4px solid #F5EFE4;opacity:0;}
+
+
+</style>
+<div id="root" data-composition-id="01-hook" data-width="1080" data-height="1920" data-duration="4">
+  <div id="f01-ground" class="f01-ground clip" data-start="0" data-duration="4" data-track-index="0"></div>
+  <div id="f01-world" class="f01-world clip" data-start="0" data-duration="4" data-track-index="1">
+    <div id="f01-bgwrap" style="position:absolute;inset:0;">
+<svg class="f01-desk" width="1080" height="2000" viewBox="0 0 1080 2000">
+  <defs>
+    <linearGradient id="f01-g-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#11223A"/><stop offset="1" stop-color="#0B1626"/></linearGradient>
+    <radialGradient id="f01-g-lamp" cx="0.16" cy="0.12" r="0.6"><stop offset="0" stop-color="#F5EFE4" stop-opacity="0.10"/><stop offset="1" stop-color="#F5EFE4" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1080" height="2000" fill="url(#f01-g-wall)"/>
+  <rect width="1080" height="2000" fill="url(#f01-g-lamp)"/>
+  <g stroke="#F5EFE4" stroke-opacity="0.06" stroke-width="3" fill="none">
+    <rect x="690" y="70" width="330" height="430" rx="10"/><path d="M855 70v430 M690 285h330"/>
+  </g>
+  <circle cx="960" cy="150" r="26" fill="#F5EFE4" fill-opacity="0.08"/>
+  <rect x="0" y="1470" width="1080" height="530" fill="#142640"/>
+  <rect x="0" y="1470" width="1080" height="3" fill="#F5EFE4" fill-opacity="0.07"/>
+  <g transform="rotate(-8 860 1690)"><rect x="700" y="1600" width="330" height="220" rx="12" fill="#1B2E4A"/><path d="M730 1650h250 M730 1690h250 M730 1730h170" stroke="#F5EFE4" stroke-opacity="0.12" stroke-width="6" stroke-linecap="round"/></g>
+  <g transform="rotate(18 120 1560)"><rect x="40" y="1548" width="230" height="20" rx="10" fill="#F2A93B" fill-opacity="0.55"/><path d="M270 1548l26 10-26 10z" fill="#E8D3B5" fill-opacity="0.6"/></g>
+</svg></div>
+    
+    <div id="f01-device" class="f01-device">
+      
+<svg class="f01-phone-svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <rect x="164" y="164" width="752" height="1440" rx="102" fill="#050A12" fill-opacity="0.55"/>
+  <rect x="170" y="150" width="740" height="1440" rx="96" fill="#070D17" stroke="#F5EFE4" stroke-opacity="0.16" stroke-width="3"/>
+  <rect x="470" y="190" width="140" height="34" rx="17" fill="#000"/>
+</svg>
+      <div id="f01-screen" class="f01-screen">
+        <div class="f01-status"><span>21:30</span><span class="f01-batt"></span></div>
+        
+<div class="f01-appbar">
+  <div class="f01-apptitle">So sánh nhóm ngành</div>
+  <div class="f01-tabs"><span id="f01-tab-a" class="f01-tab f01-on">Nhóm ngành</span><span id="f01-tab-b" class="f01-tab ">Thu nhập</span></div>
+</div>
+    <div id="f01-ten" style="position:absolute;left:48px;top:300px;font-size:230px;font-weight:800;line-height:0.9;color:#14B8A6;letter-spacing:-0.04em;">10</div>
+    <div id="f01-tenlbl" style="position:absolute;left:300px;top:330px;width:340px;font-size:38px;font-weight:700;line-height:1.2;">nhóm ngành chuyên môn</div>
+    <div id="f01-tensrc" style="position:absolute;left:48px;top:560px;font-size:23px;font-weight:500;color:#B8C4D3;">theo phân loại quốc tế của UNESCO</div>
+    <div id="f01-grid" class="f01-grid"><div id="f01-cell-0" class="f01-cell"><svg  width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z M6 11v5c0 1.6 2.7 3 6 3s6-1.4 6-3v-5 M22 9v5"/></svg><span>Giáo dục</span></div><div id="f01-cell-1" class="f01-cell"><svg  width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 1.5-.9 1.5-1.6 0-1.3-1.2-1.5-1.2-2.6 0-.9.7-1.6 1.6-1.6H16a5 5 0 0 0 5-5C21 6.2 17 3 12 3z M7.5 11.5h.01 M10 7.5h.01 M14.5 7.5h.01"/></svg><span>Nghệ thuật – Nhân văn</span></div><div id="f01-cell-2" class="f01-cell"><svg  width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h13v14H6a2 2 0 0 1-2-2z M17 9h3v8a2 2 0 0 1-2 2 M7 9h7 M7 13h7 M7 16h4"/></svg><span>Khoa học xã hội – Báo chí</span></div><div id="f01-cell-3" class="f01-cell"><svg  width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h18v11H3z M8 8V5h8v3 M3 13h18 M11 13v2h2v-2"/></svg><span>Kinh doanh – Luật</span></div><div id="f01-cell-4" class="f01-cell"><svg  width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6 M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3 M7.5 15h9"/></svg><span>Khoa học tự nhiên – Toán</span></div><div id="f01-cell-5" class="f01-cell"><svg  width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v10H4z M2 19h20 M10 8l-2 2 2 2 M14 8l2 2-2 2"/></svg><span>Công nghệ thông tin</span></div><div id="f01-cell-6" class="f01-cell"><svg  width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M12 2v3 M12 19v3 M2 12h3 M19 12h3 M4.9 4.9 7 7 M17 17l2.1 2.1 M4.9 19.1 7 17 M17 7l2.1-2.1"/></svg><span>Kỹ thuật – Xây dựng</span></div><div id="f01-cell-7" class="f01-cell"><svg  width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V11 M12 11c0-4 3-7 8-7 0 5-3 8-8 8 M12 14c0-3-2.5-5.5-7-5.5 0 4 2.5 6.5 7 6.5"/></svg><span>Nông – Lâm – Thủy sản, Thú y</span></div><div id="f01-cell-8" class="f01-cell"><svg  width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg><span>Sức khỏe & phúc lợi</span></div><div id="f01-cell-9" class="f01-cell"><svg  width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18h16 M6 18a6 6 0 0 1 12 0 M12 9V7 M10 7h4"/></svg><span>Dịch vụ</span></div></div>
+        <div class="f01-home"></div>
+      </div>
+      <svg class="f01-hands" width="1080" height="1920" viewBox="0 0 1080 1920"><g >
+    <path d="M-60 1920 L-60 1640 C 20 1600 120 1560 190 1585 L 330 1760 L 330 1920 Z" fill="#1B2E4A"/>
+    <path d="M-60 1660 C 20 1620 120 1580 190 1605" stroke="#14B8A6" stroke-opacity="0.55" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <rect x="132" y="1150" width="74" height="48" rx="24" fill="#E8B48F" stroke="#CF9572" stroke-width="3" transform="rotate(-6 169 1174)"/>
+    <rect x="128" y="1222" width="78" height="50" rx="25" fill="#E8B48F" stroke="#CF9572" stroke-width="3" transform="rotate(-4 167 1247)"/>
+    <rect x="130" y="1296" width="76" height="48" rx="24" fill="#E8B48F" stroke="#CF9572" stroke-width="3" transform="rotate(-2 168 1320)"/>
+    <path d="M40 1700 C 20 1560 70 1420 175 1372 L 215 1380 C 240 1470 245 1560 210 1640 C 170 1700 100 1730 40 1700 Z" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/>
+    <g transform="rotate(-38 220 1560)">
+      <rect x="196" y="1408" width="62" height="200" rx="31" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/>
+      <ellipse cx="227" cy="1438" rx="20" ry="24" fill="#F4D3BC"/>
+    </g>
+  </g><g transform="translate(1080 0) scale(-1 1)">
+    <path d="M-60 1920 L-60 1640 C 20 1600 120 1560 190 1585 L 330 1760 L 330 1920 Z" fill="#1B2E4A"/>
+    <path d="M-60 1660 C 20 1620 120 1580 190 1605" stroke="#14B8A6" stroke-opacity="0.55" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <rect x="132" y="1150" width="74" height="48" rx="24" fill="#E8B48F" stroke="#CF9572" stroke-width="3" transform="rotate(-6 169 1174)"/>
+    <rect x="128" y="1222" width="78" height="50" rx="25" fill="#E8B48F" stroke="#CF9572" stroke-width="3" transform="rotate(-4 167 1247)"/>
+    <rect x="130" y="1296" width="76" height="48" rx="24" fill="#E8B48F" stroke="#CF9572" stroke-width="3" transform="rotate(-2 168 1320)"/>
+    <path d="M40 1700 C 20 1560 70 1420 175 1372 L 215 1380 C 240 1470 245 1560 210 1640 C 170 1700 100 1730 40 1700 Z" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/>
+    <g transform="rotate(-38 220 1560)">
+      <rect x="196" y="1408" width="62" height="200" rx="31" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/>
+      <ellipse cx="227" cy="1438" rx="20" ry="24" fill="#F4D3BC"/>
+    </g>
+  </g></svg>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script>
+(function () {
+  const P = "f01-";
+  const $ = (s) => document.getElementById(P + s);
+  const tl = gsap.timeline({ paused: true });
+  tl.fromTo($("world"), { scale: 1 }, { scale: 1.00233, duration: 4, ease: "none" }, 0);
+  tl.fromTo($("bgwrap"), { y: 0 }, { y: -2.4, duration: 4, ease: "none" }, 0);
+  tl.fromTo($("device"), { y: 760, rotation: -5 }, { y: 0, rotation: 0, duration: 1.0, ease: "power3.out" }, 0);
+  tl.fromTo($("screen"), { opacity: 0.15 }, { opacity: 1, duration: 0.45, ease: "power2.out" }, 0.55);
+  tl.fromTo($("ten"), { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.55, ease: "back.out(1.6)" }, 1.38);
+  tl.fromTo([$("tenlbl"), $("tensrc")], { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out", stagger: 0.15 }, 1.63);
+  tl.fromTo(Array.from({ length: 10 }, (_, i) => $("cell-" + i)), { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.7)", stagger: 0.05 }, 1.93);
+  window.__timelines["01-hook"] = tl;
+})();
+</script>
+</template>

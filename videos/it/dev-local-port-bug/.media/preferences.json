@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "preferences": {
+    "destination": {
+      "value": "tiktok-youtube-shorts",
+      "confirmed_in": [
+        "dev-local-port-bug"
+      ],
+      "updated_at": "2026-10-22T01:43:10.917Z"
+    },
+    "aspect": {
+      "value": "1080x1920",
+      "confirmed_in": [
+        "dev-local-port-bug"
+      ],
+      "updated_at": "2026-10-22T01:43:11.073Z"
+    },
+    "language": {
+      "value": "vi",
+      "confirmed_in": [
+        "dev-local-port-bug"
+      ],
+      "updated_at": "2026-10-22T01:43:11.227Z"
+    },
+    "flow": {
+      "value": "automation",
+      "confirmed_in": [
+        "dev-local-port-bug"
+      ],
+      "updated_at": "2026-10-22T01:43:11.384Z"
+    },
+    "storyboard": {
+      "value": "no",
+      "confirmed_in": [
+        "dev-local-port-bug"
+      ],
+      "updated_at": "2026-10-22T01:43:11.561Z"
+    },
+    "style_preset.faceless-explainer": {
+      "value": "blue-professional",
+      "confirmed_in": [
+        "dev-local-port-bug"
+      ],
+      "updated_at": "2026-10-22T01:43:11.732Z"
+    }
+  },
+  "sightings": {}
+}

@@ -1,0 +1,280 @@
+{
+  "title": "POV: Lập trình viên gặp lỗi khi chạy thử trên máy — và tự tìm ra lỗi khi đang kể cho đồng nghiệp",
+  "status": "approved",
+  "language": "vi-VN",
+  "durationSeconds": 47.5,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "learningObjective": "Thấy một phần công việc thật của lập trình viên: đọc kỹ thông báo lỗi, kiểm tra từng bước, và mẹo kể vấn đề cho người khác nghe (\"vịt cao su\") để tự tìm ra lỗi.",
+  "closingQuestion": "Bạn đã bao giờ mất cả buổi vì một lỗi rất nhỏ chưa?",
+  "format": "POV một nghề (lập trình viên): ngồi ở bàn làm việc nhìn màn hình máy tính, rồi xoay ghế sang đồng nghiệp bên cạnh. Bối cảnh máy macOS.",
+  "scenes": [
+    {
+      "id": "hook",
+      "start": 0,
+      "duration": 4,
+      "visual": "Góc nhìn thứ nhất tại bàn làm việc buổi sáng: màn hình máy tính lớn ở giữa, bàn phím và chuột phía dưới, hai tay đặt trên bàn phím. Cửa sổ dòng lệnh (terminal) phóng to vừa chạy `npm run dev` thì tràng chữ lỗi đỏ bật ra gần kín cửa sổ (khoảng giây thứ 2), dòng chính là `Error: listen EADDRINUSE: address already in use :::3000`. Góc trên màn hình có đồng hồ 9:00.",
+      "narration": "Sáng thứ Hai, mình chạy thử ứng dụng đang làm… và cả màn hình đỏ lòm.",
+      "onScreenText": "Thứ Hai · 9:00",
+      "assets": [
+        "desk-office-bg.svg",
+        "monitor.svg",
+        "keyboard.svg",
+        "mouse.svg",
+        "pov-hands-keyboard.svg"
+      ],
+      "sfx": [
+        "keyboard-typing",
+        "error-beep"
+      ],
+      "factIds": [
+        "fact-002",
+        "fact-008"
+      ]
+    },
+    {
+      "id": "retry",
+      "start": 4,
+      "duration": 4.4,
+      "visual": "Hai tay gõ lại `npm run dev` (phím nhấn xuống theo từng chữ, con trỏ nháy); khối lỗi đỏ hiện lại lần hai, rồi lần ba. Đồng hồ góc màn hình nhảy 9:10 → 9:25.",
+      "narration": "Chạy lại lần hai, lần ba… biết đâu nó tự hết. Vẫn lỗi y hệt.",
+      "onScreenText": "9:10… 9:25…",
+      "assets": [
+        "monitor.svg",
+        "keyboard.svg",
+        "pov-hands-keyboard.svg"
+      ],
+      "sfx": [
+        "keyboard-typing",
+        "error-beep"
+      ],
+      "factIds": [
+        "fact-005",
+        "fact-008"
+      ]
+    },
+    {
+      "id": "read",
+      "start": 8.4,
+      "duration": 6.3,
+      "visual": "Camera đẩy nhẹ vào màn hình; dòng `address already in use :::3000` được tô sáng bằng vệt highlight xanh ngọc; nhãn chú thích hai dòng hiện cạnh (chính là chữ trên màn hình).",
+      "narration": "Đọc kỹ lỗi mới thấy: ứng dụng cần cổng 3000, mà có chương trình khác chiếm rồi. Nhưng là chương trình nào?",
+      "ttsNarration": "Đọc kỹ lỗi mới thấy: ứng dụng cần cổng ba nghìn, mà có chương trình khác chiếm rồi. Nhưng là chương trình nào?",
+      "onScreenText": "EADDRINUSE = cổng đã bị chiếm",
+      "assets": [
+        "monitor.svg"
+      ],
+      "sfx": [
+        "soft-pop"
+      ],
+      "factIds": [
+        "fact-001",
+        "fact-002"
+      ]
+    },
+    {
+      "id": "turn",
+      "start": 14.7,
+      "duration": 5.6,
+      "visual": "Góc nhìn xoay sang phải (ghế xoay): màn hình trượt ra khỏi khung, hiện chị Mai ngồi bàn bên cạnh, tai nghe đeo trên cổ, quay sang lắng nghe. Một bong bóng thoại nhỏ hiện ra từ phía người kể.",
+      "narration": "Bí quá, mình quay sang than với chị Mai: “Chị ơi, em tắt hết rồi mà, từ hôm thứ Sáu…”",
+      "ttsNarration": "Bí quá, mình quay sang than với chị Mai. Chị ơi, em tắt hết rồi mà, từ hôm thứ Sáu…",
+      "onScreenText": "Hỏi thử chị Mai…",
+      "assets": [
+        "desk-office-bg.svg",
+        "colleague.svg",
+        "speech-bubble.svg"
+      ],
+      "sfx": [
+        "chair-swivel"
+      ],
+      "factIds": [
+        "fact-006",
+        "fact-008"
+      ]
+    },
+    {
+      "id": "realize",
+      "start": 20.3,
+      "duration": 3.8,
+      "visual": "Chị Mai chưa nói gì, chỉ gật đầu; một bóng đèn ý tưởng bật sáng phía trên khung hình.",
+      "narration": "“Khoan! Thứ Sáu em chạy thử xong… quên chưa tắt!”",
+      "onScreenText": "Khoan đã!",
+      "assets": [
+        "colleague.svg",
+        "lightbulb.svg"
+      ],
+      "sfx": [
+        "soft-pop"
+      ],
+      "factIds": [
+        "fact-006",
+        "fact-008"
+      ]
+    },
+    {
+      "id": "find",
+      "start": 24.1,
+      "duration": 4.9,
+      "visual": "Xoay ghế về màn hình; hai tay gõ `lsof -i :3000 -P`; terminal in ra dòng tiêu đề `COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME` và dòng `node 4821 minh 23u IPv6 0x… 0t0 TCP *:3000 (LISTEN)` (IPv6 và *:3000 để khớp với lỗi :::3000); dòng này được tô sáng, cột USER \"minh\" cho thấy đó là chương trình của chính mình. Nhãn kiểu sticker bằng phông của kênh, có mũi tên, nằm ngoài khung terminal: \"Thủ phạm: mình của thứ Sáu!\". Thẻ nhỏ \"macOS\" ở góc terminal.",
+      "narration": "Kiểm tra cho chắc: đúng là chương trình của mình vẫn đang chiếm cổng.",
+      "onScreenText": "Thủ phạm: mình của thứ Sáu!",
+      "assets": [
+        "monitor.svg",
+        "keyboard.svg",
+        "pov-hands-keyboard.svg"
+      ],
+      "sfx": [
+        "keyboard-typing"
+      ],
+      "factIds": [
+        "fact-003",
+        "fact-008"
+      ]
+    },
+    {
+      "id": "fix",
+      "start": 29,
+      "duration": 4.2,
+      "visual": "Gõ `kill 4821`, rồi `npm run dev` lần nữa; terminal hiện dòng xanh lá báo ứng dụng đang chạy ở `http://localhost:3000`; một dấu tick (vẽ bằng SVG) bật lên.",
+      "narration": "Tắt nó đi, chạy lại… xanh rồi!",
+      "onScreenText": "Chạy được rồi!",
+      "assets": [
+        "monitor.svg",
+        "keyboard.svg",
+        "pov-hands-keyboard.svg"
+      ],
+      "sfx": [
+        "keyboard-typing",
+        "success-chime"
+      ],
+      "factIds": [
+        "fact-004",
+        "fact-005",
+        "fact-008"
+      ]
+    },
+    {
+      "id": "colleague",
+      "start": 33.2,
+      "duration": 3.7,
+      "voice": "Trúc Ly",
+      "visual": "Xoay lại sang chị Mai: chị bật cười, giơ ngón cái; bong bóng thoại của chị hiện ra.",
+      "narration": "Đấy, chị chưa nói câu nào mà em đã tự tìm ra rồi!",
+      "onScreenText": "Chị chưa nói câu nào!",
+      "assets": [
+        "colleague.svg",
+        "speech-bubble.svg"
+      ],
+      "sfx": [
+        "soft-laugh"
+      ],
+      "factIds": [
+        "fact-006",
+        "fact-008"
+      ]
+    },
+    {
+      "id": "takeaway",
+      "start": 36.9,
+      "duration": 6.6,
+      "visual": "Trên bàn, cạnh bàn phím, một chú vịt cao su nhỏ hiện ra; nhãn 'gỡ lỗi kiểu vịt cao su' hiện cạnh.",
+      "narration": "Đó là mẹo “vịt cao su”: kể từng bước cho ai đó nghe, dù chỉ là một chú vịt, nhiều khi đang kể là tự nhận ra lỗi.",
+      "onScreenText": "Mẹo: “gỡ lỗi kiểu vịt cao su” (rubber duck debugging)",
+      "assets": [
+        "rubber-duck.svg",
+        "keyboard.svg"
+      ],
+      "sfx": [
+        "soft-pop"
+      ],
+      "factIds": [
+        "fact-006"
+      ]
+    },
+    {
+      "id": "question",
+      "start": 43.5,
+      "duration": 4,
+      "visual": "Quay lại màn hình máy tính đang chạy ổn; con trỏ nháy trong terminal; chú vịt đứng cạnh bàn phím.",
+      "narration": "Bạn đã bao giờ mất cả buổi vì một lỗi rất nhỏ chưa?",
+      "onScreenText": "Kể mình nghe dưới phần bình luận nhé!",
+      "assets": [
+        "monitor.svg",
+        "keyboard.svg",
+        "pov-hands-keyboard.svg",
+        "rubber-duck.svg"
+      ],
+      "sfx": [],
+      "factIds": [
+        "fact-008"
+      ]
+    }
+  ],
+  "research": [
+    {
+      "id": "fact-001",
+      "claim": "Trong Node.js, mã lỗi EADDRINUSE (\"Address already in use\") nghĩa là không gắn được máy chủ vào địa chỉ/cổng trên máy vì đã có một máy chủ khác trên cùng máy đang chiếm địa chỉ đó.",
+      "sourceUrl": "https://nodejs.org/api/errors.html#common-system-errors",
+      "accessedAt": "2026-10-16",
+      "status": "verified",
+      "confidence": "high",
+      "notes": "Trích: \"EADDRINUSE (Address already in use): An attempt to bind a server (net, http, or https) to a local address failed due to another server on the local system already occupying that address.\" Lời dẫn \"ứng dụng cần cổng 3000, mà có chương trình khác chiếm rồi\" là cách nói dễ hiểu của câu này."
+    },
+    {
+      "id": "fact-002",
+      "claim": "Với một máy chủ Node.js thuần không tự xử lý lỗi và dùng địa chỉ mặc định, khi cổng đã bị chiếm Node.js in ra dòng `Error: listen EADDRINUSE: address already in use :::3000` (`::` là địa chỉ IPv6 \"bất kỳ\", `:3000` là cổng).",
+      "sourceUrl": "https://raw.githubusercontent.com/nodejs/node/main/lib/internal/errors.js",
+      "accessedAt": "2026-10-16",
+      "status": "verified",
+      "confidence": "high",
+      "notes": "Nguồn chính là mã nguồn Node.js hiện tại: lib/internal/errors.js ghép thông báo `${syscall} ${code}: ${uvmsg}` + ` ${address}:${port}` (lớp kế thừa Error); lib/net.js gọi `new UVExceptionWithHostPort(err, 'listen', address, port)` với `DEFAULT_IPV6_ADDR = '::'` (https://raw.githubusercontent.com/nodejs/node/main/lib/net.js); libuv uv.h: XX(EADDRINUSE, \"address already in use\") (https://raw.githubusercontent.com/libuv/libuv/v1.x/include/uv.h); tài liệu net: \"If host is omitted, the server will accept connections on the unspecified IPv6 address (::) when IPv6 is available\" (https://nodejs.org/api/net.html). Ví dụ thực tế (Node 2020): https://api.github.com/repos/nodejs/node/issues/comments/626014980. Đầu ra thật còn có các dòng `node:events:…` và tiêu đề `> … dev` của npm; trên màn hình chỉ hiện dòng Error (đơn giản hóa hợp lý). Không dùng thương hiệu Next.js/Vite vì chúng tự đổi sang cổng khác."
+    },
+    {
+      "id": "fact-003",
+      "claim": "Trên macOS, lệnh `lsof -i :3000 -P` liệt kê tiến trình có kết nối mạng ở cổng 3000, với các cột COMMAND, PID, USER, FD, TYPE, DEVICE, SIZE/OFF, NODE, NAME; cổng đang lắng nghe hiện dạng `TCP *:3000 (LISTEN)`.",
+      "sourceUrl": "https://man7.org/linux/man-pages/man8/lsof.8.html",
+      "accessedAt": "2026-10-16",
+      "status": "verified",
+      "confidence": "medium",
+      "notes": "Man page: -i \"selects the listing of files any of whose Internet address matches the address specified in i\"; -P \"inhibits the conversion of port numbers to port names for network files\"; địa chỉ \"bất kỳ\" hiện bằng \"*\"; trạng thái TCP trong ngoặc; độ lệch hiện dạng \"0t\". Ví dụ dòng cùng định dạng trên macOS: https://flaviocopes.com/courses/macos-internals-troubleshooting/inspect-listeners-and-connections/ (\"node 4821 flavio 23u IPv4 0x1a2b 0t0 TCP 127.0.0.1:3000 (LISTEN)\"). Dùng -P vì IANA đăng ký 3000/tcp là \"hbci\". DEVICE dạng 0x… là của macOS (Linux hiện số thập phân) nên bối cảnh là macOS. Windows dùng `netstat -ano` (https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/netstat) và `taskkill /PID <pid> /F` (https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/taskkill). lsof không cho biết tiến trình chạy từ khi nào — nhãn \"mình của thứ Sáu\" là chú thích của câu chuyện, đặt ngoài terminal."
+    },
+    {
+      "id": "fact-004",
+      "claim": "Lệnh `kill <PID>` khi không chỉ định tín hiệu sẽ gửi tín hiệu TERM; với Node.js, tín hiệu này mặc định làm chương trình thoát.",
+      "sourceUrl": "https://man7.org/linux/man-pages/man1/kill.1.html",
+      "accessedAt": "2026-10-16",
+      "status": "verified",
+      "confidence": "high",
+      "notes": "Trích: \"If no signal is specified, the TERM signal is sent. The default action for this signal is to terminate the process.\" Node.js: \"'SIGTERM' and 'SIGINT' have default handlers on non-Windows platforms that reset the terminal mode before exiting with code 128 + signal number\" (https://nodejs.org/api/process.html). Video không dùng sudo, kill -9 hay killall node; nhân vật kiểm tra đúng tiến trình của mình trước khi tắt."
+    },
+    {
+      "id": "fact-005",
+      "claim": "`npm run dev` chạy lệnh tên \"dev\" được khai báo trong mục \"scripts\" của package.json.",
+      "sourceUrl": "https://docs.npmjs.com/cli/v11/commands/npm-run",
+      "accessedAt": "2026-10-16",
+      "status": "verified",
+      "confidence": "high",
+      "notes": "Trích: \"This runs an arbitrary command from a package's \\\"scripts\\\" object.\" Trong câu chuyện, script \"dev\" là kiểu `node server.js` (thoát khi lỗi nên phải gõ lại); không hiện nodemon/Next/Vite. Dòng xanh báo chạy thành công là đầu ra của dự án hư cấu (fact-008)."
+    },
+    {
+      "id": "fact-006",
+      "claim": "\"Gỡ lỗi kiểu vịt cao su\" (rubber duck debugging): lập trình viên thường tìm ra cách giải quyết ngay trong lúc giải thích từng bước vấn đề cho người khác — người nghe (hay một chú vịt) không cần nói gì; tên gọi bắt nguồn từ một giai thoại trong sách The Pragmatic Programmer (Andy Hunt, Dave Thomas).",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rubber_duck_debugging",
+      "accessedAt": "2026-10-16",
+      "status": "verified",
+      "confidence": "medium",
+      "notes": "Wikipedia: \"Programmers often discover solutions while explaining a problem to someone else\"; \"The name is a reference to an anecdote told in The Pragmatic Programmer by Andy Hunt and Dave Thomas\"; trích lại sách: người nghe không cần \"say a word; the simple act of explaining, step by step, what the code is supposed to do often causes the problem to leap off the screen and announce itself\". Nguồn thứ hai: blog Michigan Tech College of Computing (21/8/2024) https://blogs.mtu.edu/computing/2024/08/21/talk-to-the-duck-the-rubber-duck-debugging-method/. Chưa mở được bản sách gốc — độ tin cậy trung bình; tên sách không đưa lên màn hình. Câu chuyện được sắp để nhân vật tự nhận ra lỗi trong lúc kể (chị Mai chưa nói gì), đúng với mẹo này."
+    },
+    {
+      "id": "fact-008",
+      "claim": "Nhân vật, đồng nghiệp \"chị Mai\", \"Thứ Hai 9:00\", đồng hồ 9:10/9:25, \"ứng dụng đang làm\", chương trình quên tắt từ thứ Sáu, PID 4821, tên người dùng \"minh\" và dòng báo chạy thành công là tình huống hư cấu để dẫn chuyện; bối cảnh máy macOS.",
+      "sourceUrl": "",
+      "accessedAt": "",
+      "status": "simulation",
+      "confidence": "",
+      "notes": "Các lệnh và thông báo lỗi trên màn hình phải đúng thực tế (fact-001…005); chỉ câu chuyện là hư cấu. Tình huống có thật phổ biến: \"A previous dev server is still running\" (https://fixdevs.com/blog/port-3000-already-in-use/). Không ngụ ý làm việc cuối tuần: chương trình được chạy hôm thứ Sáu và quên tắt qua cuối tuần."
+    }
+  ]
+}

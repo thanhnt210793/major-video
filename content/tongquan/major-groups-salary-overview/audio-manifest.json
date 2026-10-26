@@ -1,0 +1,15 @@
+{
+  "items": [
+    {
+      "type": "narration",
+      "files": "videos/tongquan/major-groups-salary-overview/assets/voice/01.wav … 10.wav",
+      "source": "VieNeu-TTS v3 Turbo, SDK 3.8.3 (vieneu-run.json), giọng mẫu Hải Đăng (nam, miền Bắc, tự nhiên)",
+      "sourceUrl": "https://github.com/pnnbao97/VieNeu-TTS",
+      "license": "Apache-2.0 (mã nguồn và trọng số mô hình); theo model card v3 Turbo, âm thanh từ giọng mẫu được dùng cho nội dung thương mại và có kiếm tiền, không cần giấy phép hay phí thêm",
+      "attribution": "Không bắt buộc trong âm thanh; ghi công dự án nếu phân phối lại mô hình",
+      "notes": "Tạo trên máy, chi phí 0 USD. Giọng mẫu (không nhân bản giọng). Văn bản đọc = ttsNarration/narration trong storyboard.json; các file là đúng bản nghe thử đã được duyệt ngày 16/10/2026."
+    }
+  ],
+  "music": "Không có — repo chưa có nhạc nền đã kiểm tra giấy phép.",
+  "sfx": "Không có — repo chưa có SFX đã kiểm tra giấy phép."
+}

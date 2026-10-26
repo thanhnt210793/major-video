@@ -1,0 +1,15 @@
+{
+  "items": [
+    {
+      "type": "narration",
+      "files": "videos/it/dev-local-port-bug/assets/voice/01.wav … 10.wav",
+      "source": "VieNeu-TTS v3 Turbo, SDK 3.8.3; giọng mẫu Hải Đăng (người kể, cảnh 1–7 và 9–10) và Trúc Ly (chị Mai, cảnh 8)",
+      "sourceUrl": "https://github.com/pnnbao97/VieNeu-TTS",
+      "license": "Apache-2.0 (mã nguồn và trọng số); theo model card v3 Turbo, âm thanh từ giọng mẫu được dùng cho nội dung thương mại",
+      "attribution": "Không bắt buộc trong âm thanh",
+      "notes": "Tạo trên máy, 0 USD; giọng mẫu, không nhân bản giọng."
+    }
+  ],
+  "music": "Không có — chưa có nhạc đã kiểm tra giấy phép.",
+  "sfx": "Không có — chưa có SFX đã kiểm tra giấy phép (nên có tiếng gõ phím, tiếng ghế xoay)."
+}

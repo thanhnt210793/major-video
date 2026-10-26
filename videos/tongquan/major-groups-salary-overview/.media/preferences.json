@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "preferences": {
+    "destination": {
+      "value": "tiktok-youtube-shorts",
+      "confirmed_in": [
+        "major-groups-salary-overview"
+      ],
+      "updated_at": "2026-10-16T07:04:28.687Z"
+    },
+    "aspect": {
+      "value": "1080x1920",
+      "confirmed_in": [
+        "major-groups-salary-overview"
+      ],
+      "updated_at": "2026-10-16T07:04:28.792Z"
+    },
+    "language": {
+      "value": "vi",
+      "confirmed_in": [
+        "major-groups-salary-overview"
+      ],
+      "updated_at": "2026-10-16T07:04:28.903Z"
+    },
+    "flow": {
+      "value": "automation",
+      "confirmed_in": [
+        "major-groups-salary-overview"
+      ],
+      "updated_at": "2026-10-16T07:04:29.011Z"
+    },
+    "storyboard": {
+      "value": "no",
+      "confirmed_in": [
+        "major-groups-salary-overview"
+      ],
+      "updated_at": "2026-10-16T07:04:29.122Z"
+    },
+    "style_preset.faceless-explainer": {
+      "value": "blue-professional",
+      "confirmed_in": [
+        "major-groups-salary-overview"
+      ],
+      "updated_at": "2026-10-16T07:05:32.450Z"
+    }
+  },
+  "sightings": {}
+}

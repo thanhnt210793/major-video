@@ -1,0 +1,72 @@
+# POV: Lỗi trên hệ thống thật sau khi phát hành — và người gây lỗi là chính mình
+
+Bản tổng hợp được tạo từ `storyboard.json`; tệp JSON vẫn là nguồn chính. Trạng thái: **bản nháp — chờ duyệt**. Người duyệt đọc và duyệt ở `kichban/it/kichban_loi-production-sau-release_final.md`.
+
+## 1. Đối tượng và mục tiêu
+
+- **Đối tượng:** học sinh THCS/THPT tò mò về nghề lập trình.
+- **Mục tiêu:** Thấy cách một nhóm làm phần mềm xử lý khi lỗi xảy ra trên hệ thống thật, và người gây ra lỗi nên làm gì: báo ngay cho nhóm, ưu tiên để khách dùng lại được, sửa lỗi, rồi cùng rút kinh nghiệm mà không đổ lỗi cho nhau.
+- **Định dạng:** 59,2 giây, 1080×1920, 13 cảnh. POV một nghề (lập trình viên) tại văn phòng, dùng lại bối cảnh bàn làm việc và chị Mai của video it/dev-local-port-bug. Giọng hài hước nhẹ, dở khóc dở cười.
+- **Câu hỏi kết:** Nếu là bạn, bạn sẽ nhận lỗi ngay hay đợi sửa xong mới nói?
+
+## 2. Các thông tin cần kiểm chứng
+
+| Mã | Nội dung | Nguồn | Trạng thái |
+|---|---|---|---|
+| fact-001 | Ở các công ty như Google và Atlassian, khi có sự cố, ưu tiên đầu tiên là khôi phục dịch vụ cho người dùng (chặn ảnh hưởng), rồi mới tìm nguyên nhân gốc. | https://sre.google/workbook/incident-response/ | đã kiểm chứng (high) |
+| fact-002 | Quay về bản phát hành trước (rollback) là một cách giảm ảnh hưởng chung khi sự cố gắn với một lần phát hành, có thể làm trước khi hiểu hết nguyên nhân. | https://sre.google/workbook/incident-response/ | đã kiểm chứng (high) |
+| fact-003 | Trong khung xử lý sự cố của Google có ba vai chính: chỉ huy sự cố, phụ trách thông tin (cập nhật cho các bên liên quan) và phụ trách vận hành; sự cố nhỏ thì một người có thể kiêm nhiều vai. | https://sre.google/workbook/incident-response/ | đã kiểm chứng (high) |
+| fact-004 | Báo cáo rút kinh nghiệm sau sự cố (postmortem) nên "không đổ lỗi": tập trung tìm các nguyên nhân góp phần và cách giảm khả năng lặp lại, không quy lỗi cho cá nhân hay nhóm nào. | https://sre.google/sre-book/postmortem-culture/ | đã kiểm chứng (high) |
+| fact-005 | Công cụ quản lý phiên bản git cho xem phiên bản, người và thời điểm sửa gần nhất của từng dòng trong một tệp (lệnh git blame). | https://git-scm.com/docs/git-blame | đã kiểm chứng (high) |
+| fact-006 | Trong JavaScript (trình chạy V8), gọi .trim() khi biến maGiamGia là undefined (ví dụ ô để trống nên mã không được gửi lên) sẽ báo lỗi TypeError: Cannot read properties of undefined (reading ...). Một ô nhập để trống thường cho chuỗi rỗng, và "".trim() thì không lỗi. | https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_access_property | đã kiểm chứng (high) |
+| fact-007 | Phần mềm có thể chạy được trên máy của lập trình viên nhưng lỗi trên hệ thống thật, vì hai môi trường khác nhau (các dịch vụ đi kèm như cơ sở dữ liệu, công cụ). | https://12factor.net/dev-prod-parity | đã kiểm chứng (medium) |
+| fact-008 | Theo Google, nên báo sự cố sớm (kể cả khi sau đó chỉ cần một cách sửa đơn giản) hơn là để vấn đề lớn dần hàng giờ; văn hoá đổ lỗi khiến người ta không dám nói ra vấn đề vì sợ bị phạt. | https://sre.google/sre-book/managing-incidents/ | đã kiểm chứng (high) |
+| fact-009 | Nhân vật "mình" (tên đăng nhập minh), chị Mai (kiểm thử), anh Quân (trưởng nhóm), sếp, khách hàng lớn, ứng dụng bán hàng, tính năng mã giảm giá, việc phát hành năm tính năng mười phút trước, dòng code viết hôm thứ Ba, cuộc họp online gấp và câu hỏi của sếp, câu tự nói "Ai viết dòng này vậy?", ly trà sữa, việc chị Mai thử lại trên bản thử giống hệ thống thật và kết quả đạt, việc phát hành lại bản đã sửa, chuyện anh Quân báo tin cho khách, lời cảm ơn của sếp, các giờ 16:45/17:00/18:45, chiều thứ Sáu và đầu tuần sau, số tin nhắn và chuyện về muộn là tình huống hư cấu để dẫn chuyện. | — | tình huống giả lập |
+
+## 3. Kịch bản từng cảnh
+
+| Thời gian (giây) | Lời đọc | Chữ trên màn hình | Hình ảnh | Âm thanh | Hiệu ứng (mã) |
+|---|---|---|---|---|---|
+| 0–3,4 | Không nhập mã giảm giá… là không thanh toán được à? | Thứ Sáu · 16:45 | Khung đầu tiên (0,0 s): màn hình máy tính đã mở trang thanh toán của một ứng dụng bán hàng chung chung; ô "Mã giảm giá" để trống được khoanh đỏ, thông báo đỏ lớn "Thanh toán thất bại" đã hiện; hai tay POV đặt trên bàn phím; nhãn "Thứ Sáu · 16:45" đã có sẵn. 0,3–0,9 s: máy quay đẩy nhẹ vào ô mã trống và thông báo đỏ (chuyển động duy nhất); thông báo đỏ nhấp sáng một lần cùng tiếng báo lỗi. | Tiếng báo lỗi "bíp bíp" ngắn, rõ đúng lúc thông báo đỏ nhấp sáng, kèm một tiếng "thụp" trầm như tim hẫng một nhịp. | error-beep, tension-hit |
+| 3,4–9 | Mười phút trước, nhóm mình vừa phát hành năm tính năng mới. Giờ thì khách hàng lớn đã báo lên tận sếp. | Mới phát hành được 10 phút | Màn hình chat nhóm trên máy tính: tin nhắn từ 10 phút trước "Đã phát hành 5 tính năng mới" kèm pháo giấy; ngay dưới, tin nhắn mới dồn lên liên tục, số tin chưa đọc nhảy 3 → 12 → 27; tin cuối của sếp: "Khách hàng lớn báo không thanh toán được! Họp gấp, cả nhóm vào ngay." | Tiếng tin nhắn "ting ting" dồn dập, mỗi lúc một nhanh hơn. | notification |
+| 9–13,8 | Sếp gọi họp gấp. Cả nhóm im phăng phắc, ly trà sữa còn chưa kịp uống. | 17:00 · Họp gấp | Cuộc họp online gấp hiện trên màn hình: khung lớn của sếp đang họp từ xa (nhãn "Sếp", mặt nghiêm); khung nhỏ là cả nhóm — mình, chị Mai, anh Quân — ngồi chung bàn, vào họp bằng một máy; đồng hồ góc màn hình 17:00. Trên bàn, ly trà sữa đầy đá, ống hút còn nguyên vỏ. Máy quay đẩy chậm vào khung của sếp. | Tiếng tin nhắn tắt hẳn; giọng người kể chậm lại một chút, hơi vang như trong phòng họp; dưới giọng là tiếng đồng hồ tích tắc, tiếng tim đập rõ dần và một tiếng nền trầm, kéo dài, căng thẳng. | tension-drone, clock-tick, heartbeat |
+| 13,8–17,4 | “Khách lớn đang chờ đấy. Bao giờ thì xong?” _(giọng Thiền Tâm Đức)_ | Tích tắc… tích tắc… | Khung của sếp phóng to gần kín màn hình, sếp nhìn thẳng vào máy quay, giọng điềm tĩnh; nhãn "Sếp" vẫn rõ trên khung, biểu tượng micro của sếp bật, có vòng sáng "đang nói"; hai tay POV siết nhẹ mép bàn. Chữ "Tích tắc… tích tắc…" nhỏ, cạnh biểu tượng đồng hồ, không dùng màu báo lỗi, không che phụ đề hay nhãn "Sếp". | Giọng sếp (giọng nam trầm, khác giọng người kể), điềm tĩnh, chậm rãi, nghiêm, nghe như qua loa máy tính vì đang họp online; hỏi xong là một nhịp im lặng, chỉ còn tiếng tích tắc, tiếng tim đập và một tiếng "thụp" trầm. | clock-tick, heartbeat, tension-hit |
+| 17,4–20,4 | Ơ kìa… trên máy mình vẫn chạy ngon lành mà! | Cùng thao tác, khác kết quả | Màn hình chia đôi: bên trái "Máy của mình" — trang thanh toán bỏ trống ô mã giảm giá vẫn báo "Thanh toán thành công" kèm dấu tick xanh (vẽ bằng SVG); bên phải "Hệ thống thật" — cùng thao tác báo đỏ "Thanh toán thất bại" kèm dấu X đỏ (vẽ bằng SVG). Hai tay POV giơ lên kiểu "ơ kìa". | Tiếng "tưng" như lò xo bật khi hai tay giơ lên "ơ kìa"; nền căng thẳng tạm lắng. | comedic-spring |
+| 20,4–26,6 | Dò lại từng dòng đã sửa trong tuần… Ai viết dòng này vậy? Trời ơi… là mình! | Người viết: minh | Trình soạn thảo mở phần xem lịch sử thay đổi theo từng dòng; danh sách các dòng sửa trong tuần lướt qua rồi dừng ở dòng `const ma = maGiamGia.trim();` được tô đỏ. Nhãn lớn bằng phông của kênh chỉ vào dòng đó: "Ô mã để trống → dòng này báo lỗi". Dòng log nhỏ, mờ bên dưới: `TypeError: Cannot read properties of undefined (reading 'trim')`. Hỏi xong "Ai viết dòng này vậy?" thì con trỏ chuột dừng ở chú thích tên người viết, chú thích phóng to: "minh · thứ Ba" (chữ "minh" dùng phông đơn cách như tên đăng nhập); chữ "Người viết: minh" chỉ hiện cùng lúc đó, không hiện sớm hơn. Đến chữ "Trời ơi", máy quay giật nhẹ một nhịp, giọt mồ hôi vẽ bằng SVG lăn xuống cạnh tên. | Tiếng cuộn trang lách tách; hỏi xong "Ai viết dòng này vậy?" thì giọng ngắt một nhịp, tên "minh" phóng to cùng tiếng đĩa nhạc rít "két" rồi khựng lại; câu "Trời ơi… là mình!" có tiếng vang nhẹ như đang tự nói trong đầu; nói xong mới vang đoạn nhạc ngắn "tèn tèn ten" kiểu phim hài, rồi tiếng tim đập dồn dập dẫn sang cảnh sau. | scroll-ticks, record-scratch, dramatic-sting, heartbeat |
+| 26,6–31,6 | Tim đập thình thịch, nhưng mình báo ngay: “Mọi người ơi, lỗi do em, em đang xem rồi ạ.” | Báo ngay, không giấu | Xoay ghế sang bàn bên: chị Mai (nhãn tên "Chị Mai · kiểm thử") và anh Quân đứng cạnh (nhãn tên "Anh Quân · trưởng nhóm") quay sang; bong bóng thoại từ phía người kể: "Lỗi do em, em đang xem rồi ạ!". Hai tay POV hơi run. | Giọng người kể chậm lại một chút, căng như ở cảnh họp; tiếng tim đập thình thịch rõ nhất cả video nhưng luôn nhỏ hơn giọng đọc, tiếng ghế xoay "cót két"; nói xong câu nhận lỗi thì tiếng tim chậm lại. | heartbeat, chair-swivel |
+| 31,6–37,2 | “Cứ quay về bản cũ đã, để khách thanh toán lại được ngay. Sửa lỗi tính sau!” _(giọng Thái Sơn)_ | Ưu tiên 1: khách dùng lại được | Anh Quân (nhãn tên "Anh Quân · trưởng nhóm" hiện cạnh anh suốt lúc anh nói) gật đầu, giơ tay chốt; màn hình hiện thanh tiến trình "Quay về bản cũ" chạy đầy, rồi biểu đồ đơn thanh toán lỗi từ đỉnh đỏ rơi về 0, nhãn xanh "Khách thanh toán lại được" kèm dấu tick vẽ bằng SVG. | Giọng anh Quân (giọng nam miền Nam, khác người kể và sếp), dứt khoát; tiếng "vút" khi thanh tiến trình chạy, tiếng chuông nhẹ khi biểu đồ lỗi rơi về 0; nền căng thẳng nhỏ dần rồi tắt. | whoosh, success-chime |
+| 37,2–41,4 | Mình sửa xong, nhờ chị Mai thử lại đúng trường hợp không nhập mã… | Thử lại với ô mã để trống | Quay về màn hình: dòng code được sửa thành `const ma = (maGiamGia ?? "").trim();`; rồi xoay sang chị Mai đang thử lại trên điện thoại kiểm thử (nhãn nhỏ góc màn hình điện thoại: "Bản thử · giống hệ thống thật"): ô mã giảm giá để trống, ngón tay bấm "Thanh toán", vòng xoay chờ quay. | Tiếng gõ phím lách cách, tiếng chạm màn hình; lúc vòng xoay chờ, mọi âm thanh im bặt, như cả phòng nín thở. | keyboard-typing, tap |
+| 41,4–43,6 | “Ngon lành rồi em ơi!” _(giọng Trúc Ly)_ | Kiểm thử: Đạt | Điện thoại hiện "Thanh toán thành công" kèm dấu tick xanh vẽ bằng SVG; chị Mai quay sang, giơ ngón cái, cười tươi. | Tiếng "ting" thành công trong trẻo đúng lúc điện thoại chuyển sang "Thanh toán thành công", ngay trước câu nói; rồi giọng chị Mai (giọng nữ) vui vẻ. | success-chime |
+| 43,6–49,8 | Phát hành lại xong, anh Quân báo tin cho khách. Tối đó về muộn một chút, nhưng không ai phải gánh một mình. | Xong! Cả nhóm cùng xử lý | Thanh tiến trình "Phát hành bản sửa" chạy đầy, biểu đồ thanh toán thành công vọt lên màu xanh; khung chat hiện tin của anh Quân "Đã báo tình hình cho khách", ngay dưới là tin của sếp: "Cảm ơn cả nhóm nhé!"; ngoài cửa sổ trời đã tối, đồng hồ 18:45; ba người đập tay, cùng thở phào; ly trà sữa đã tan hết đá, nhạt màu, đặt cạnh bàn phím. | Tiếng "vút" khi phát hành; sau câu "…báo tin cho khách" là tiếng reo vui (không lời) và tiếng đập tay của cả nhóm; nói xong câu cuối là một tiếng thở phào ngắn. | whoosh, team-cheer, high-five, relief-sigh |
+| 49,8–55,4 | Đầu tuần sau, cả nhóm rút kinh nghiệm: tìm cách để lỗi không lặp lại, chứ không tìm người để trách. | Tìm cách, không tìm người | Sáng thứ Hai: tài liệu chung tên "Báo cáo rút kinh nghiệm" với ba mục "Chuyện gì đã xảy ra · Vì sao · Làm gì để không lặp lại"; dòng "Ai viết dòng này?" bị gạch đi, thay bằng "Thêm bước tự động thử: ô mã để trống"; một sticker nhỏ cạnh đó: "Không phải bản kiểm điểm đâu!". | Yên tĩnh, nhẹ nhõm; tiếng bút gạch "soạt" khi dòng "Ai viết dòng này?" bị gạch đi, tiếng "póc" nhỏ khi sticker hiện ra. | pen-strike, soft-pop |
+| 55,4–59,2 | Nếu là bạn, bạn sẽ nhận lỗi ngay, hay đợi sửa xong mới nói? | Bạn sẽ làm gì? Bình luận nhé! | Quay lại bàn làm việc buổi sáng, màn hình chạy ổn; thẻ câu hỏi hiện giữa màn hình. | Yên tĩnh, chỉ một tiếng "póc" nhẹ khi thẻ câu hỏi hiện ra. | soft-pop |
+
+## 4. Mở đầu
+
+- **Mẫu đã chọn:** oddly-specific (Chi tiết lạ mà cụ thể), 12/12 điểm.
+- **Khung đầu:** trang thanh toán với ô "Mã giảm giá" trống và thông báo đỏ "Thanh toán thất bại" đã hiện từ giây 0.
+- **Điều hứa hẹn:** Vì sao bỏ trống ô mã giảm giá lại làm khách không thanh toán được — và ai đã gây ra lỗi đó? Cảnh trả lời: `discover`.
+- **Hai phương án dự phòng:** curiosity-question: Lỗi do chính mình viết… nên nói ngay hay lặng lẽ sửa? · countdown: Còn mười lăm phút là về… thì sếp gọi. (chi tiết trong `hook-options.md`).
+
+## 5. Giọng đọc và phát âm
+
+- **Dàn giọng** (người duyệt chọn qua video nghe thử `audio/thu-giong/nghe-thu-giong.mp4`, 26/10): người kể Hải Đăng (giọng kênh); sếp Thiền Tâm Đức (cảnh boss, lọc như qua loa máy tính); anh Quân Thái Sơn (cảnh mitigate, tự nói câu chốt); chị Mai Trúc Ly (cảnh qc-ok, như video it/dev-local-port-bug).
+- **Xử lý giọng người kể** (bản 3C và 4B trong video nghe thử): cảnh meeting và own-it đọc chậm 7% (atempo 0.93) kèm vang phòng nhẹ. Cảnh discover cắt ở khoảng ngừng sau "vậy?", chèn tiếng đĩa rít và 0,25 s lặng, cho câu "Trời ơi… là mình!" vang nhẹ, rồi mới vang nhạc "tèn tèn ten".
+- **Khi dựng, dùng lại đúng các lượt đọc người duyệt đã nghe** trong `content/it/loi-production-sau-release/audio/thu-giong/raw/`: `1A.wav` (boss), `2B.wav` (mitigate), `3-take1.wav` (discover), `4-take1.wav` (meeting). Không tạo lại các cảnh này; các cảnh khác tạo mới bằng `tts_vieneu.py`.
+- Số đọc bằng chữ: "Mười phút", "năm tính năng" đã viết sẵn bằng chữ trong lời đọc.
+- Câu trích lời ở cảnh own-it, boss, mitigate và qc-ok có bản đọc (ttsNarration) bỏ ngoặc kép; own-it dùng dấu chấm thay dấu hai chấm để có khoảng ngừng.
+- Cảnh discover: dấu "…" luôn dính vào chữ đứng trước ("tuần…", "ơi…"), không đứng riêng, để phụ đề khớp từng chữ.
+- Nghe lại ở bản xem thử: chữ "phắc" trong "im phăng phắc" (meeting) và giọng lên ở cuối câu mở đầu "…được à?".
+- Không đọc tên lệnh, đoạn code hay ký hiệu; chúng chỉ hiện trên màn hình. Dấu tick, dấu X và giọt mồ hôi vẽ bằng SVG, không dùng emoji.
+
+## 6. Điểm còn chưa chắc chắn
+
+- fact-001: video chỉ thể hiện "khôi phục dịch vụ trước" bằng quyết định của anh Quân, không nói đó là quy luật chung của mọi công ty.
+- fact-007: nguồn là The Twelve-Factor App, một phương pháp luận nổi tiếng, không phải tổ chức tiêu chuẩn (độ tin cậy trung bình).
+- Chuyện về muộn không có nguồn, nên chỉ là chi tiết trong truyện; video không nói làm IT là phải tăng ca hay làm cuối tuần (báo cáo viết vào đầu tuần sau).
+- Đoạn code và tên người dùng "minh" là hư cấu để minh hoạ.
+- Hiệu ứng âm thanh: tất cả là CC0 (Freesound, Kenney), ghi trong `assets/LICENSES.md`; mỗi hiệu ứng có 1–2 lựa chọn, chọn bằng tai khi dựng. Chưa có nhạc nền (kênh chưa có bản nhạc nào đã kiểm tra giấy phép).
+
+## Vấn đề còn mở
+
+- Chờ người duyệt đọc và duyệt kịch bản.
