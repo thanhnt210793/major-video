@@ -10,11 +10,15 @@ node_modules/
 
 # Regenerable media and caches
 assets/voice-samples/
-videos/*/.hyperframes/artifacts/
-videos/*/.hyperframes/frame-packets/
-videos/*/snapshots/
-content/*/qa/**/*.png
-content/*/qa/**/*.jpg
+# HyperFrames local workflow state: history and caches with this machine's absolute paths
+videos/*/*/.hyperframes/
+videos/*/*/snapshots/
+content/*/*/qa/**/*.png
+content/*/*/qa/**/*.jpg
 
 # Renders are large binaries: keep them on disk or in external storage, not in git
-videos/*/renders/
+videos/*/*/renders/
+
+# Draft/preview audio (regenerable)
+content/*/*/audio/**/*.wav
+content/*/*/audio/**/*.mp4

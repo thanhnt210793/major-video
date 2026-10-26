@@ -26,6 +26,16 @@ Expect: video 1080×1920, 30 fps, duration 30–60 s and within ~0.1 s of the st
 - Full-resolution frames at the middle of each scene (from storyboard `start + duration/2`) and 0.2 s before each scene boundary:
   `ffmpeg -v error -ss <t> -i "<mp4>" -frames:v 1 "<out>/frame_<sceneId>_<t>.png"`
 - Read every image. Check against the storyboard and `ai-career-pov-2d-pipeline.md` §9 "Hình ảnh 2D": text errors or missing Vietnamese diacritics, clipped/cut-off elements, text too small for a phone, inconsistent hands/devices/palette between scenes, leftover placeholder or debug content, on-screen text that doesn't match the scene.
+- **Hook (0–3 s).** Extract a strip:
+  `ffmpeg -v error -t 3 -i "<mp4>" -vf "fps=4,scale=270:-1,tile=6x2" -frames:v 1 "<out>/hook_0-3s_4fps.png"`
+  Also extract a full-resolution frame at 0.0 s. Compare them with "The first second on screen" in `.claude/skills/career-hook/hook-patterns.md` and report:
+  - whether frame 0 is fully composed (not black, empty or fading in)
+  - when the hook moment named in scene 1's `visual` first appears, and whether it is readable at phone size
+  - whether the on-screen text is up from the start
+  - when the first narration word starts, from the first word of frame 1 in `videos/<slug>/audio_meta.json`
+
+  A dark or empty frame 0, or a hook moment after 1.5 s, is a should-fix finding, not a blocking one.
+- **Pacing.** On the 2 fps contact sheets, find any stretch longer than ~8 s with no visible change: no camera move, no new element, no UI state change. These are where viewers swipe away (`assets/style.json` → `motion.rules`). Report each with its time range as should-fix.
 - Automated hints (report, don't treat as verdicts): `ffmpeg -v info -i "<mp4>" -vf "blackdetect=d=0.1,freezedetect=n=0.001:d=2" -an -f null - 2>&1 | grep -E "black_|freeze_"`
 
 ## 3. Audio

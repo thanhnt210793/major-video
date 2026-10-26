@@ -10,13 +10,26 @@
 // become errors instead of warnings.
 
 import { readFileSync } from "node:fs";
-import { basename } from "node:path";
+import { basename, dirname, isAbsolute, join, relative, resolve, sep } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const CONTENT = resolve(dirname(fileURLToPath(import.meta.url)), "..", "content");
 
 const RESEARCH_STATUSES = ["verified", "simulation", "unverified"];
 // draft → approved (human approved script; build may start) → published
 const STORYBOARD_STATUSES = ["draft", "approved", "published"];
 const SPEC = { fps: 30, width: 1080, height: 1920, minSeconds: 30, maxSeconds: 60, hookMaxSeconds: 4 };
 const EPS = 1e-6;
+// Pattern ids from .claude/skills/career-hook/hook-patterns.md (career-log compares retention by pattern).
+const HOOK_PATTERNS = [
+  "in-medias-res", "oddly-specific", "curiosity-question", "pov-stakes", "countdown",
+  "myth-vs-reality", "result-first", "relatable", "wrong-move",
+];
+// Openers that spend the first second announcing instead of hooking (hook-patterns.md hard rule 1).
+const HOOK_GREETING = /^\s*(xin chào|chào (các bạn|cả nhà|mọi người)|hello|hôm nay (mình|chúng ta|tụi mình) sẽ|trong video (này|hôm nay)|cùng (tìm hiểu|khám phá))/i;
+// Channel narrator (VieNeu "Hải Đăng") speaks ~4.4–5.0 syllables/s and starts ~0.1 s in.
+const SYLLABLES_PER_SECOND = 4.7;
+const countSyllables = (text) => text.split(/\s+/).filter((w) => /\p{L}/u.test(w)).length;
 
 export function validate(doc, { strict = false } = {}) {
   const errors = [];
@@ -68,6 +81,10 @@ export function validate(doc, { strict = false } = {}) {
       if (!Array.isArray(s?.[f])) errors.push(`${at}: \`${f}\` must be an array.`);
     if (s?.ttsNarration !== undefined && typeof s.ttsNarration !== "string")
       errors.push(`${at}: \`ttsNarration\` (TTS-only spelling of the narration) must be a string.`);
+    if (s?.voice !== undefined && (typeof s.voice !== "string" || !s.voice.trim()))
+      errors.push(`${at}: \`voice\` (per-scene VieNeu preset override) must be a non-empty string.`);
+    if (s?.sound !== undefined && typeof s.sound !== "string")
+      errors.push(`${at}: \`sound\` (plain-Vietnamese sound description for the reviewer) must be a string.`);
 
     if (!isNum(s?.start) || !isNum(s?.duration) || s.duration <= 0) {
       errors.push(`${at}: \`start\` and positive \`duration\` (seconds) are required.`);
@@ -89,7 +106,53 @@ export function validate(doc, { strict = false } = {}) {
   if (isNum(scenes[0]?.duration) && scenes[0].duration > SPEC.hookMaxSeconds)
     warnings.push(`First scene is ${scenes[0].duration}s; the hook should land within ${SPEC.hookMaxSeconds}s.`);
 
+  const first = scenes[0];
+  if (first && typeof first.narration === "string") {
+    if (HOOK_GREETING.test(first.narration))
+      warnings.push("Scene 1 opens with a greeting or announcement; start inside the moment (career-hook hard rule 1).");
+    const spoken = typeof first.ttsNarration === "string" ? first.ttsNarration : first.narration;
+    const syllables = countSyllables(spoken);
+    const fits = isNum(first.duration) ? Math.floor((first.duration - 0.3) * SYLLABLES_PER_SECOND) : Infinity;
+    if (syllables > fits)
+      warnings.push(`Scene 1 narration has ${syllables} syllables; at ~${SYLLABLES_PER_SECOND}/s it overruns the ${first.duration}s hook (fits ~${fits}).`);
+  }
+
+  if (doc.hook !== undefined) {
+    const h = doc.hook;
+    if (typeof h !== "object" || h === null || Array.isArray(h)) errors.push("`hook` must be an object.");
+    else {
+      if (!HOOK_PATTERNS.includes(h.pattern))
+        errors.push(`\`hook.pattern\` must be one of ${HOOK_PATTERNS.join(", ")} (see .claude/skills/career-hook/hook-patterns.md).`);
+      if (!isStr(h.promise)) errors.push("`hook.promise` must be a non-empty string.");
+      if (!sceneIds.has(h.payoffSceneId))
+        errors.push(`\`hook.payoffSceneId\` ${JSON.stringify(h.payoffSceneId)} is not a scene id.`);
+      else if (h.payoffSceneId === first?.id)
+        errors.push("`hook.payoffSceneId` must be a later scene; the hook can't pay off its own promise.");
+      if (h.alternatives !== undefined && !(Array.isArray(h.alternatives) && h.alternatives.every(isStr)))
+        errors.push("`hook.alternatives` must be an array of strings.");
+    }
+  }
+
   return { errors, warnings };
+}
+
+// Videos live in content/<group>/<name>/, with <group> listed in content/nhom-nganh.json.
+// Files outside content/ (e.g. test copies) are not checked.
+export function checkLocation(file) {
+  const rel = relative(CONTENT, resolve(file));
+  if (rel.startsWith("..") || isAbsolute(rel)) return [];
+  const parts = rel.split(sep);
+  if (parts.length !== 3)
+    return [`Storyboard should be at content/<group>/<name>/storyboard.json (groups in content/nhom-nganh.json); got content/${parts.join("/")}.`];
+  const [group, name] = parts;
+  const warnings = [];
+  let groups = [];
+  try { groups = JSON.parse(readFileSync(join(CONTENT, "nhom-nganh.json"), "utf8")).groups.map((g) => g.id); } catch {}
+  if (!groups.includes(group))
+    warnings.push(`Group folder "${group}" is not in content/nhom-nganh.json (${groups.join(", ")}). Add it there or move the video.`);
+  if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(name))
+    warnings.push(`Video folder "${name}" should be short ASCII kebab-case (Vietnamese without diacritics is fine).`);
+  return warnings;
 }
 
 function readStdin() {
@@ -116,6 +179,7 @@ function main() {
   }
 
   const { errors, warnings } = validate(doc, { strict });
+  warnings.push(...checkLocation(file));
   const lines = [
     ...errors.map((m) => `  ERROR ${m}`),
     ...warnings.map((m) => `  WARN  ${m}`),
@@ -136,4 +200,6 @@ function main() {
   return 0;
 }
 
-process.exitCode = main();
+// Run only as a CLI or hook; scripts/kichban.mjs imports validate().
+const isMain = process.argv[1] && resolve(process.argv[1]).toLowerCase() === fileURLToPath(import.meta.url).toLowerCase();
+if (isMain) process.exitCode = main();

@@ -4,8 +4,9 @@ Reads content/<slug>/storyboard.json and writes one WAV per narrated scene,
 named by 1-based scene order (01.wav, 02.wav, ...) so it lines up with the
 HyperFrames STORYBOARD.md frame numbers.
 
-Each scene speaks `ttsNarration` when present (TTS-only spelling, <en>...</en>
-tags), otherwise `narration`. Subtitles always come from `narration`.
+Each scene speaks `ttsNarration` when present (TTS-only spelling), otherwise
+`narration`. Subtitles always come from `narration`. A scene's optional `voice`
+(a preset name, e.g. a second character) overrides --voice for that scene.
 
 Run with the project TTS venv (Python 3.12, see CLAUDE.md):
   .venv-tts/Scripts/python scripts/tts_vieneu.py --list-voices
@@ -70,10 +71,11 @@ def main():
             target.unlink(missing_ok=True)
             log["scenes"].pop(f"{i:02d}", None)
             continue
-        print(f"[{i:02d}] {sid}: {text}")
-        audio = tts.infer(text, voice=args.voice)
+        voice = scene.get("voice") or args.voice
+        print(f"[{i:02d}] {sid} ({voice}): {text}")
+        audio = tts.infer(text, voice=voice)
         tts.save(audio, str(target))
-        log["scenes"][f"{i:02d}"] = {"sceneId": sid, "ttsText": text, "file": target.name}
+        log["scenes"][f"{i:02d}"] = {"sceneId": sid, "voice": voice, "ttsText": text, "file": target.name}
 
     run_log.write_text(json.dumps(log, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"wrote {out} ({len(log['scenes'])} narrated scenes); log: {run_log}")

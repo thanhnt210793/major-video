@@ -44,7 +44,7 @@ vo_mode: verbatim
 POV 2D career-guidance short: the viewer is the <career> in <situation>. <one line on tone>.
 
 ## Assets
-- ../../content/<slug>/storyboard.json — approved scenes, narration, on-screen text, visuals, SFX cues. Source of truth.
+- ../../../content/<slug>/storyboard.json — approved scenes, narration, on-screen text, visuals, SFX cues. Source of truth.
 - assets/<file>.svg — <shared 2D asset copied from repo assets/2d/, which scene>
 
 ## Customizations
@@ -76,11 +76,41 @@ Load `/hyperframes:faceless-explainer` and follow its steps. The workflow finds 
 - **Steps 4–5 (visual style).** Follow the 2D POV conventions in CLAUDE.md:
   - Illustrated hands in the foreground, and consistent hands, devices, palette and viewpoint across frames.
   - Subtle parallax and push-ins, with motion that serves the content.
-  - Search the catalog (`npx hyperframes catalog --query "<English description>"`) before hand-building an effect.
-  - Copy shared SVGs from `assets/2d/` into `videos/<slug>/assets/` and list them in BRIEF `## Assets`.
-  - A new reusable SVG goes back into `assets/2d/` with a line in `assets/LICENSES.md`.
+  - **Motion language.** Apply `assets/style.json` → `motion` everywhere: eases, timing unit, stagger, intensity, transitions and rules. Write it once into the project's `## Video direction` so every frame uses the same values.
+    - For judgement (what moves, what holds, restraint), use `motion-art-direction`.
+    - For craft (anticipation, follow-through, arcs, timing), use `animation-principles`.
+    - For the GSAP API (DrawSVG, MorphSVG, MotionPath, SplitText, CustomWiggle), use `gsap-core`, `gsap-timeline` and `gsap-plugins`, always inside HyperFrames' GSAP contract.
+  - **One hero per frame.** In `STORYBOARD.md`, every frame names:
+    - its hero: the one thing the eye follows;
+    - its support: what helps the hero land;
+    - its texture: quiet ambient life.
+  - **Something changes every 5–8 s:** a push-in, a camera move, a new element, or a UI state change. A frame longer than ~8 s needs a second beat. This keeps viewers past the hook.
+  - **Start from the shared art.** Check `assets/2d/README.md` and its layer recipes before drawing anything.
+    - Copy what fits into `videos/<slug>/assets/2d/` and list it in BRIEF `## Assets`.
+    - New reusable art goes back into `assets/2d/`, with an entry in its README, in `preview.html` and in `assets/LICENSES.md`.
+    - Art for a single career group goes in `assets/2d/<group>/`.
+  - **Search the registry before hand-building.** For any UI moment, run `npx hyperframes catalog --query "<English description>"`. Install what fits with `npx hyperframes add <name>`; the `hyperframes-registry` skill covers the wiring.
+    - Restyle it to the palette, Be Vietnam Pro (JetBrains Mono for code) and Vietnamese text. Most items read their fonts from CSS variables such as `--font-body`; point those at the local `@font-face`. Lint rejects fonts like Inter that have no local file.
+    - Matches for POV scenes, tested on 2026-10-23:
+      - `chat-message`, `notification-pileup` and `press-ripple` come with their own GSAP timelines.
+      - Also worth a look: `message-thread-reveal`, `code-typing`, `agent-cursor`, `success-check`, `confetti`, `hw-box-label`, `svg-line-draw-loader`, `macos-notification`.
+      - `terminal-simulator` is only a static skeleton; the hand-built terminal in `videos/it/dev-local-port-bug` is richer.
+    - Skip WebGL, WebGPU, 3D and shader items, because they break the flat 2D look.
+    - List the items you used in BRIEF `## Assets`. Their license (Apache-2.0) is already in `assets/LICENSES.md`.
+  - **Brief the frame workers.** When faceless-explainer dispatches one sub-agent per frame (Step 5), each brief includes:
+    - the `motion` block from `style.json`;
+    - that frame's hero, support and texture;
+    - the `assets/2d` files and registry items it should use;
+    - for frame 1, the hook rules below.
+  - Frame 1 is the hook. Build it to "The first second on screen" in `.claude/skills/career-hook/hook-patterns.md`:
+    - Frame 0 is fully composed, with no fade from black.
+    - The hook moment is visible and readable on a phone by 1.0 s.
+    - The on-screen text is up at 0.0–0.3 s.
+    - Narration starts within ~0.2 s, with one SFX accent.
+
+    Before the preview approval, run `npx hyperframes snapshot --at 0,0.5,1,2 --no-end --describe false` and check those four frames against scene 1's `visual`.
   - `audio.mjs sync-durations` may lengthen frames to fit the real narration. If the total leaves 30–60 s, or drifts more than ~1 s from `durationSeconds`, tighten the narration via `/career-script`. Then update the timings in storyboard.json so it matches the build.
-- **Step 6 (render).** Render only after the user approves the Studio preview. Name outputs `renders/<slug>-<YYYYMMDD>-<n>.mp4` so each QA report maps to one render. `--quality draft` is for iteration.
+- **Step 6 (render).** Render only after the user approves the Studio preview. Name outputs `renders/<name>-<YYYYMMDD>-<n>.mp4` (`<name>` is the slug without its group) so each QA report maps to one render. `--quality draft` is for iteration.
 
 ## 4. After the render
 

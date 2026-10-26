@@ -40,7 +40,7 @@ This writes `01.wav`, `02.wav`, … (scene order = frame number) and `vieneu-run
   - For a new track, the user supplies the file and its source page. Check that the license allows TikTok and YouTube use, then add the row.
   - Never fetch audio just because it is downloadable.
 - Copy music into `videos/<slug>/assets/bgm/` and SFX into `videos/<slug>/assets/sfx/`.
-- SFX follow the scenes' `sfx` cues. Add entries to `audio_meta.json` `sfx[]` after step 4: `{ "frame": N, "file": "assets/sfx/<f>", "offset_s": <s>, "duration_s": <s>, "volume": 0.35 }`. Keep them subtle; notification sounds go only on real events.
+- SFX follow the scenes' `sfx` cues and the plain-Vietnamese `sound` description the reviewer approved (what is heard, and when). Add entries to `audio_meta.json` `sfx[]` after step 4: `{ "frame": N, "file": "assets/sfx/<f>", "offset_s": <s>, "duration_s": <s>, "volume": 0.35 }`. Keep them subtle; notification sounds go only on real events.
 
 ## 4. Build `audio_meta.json`
 

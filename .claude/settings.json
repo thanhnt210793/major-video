@@ -13,6 +13,10 @@
     "allow": [
       "Bash(node scripts/validate-storyboard.mjs *)",
       "Bash(node scripts/build-audio-meta.mjs *)",
+      "Bash(node scripts/kichban.mjs *)",
+      "Bash(npx hyperframes init*)",
+      "Bash(npx hyperframes render*)",
+      "Bash(npx hyperframes add*)",
       "Bash(.venv-tts/Scripts/python scripts/tts_vieneu.py *)",
       "Bash(.venv-tts/Scripts/python.exe scripts/tts_vieneu.py *)",
       "Bash(npx hyperframes lint*)",

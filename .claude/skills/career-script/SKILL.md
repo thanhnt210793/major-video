@@ -12,7 +12,10 @@ Topic: $ARGUMENTS
 
 ## 0. Set up
 
-- Pick a short ASCII kebab-case slug for the situation, e.g. `junior-dev-production-bug`.
+- Pick the career group from `content/nhom-nganh.json`. A video spanning several groups goes in `tongquan`. If none fits, ask the user before adding a group there.
+- Pick a short ASCII kebab-case name for the situation, e.g. `junior-dev-production-bug`.
+- The slug is `<group>/<name>`, e.g. `it/junior-dev-production-bug`, and the video lives in `content/<slug>/`.
+- If the group is marked `safetySensitive`, apply the safety rules in step 2 and in CLAUDE.md from the start.
 - If `content/<slug>/storyboard.json` already exists, resume: read it and `content/<slug>/script.md`, and continue from the first unfinished step.
 - Otherwise copy [storyboard.template.json](storyboard.template.json) to `content/<slug>/storyboard.json`.
 
@@ -31,25 +34,29 @@ One career, one concrete situation that can be shown in about 45 s. If the reque
 
 Fill the seven template scenes (0–4 hook, 4–11 POV action starts, 11–19 observe the problem, 19–28 analyze/fix, 28–37 result/check, 37–42 takeaway, 42–45 question). Timings may shift, but scenes must stay contiguous and total 30–60 s.
 
+Write scenes 2..N first, then scene 1 last with the `career-hook` skill (load it with the Skill tool). The hook is drawn from the story's strongest moment. In draft mode the skill applies its top candidate, adds the `hook` object to the storyboard, and writes the runner-ups to `content/<slug>/hook-options.md`.
+
 Per scene:
 - `narration`: one idea, natural spoken Vietnamese with correct diacritics. This text is also the caption text.
-- `ttsNarration` (optional): the same words spelled for VieNeu-TTS. Wrap English terms in `<en>…</en>` to force English pronunciation, and respell acronyms or numbers if needed. It must not change the meaning.
+- `ttsNarration` (optional): the same words spelled for VieNeu-TTS — numbers as words ("hai mươi tư phần trăm"), acronyms the Vietnamese way ("ô e xê đê" for OECD). The voice must sound fully Vietnamese, so use `<en>…</en>` only for an English word Vietnamese speakers really say in English, and prefer a Vietnamese word. It must not change the meaning.
 - `onScreenText`: short and readable on a phone. It complements the narration rather than repeating it.
 - `visual`: what the viewer sees from the first-person view (hands, device, UI state, motion).
 - `assets`: SVG names, reusing files from `assets/2d/` where possible.
 - `sfx`: short cue names (`keyboard-typing`, `notification`…).
+- `sound` (optional): the scene's sound design in plain Vietnamese for the reviewer: effects, mood, and when they hit ("tiếng tin nhắn dồn dập", "tiếng tim đập to dần"). The kichban file shows it as **Âm thanh**, and the reviewer can edit it; keep `sfx` in step with it.
 - `factIds`: links to `research[]`.
 
 The PostToolUse hook validates `storyboard.json` on every edit. You can also run `node scripts/validate-storyboard.mjs content/<slug>/storyboard.json` yourself. Fix all errors.
 
 ## 4. Write `content/<slug>/script.md` for the reviewer
 
-This is the human-readable review copy, generated from `storyboard.json` (the JSON stays the source of truth). It contains:
+This is the human-readable review copy, generated from `storyboard.json` (the JSON stays the source of truth). Write it — and the storyboard's `visual`, `format` and research `claim`/`notes` text — in Vietnamese. It contains:
 1. Audience and learning objective.
 2. Claims table: id, claim, source, status.
 3. Scene table: time, narration, on-screen text, visual, assets, SFX, animation notes.
-4. TTS pronunciation notes.
-5. Uncertain claims to verify or remove.
+4. Hook: the chosen pattern, frame 0, the promise and its payoff scene, plus the two runner-ups from `hook-options.md`.
+5. TTS pronunciation notes.
+6. Uncertain claims to verify or remove.
 
 ## 5. Independent review
 
@@ -60,6 +67,7 @@ Launch the `fact-checker` and `vi-script-reviewer` agents in parallel on `conten
 Present the following:
 - the path to `script.md`
 - the scene table
+- the hook and its two runner-ups, so the user can swap before approving
 - the claims and their statuses
 - the open issues
 
