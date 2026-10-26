@@ -1,0 +1,6 @@
+<!-- Idea light bulb with rays, 300×320. From it/dev-local-port-bug. -->
+<svg xmlns="http://www.w3.org/2000/svg" id="bulb" width="300" height="320" viewBox="-40 -50 300 320">
+        <circle cx="110" cy="100" r="96" fill="#F2A93B" fill-opacity="0.22"/><path d="M110 30 a62 62 0 0 0 -36 112 c 10 8 12 18 12 30 h48 c 0 -12 2 -22 12 -30 A62 62 0 0 0 110 30z" fill="#F2A93B" stroke="#C97A1E" stroke-width="5"/>
+        <rect x="84" y="182" width="52" height="16" rx="6" fill="#B8C4D3"/><rect x="88" y="204" width="44" height="14" rx="6" fill="#B8C4D3"/>
+        <path d="M13 44 L-10 31" stroke="#F2A93B" stroke-width="9" stroke-linecap="round"/><path d="M54 3 L41 -20" stroke="#F2A93B" stroke-width="9" stroke-linecap="round"/><path d="M110 -12 L110 -38" stroke="#F2A93B" stroke-width="9" stroke-linecap="round"/><path d="M166 3 L179 -20" stroke="#F2A93B" stroke-width="9" stroke-linecap="round"/><path d="M207 44 L230 31" stroke="#F2A93B" stroke-width="9" stroke-linecap="round"/>
+      </svg>

@@ -1,0 +1,24 @@
+<!-- POV hands holding a phone, 1080×1920. From tongquan/major-groups-salary-overview. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920"><g >
+    <path d="M-60 1920 L-60 1640 C 20 1600 120 1560 190 1585 L 330 1760 L 330 1920 Z" fill="#1B2E4A"/>
+    <path d="M-60 1660 C 20 1620 120 1580 190 1605" stroke="#14B8A6" stroke-opacity="0.55" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <rect x="132" y="1150" width="74" height="48" rx="24" fill="#E8B48F" stroke="#CF9572" stroke-width="3" transform="rotate(-6 169 1174)"/>
+    <rect x="128" y="1222" width="78" height="50" rx="25" fill="#E8B48F" stroke="#CF9572" stroke-width="3" transform="rotate(-4 167 1247)"/>
+    <rect x="130" y="1296" width="76" height="48" rx="24" fill="#E8B48F" stroke="#CF9572" stroke-width="3" transform="rotate(-2 168 1320)"/>
+    <path d="M40 1700 C 20 1560 70 1420 175 1372 L 215 1380 C 240 1470 245 1560 210 1640 C 170 1700 100 1730 40 1700 Z" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/>
+    <g transform="rotate(-38 220 1560)">
+      <rect x="196" y="1408" width="62" height="200" rx="31" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/>
+      <ellipse cx="227" cy="1438" rx="20" ry="24" fill="#F4D3BC"/>
+    </g>
+  </g><g transform="translate(1080 0) scale(-1 1)">
+    <path d="M-60 1920 L-60 1640 C 20 1600 120 1560 190 1585 L 330 1760 L 330 1920 Z" fill="#1B2E4A"/>
+    <path d="M-60 1660 C 20 1620 120 1580 190 1605" stroke="#14B8A6" stroke-opacity="0.55" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <rect x="132" y="1150" width="74" height="48" rx="24" fill="#E8B48F" stroke="#CF9572" stroke-width="3" transform="rotate(-6 169 1174)"/>
+    <rect x="128" y="1222" width="78" height="50" rx="25" fill="#E8B48F" stroke="#CF9572" stroke-width="3" transform="rotate(-4 167 1247)"/>
+    <rect x="130" y="1296" width="76" height="48" rx="24" fill="#E8B48F" stroke="#CF9572" stroke-width="3" transform="rotate(-2 168 1320)"/>
+    <path d="M40 1700 C 20 1560 70 1420 175 1372 L 215 1380 C 240 1470 245 1560 210 1640 C 170 1700 100 1730 40 1700 Z" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/>
+    <g transform="rotate(-38 220 1560)">
+      <rect x="196" y="1408" width="62" height="200" rx="31" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/>
+      <ellipse cx="227" cy="1438" rx="20" ry="24" fill="#F4D3BC"/>
+    </g>
+  </g></svg>

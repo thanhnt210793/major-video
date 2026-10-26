@@ -1,0 +1,2 @@
+<!-- Success tick in a circle, 24×24 viewBox. From it/dev-local-port-bug. -->
+<svg xmlns="http://www.w3.org/2000/svg" id="tick" width="130" height="130" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#3FB68B"/><path d="M6.5 12.5l3.5 3.5 7.5-8" stroke="#0F1E33" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>

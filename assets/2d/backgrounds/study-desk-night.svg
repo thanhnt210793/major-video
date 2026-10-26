@@ -1,0 +1,17 @@
+<!-- Study desk at night, 1080×2000 (taller than the frame for a slow drift). From tongquan/major-groups-salary-overview. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="2000" viewBox="0 0 1080 2000">
+  <defs>
+    <linearGradient id="g-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#11223A"/><stop offset="1" stop-color="#0B1626"/></linearGradient>
+    <radialGradient id="g-lamp" cx="0.16" cy="0.12" r="0.6"><stop offset="0" stop-color="#F5EFE4" stop-opacity="0.10"/><stop offset="1" stop-color="#F5EFE4" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1080" height="2000" fill="url(#g-wall)"/>
+  <rect width="1080" height="2000" fill="url(#g-lamp)"/>
+  <g stroke="#F5EFE4" stroke-opacity="0.06" stroke-width="3" fill="none">
+    <rect x="690" y="70" width="330" height="430" rx="10"/><path d="M855 70v430 M690 285h330"/>
+  </g>
+  <circle cx="960" cy="150" r="26" fill="#F5EFE4" fill-opacity="0.08"/>
+  <rect x="0" y="1470" width="1080" height="530" fill="#142640"/>
+  <rect x="0" y="1470" width="1080" height="3" fill="#F5EFE4" fill-opacity="0.07"/>
+  <g transform="rotate(-8 860 1690)"><rect x="700" y="1600" width="330" height="220" rx="12" fill="#1B2E4A"/><path d="M730 1650h250 M730 1690h250 M730 1730h170" stroke="#F5EFE4" stroke-opacity="0.12" stroke-width="6" stroke-linecap="round"/></g>
+  <g transform="rotate(18 120 1560)"><rect x="40" y="1548" width="230" height="20" rx="10" fill="#F2A93B" fill-opacity="0.55"/><path d="M270 1548l26 10-26 10z" fill="#E8D3B5" fill-opacity="0.6"/></g>
+</svg>

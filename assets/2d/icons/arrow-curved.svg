@@ -1,0 +1,2 @@
+<!-- Curved pointer arrow, 120×160, warning colour. From it/dev-local-port-bug. -->
+<svg xmlns="http://www.w3.org/2000/svg" id="arrow" width="120" height="160" viewBox="0 0 120 160"><path d="M60 150 C 40 100 50 50 70 14" stroke="#F2A93B" stroke-width="10" fill="none" stroke-linecap="round"/><path d="M50 30 L72 8 L84 40" stroke="#F2A93B" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>

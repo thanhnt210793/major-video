@@ -1,0 +1,6 @@
+<!-- Smartphone layer on the 1080×1920 canvas; screen area x=196 y=176 w=688 h=1388, radius 74. From tongquan/major-groups-salary-overview. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <rect x="164" y="164" width="752" height="1440" rx="102" fill="#050A12" fill-opacity="0.55"/>
+  <rect x="170" y="150" width="740" height="1440" rx="96" fill="#070D17" stroke="#F5EFE4" stroke-opacity="0.16" stroke-width="3"/>
+  <rect x="470" y="190" width="140" height="34" rx="17" fill="#000"/>
+</svg>

@@ -1,0 +1,16 @@
+<!-- POV hands on a keyboard, 1080×2020 (ids hand-l, hand-r). From it/dev-local-port-bug. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="2020" viewBox="0 0 1080 2020">
+    <g id="hand-l"><g transform="">
+    <path d="M70 1980 L210 1600 L350 1650 L250 1980 Z" fill="#1B2E4A"/>
+    <path d="M134 1792 L290 1830" stroke="#14B8A6" stroke-opacity="0.55" stroke-width="14" stroke-linecap="round"/>
+    <path d="M200 1610 C 190 1520 270 1440 360 1440 C 440 1440 480 1500 450 1570 C 420 1640 310 1680 200 1610 Z" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/>
+    <rect x="290" y="1416" width="36" height="64" rx="18" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/><rect x="332" y="1402" width="36" height="64" rx="18" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/><rect x="374" y="1402" width="36" height="64" rx="18" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/><rect x="416" y="1416" width="36" height="64" rx="18" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/>
+    <rect x="430" y="1500" width="34" height="80" rx="17" fill="#E8B48F" stroke="#CF9572" stroke-width="3" transform="rotate(-50 447 1540)"/>
+  </g></g><g id="hand-r"><g transform="translate(1500 0) scale(-1 1)">
+    <path d="M490 1980 L630 1600 L770 1650 L670 1980 Z" fill="#1B2E4A"/>
+    <path d="M554 1792 L710 1830" stroke="#14B8A6" stroke-opacity="0.55" stroke-width="14" stroke-linecap="round"/>
+    <path d="M620 1610 C 610 1520 690 1440 780 1440 C 860 1440 900 1500 870 1570 C 840 1640 730 1680 620 1610 Z" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/>
+    <rect x="710" y="1416" width="36" height="64" rx="18" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/><rect x="752" y="1402" width="36" height="64" rx="18" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/><rect x="794" y="1402" width="36" height="64" rx="18" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/><rect x="836" y="1416" width="36" height="64" rx="18" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/>
+    <rect x="850" y="1500" width="34" height="80" rx="17" fill="#E8B48F" stroke="#CF9572" stroke-width="3" transform="rotate(-50 867 1540)"/>
+  </g></g>
+  </svg>

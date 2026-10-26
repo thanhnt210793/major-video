@@ -1,0 +1,11 @@
+<!-- Office wall, 2400×1920 world strip for horizontal pans (parallax ~0.55). From it/dev-local-port-bug. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1920" viewBox="0 0 2400 1920">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2D48"/><stop offset="1" stop-color="#0F1E33"/></linearGradient>
+    <radialGradient id="sun" cx="0.38" cy="0.12" r="0.5"><stop offset="0" stop-color="#F5EFE4" stop-opacity="0.13"/><stop offset="1" stop-color="#F5EFE4" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="2400" height="1920" fill="url(#wall)"/>
+  <rect width="2400" height="1920" fill="url(#sun)"/>
+  <g transform="translate(760 110)"><rect width="330" height="430" rx="12" fill="#F5EFE4" fill-opacity="0.07" stroke="#F5EFE4" stroke-opacity="0.12" stroke-width="4"/><path d="M165 0v430 M0 215h330" stroke="#F5EFE4" stroke-opacity="0.12" stroke-width="4"/></g>
+  <g transform="translate(1500 380)"><rect x="0" y="80" width="300" height="16" rx="6" fill="#2C4262"/><rect x="40" y="10" width="70" height="70" rx="12" fill="#14B8A6" fill-opacity="0.5"/><path d="M75 10 C 60 -30 90 -40 75 -60 M75 10 C 95 -20 110 -10 120 -40 M75 10 C 50 -10 40 -30 30 -35" stroke="#3FB68B" stroke-width="10" fill="none" stroke-linecap="round"/><rect x="150" y="30" width="110" height="50" rx="6" fill="#F5EFE4" fill-opacity="0.18"/></g>
+</svg>

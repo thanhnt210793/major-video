@@ -1,0 +1,27 @@
+<!-- Coworker at the neighbouring desk, in office-world coordinates (x 1220–2500). ids mai-head, mai-eyes, mai-smile, mai-laugh, mai-thumb. From it/dev-local-port-bug. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1920" viewBox="1220 0 1280 1920">
+  <rect x="1700" y="700" width="320" height="520" rx="60" fill="#16263D"/>
+  <path d="M1690 1180 C 1700 980 1760 900 1860 890 C 1960 900 2020 980 2030 1180 Z" fill="#F5EFE4"/>
+  <path d="M1810 892 L1860 960 L1910 892" stroke="#B8C4D3" stroke-width="6" fill="none" stroke-linejoin="round"/>
+  <path d="M1772 880 C 1772 940 1948 940 1948 880" stroke="#14B8A6" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <rect x="1752" y="858" width="40" height="56" rx="16" fill="#14B8A6"/><rect x="1928" y="858" width="40" height="56" rx="16" fill="#14B8A6"/>
+  <g id="mai-head">
+    <rect x="1838" y="790" width="44" height="70" rx="18" fill="#D9A07A"/>
+    <path d="M1738 700 C 1738 560 1982 560 1982 700 L1982 800 C 1960 815 1930 790 1925 760 L1795 760 C 1790 790 1760 815 1738 800 Z" fill="#2A2320"/>
+    <ellipse cx="1860" cy="712" rx="104" ry="112" fill="#D9A07A" stroke="#BF845F" stroke-width="3"/>
+    <path d="M1752 680 C 1760 600 1820 580 1880 590 C 1940 600 1972 640 1968 700 C 1930 650 1860 640 1800 660 C 1780 668 1764 676 1752 680 Z" fill="#2A2320"/>
+    <g id="mai-eyes"><ellipse cx="1822" cy="716" rx="11" ry="14" fill="#1A1412"/><ellipse cx="1898" cy="716" rx="11" ry="14" fill="#1A1412"/></g>
+    <path d="M1808 690 q14 -10 28 0 M1884 690 q14 -10 28 0" stroke="#1A1412" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="1800" cy="756" rx="16" ry="9" fill="#E5534B" fill-opacity="0.25"/><ellipse cx="1920" cy="756" rx="16" ry="9" fill="#E5534B" fill-opacity="0.25"/>
+    <path id="mai-smile" d="M1832 770 q28 22 56 0" stroke="#7A3B2E" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path id="mai-laugh" d="M1826 764 q34 40 68 0 z" fill="#7A3B2E" opacity="0"/>
+  </g>
+  <path d="M1712 1000 C 1690 1060 1690 1120 1720 1160 L1800 1164" stroke="#F5EFE4" stroke-width="54" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="1812" cy="1160" rx="34" ry="22" fill="#D9A07A" stroke="#BF845F" stroke-width="3"/>
+  <path d="M2008 1000 C 2034 1060 2040 1110 2030 1150 L2090 1150" stroke="#F5EFE4" stroke-width="54" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="2098" cy="1146" rx="32" ry="22" fill="#D9A07A" stroke="#BF845F" stroke-width="3"/>
+  <g id="mai-thumb" opacity="0"><path d="M2030 1170 L2074 992" stroke="#F5EFE4" stroke-width="50" stroke-linecap="round"/><rect x="2030" y="930" width="92" height="70" rx="26" fill="#D9A07A" stroke="#BF845F" stroke-width="3"/><path d="M2048 948 h58 M2048 966 h58 M2048 984 h58" stroke="#BF845F" stroke-width="3" stroke-linecap="round"/><rect x="2036" y="858" width="30" height="86" rx="15" fill="#D9A07A" stroke="#BF845F" stroke-width="3" transform="rotate(-12 2051 944)"/></g>
+  <rect x="1400" y="1150" width="1000" height="40" fill="#2C4262"/>
+  <g transform="translate(2070 880)"><polygon points="0,270 40,0 300,0 260,270" fill="#2C4262" stroke="#0A1424" stroke-width="4"/><circle cx="170" cy="130" r="18" fill="#F5EFE4" fill-opacity="0.12"/></g>
+  <g transform="translate(1530 1060)"><rect width="70" height="86" rx="10" fill="#F5EFE4" fill-opacity="0.85"/><path d="M70 22 c 26 0 26 40 0 40" stroke="#F5EFE4" stroke-opacity="0.85" stroke-width="9" fill="none"/></g>
+</svg>

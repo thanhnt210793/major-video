@@ -12,9 +12,65 @@
   },
   "usage": "Navy is the background, off-white is for text, teal is for accents and shapes. Don't put off-white text on teal, because the contrast is too low for WCAG AA. Warning, error and success are only for UI state indicators.",
   "fonts": {
-    "display": { "family": "Be Vietnam Pro", "weights": [700, 800], "dir": "assets/fonts/be-vietnam-pro" },
-    "body": { "family": "Be Vietnam Pro", "weights": [400, 500, 600], "dir": "assets/fonts/be-vietnam-pro" }
+    "display": {
+      "family": "Be Vietnam Pro",
+      "weights": [
+        700,
+        800
+      ],
+      "dir": "assets/fonts/be-vietnam-pro"
+    },
+    "body": {
+      "family": "Be Vietnam Pro",
+      "weights": [
+        400,
+        500,
+        600
+      ],
+      "dir": "assets/fonts/be-vietnam-pro"
+    },
+    "mono": {
+      "family": "JetBrains Mono",
+      "weights": "100-800 (variable)",
+      "dir": "assets/fonts/jetbrains-mono",
+      "use": "Terminal, code and file names only"
+    }
   },
-  "voice": null,
-  "voiceNotes": "Pick one narrator from assets/voice-samples/ (VieNeu preset id = file name) and keep it for every video."
+  "motion": {
+    "notes": "Channel motion language, proposed 2026-10-23 with the motion-art-direction skill: friendly and clear, lively but never busy. Every video uses these values. Change them only with the channel owner.",
+    "personality": "friendly (between Playful and Corporate)",
+    "ease": {
+      "enter": "power3.out",
+      "exit": "power2.in",
+      "move": "power2.inOut",
+      "camera": "sine.inOut",
+      "pop": "back.out(1.6)"
+    },
+    "seconds": {
+      "unit": 0.4,
+      "micro": 0.2,
+      "enter": 0.4,
+      "hero": 0.8,
+      "cameraMove": [1.2, 2.0],
+      "holdAfterBeat": 0.4,
+      "minTextHold": 1.5
+    },
+    "stagger": { "each": 0.06, "maxTotal": 0.7 },
+    "intensity": {
+      "pushInMaxScale": 1.25,
+      "popOvershootMax": 0.1,
+      "ambientMaxMovePx": 6
+    },
+    "transitions": "Camera moves inside one shared world (pan, push-in, pull-out) plus short crossfades. No wipes, spins, glitches or shader transitions.",
+    "rules": [
+      "One hero per moment. At most about a third of the elements move at the same time.",
+      "Overshoot (the pop ease) only on stickers, cards, ticks, icons and character beats. Never on numbers, charts or facts.",
+      "Something visibly changes every 5–8 s: a push-in, a camera move, a new element or a UI state change.",
+      "One 'wow' moment per video, on the payoff scene.",
+      "Keep the world alive but quiet: hands breathe, the cursor blinks, slow parallax.",
+      "Hold text still while it is being read; don't loop-animate it."
+    ]
+  },
+  "voice": "Hải Đăng",
+  "voiceNotes": "Đã chọn 2026-10-16: Hải Đăng (nam, miền Bắc, tự nhiên). Dùng cho mọi video của kênh."
 }
