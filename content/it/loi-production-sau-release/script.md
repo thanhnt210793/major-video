@@ -1,6 +1,6 @@
 # POV: Lỗi trên hệ thống thật sau khi phát hành — và người gây lỗi là chính mình
 
-Bản tổng hợp được tạo từ `storyboard.json`; tệp JSON vẫn là nguồn chính. Trạng thái: **bản nháp — chờ duyệt**. Người duyệt đọc và duyệt ở `kichban/it/kichban_loi-production-sau-release_final.md`.
+Bản tổng hợp được tạo từ `storyboard.json`; tệp JSON vẫn là nguồn chính. Trạng thái: **bản nháp — chờ duyệt**. Người duyệt đọc và duyệt ở `kichban/it/1-lap-trinh-vien/kichban_loi-production-sau-release_final.md`.
 
 ## 1. Đối tượng và mục tiêu
 

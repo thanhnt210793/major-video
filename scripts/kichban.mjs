@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// The reviewer-facing script file for the /lam-video flow: kichban/<group>/kichban_<name>_final.md.
+// The reviewer-facing script file for the /lam-video flow: kichban/<group>/<occupation>/kichban_<name>_final.md.
 // storyboard.json stays the source of truth; this file is a plain-Vietnamese view of it
 // that a non-technical reviewer can edit and approve.
 //

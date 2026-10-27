@@ -1,6 +1,6 @@
 ---
 name: lam-video
-description: Guided, non-technical way to make a Career POV video. The person writes a rough idea or script in Vietnamese. Claude analyses it and suggests a focus, writes kichban/<group>/kichban_<name>_final.md for them to read, edit and approve, then builds the video, opens it, and revises it from their feedback. Use whenever someone pastes a rough video idea or script ("kịch bản", "ý tưởng video", "làm video về…"), asks for a video without naming a pipeline step, says "đã sửa" / "đã duyệt" about a kichban file, or gives feedback on a video they just watched.
+description: Guided, non-technical way to make a Career POV video. The person writes a rough idea or script in Vietnamese. Claude analyses it and suggests a focus, writes kichban/<group>/<occupation>/kichban_<name>_final.md for them to read, edit and approve, then builds the video, opens it, and revises it from their feedback. Use whenever someone pastes a rough video idea or script ("kịch bản", "ý tưởng video", "làm video về…"), asks for a video without naming a pipeline step, says "đã sửa" / "đã duyệt" about a kichban file, or gives feedback on a video they just watched.
 argument-hint: <rough script or idea> | <slug to resume>
 ---
 
@@ -40,14 +40,31 @@ Every content and accuracy rule in CLAUDE.md still applies. Where this file diff
 - **Don't ask the reviewer about channel-level settings.** Palette, font, narrator voice, music library and permissions belong to the channel owner. If one of them blocks the work, say plainly that the channel owner needs to look at it, and what exactly.
 - **Permission prompts.** If a permission prompt is likely, warn them in one line what it is for. Example: "Máy sẽ hỏi cho phép dựng video, bạn bấm Yes."
 
+## The kichban folder tree
+
+```
+kichban/
+├─ KE-HOACH.md                     plan: every group × occupation, its video ideas and their status
+├─ <group>/
+│  ├─ top-5-nganh-hot.md           researched top-5 occupations of the group, with sources
+│  ├─ <n>-<occupation>/            n = rank in top-5-nganh-hot.md, e.g. 1-ky-su-ai
+│  │  ├─ KE-HOACH.md               that occupation: summary, video ideas, list of its videos
+│  │  └─ kichban_<name>_final.md   one per video
+│  └─ khac/                        videos in the group that fit none of the top 5
+```
+
+- **`<occupation>` in this file means that folder**, e.g. `1-ky-su-ai`. The video slug stays `<group>/<name>`; only the kichban file sits one level deeper.
+- **To find a video's kichban file**, glob `kichban/<group>/*/kichban_<name>_final.md`.
+- **Keep the plan current.** Whenever a video changes state (idea → kịch bản nháp → đã duyệt → đã có video → đã đăng), update its row in `kichban/KE-HOACH.md` and its line in the occupation's `KE-HOACH.md`. When an idea from a `KE-HOACH.md` becomes a video, link the row to its kichban file.
+
 ## Find where we are
 
-If the input names a video, a kichban file, or continues an earlier conversation, find its folder and go to the step that matches its state. People usually give only the name or a description, so search `content/*/<name>/` and the titles in `content/*/*/storyboard.json`.
+If the input names a video, a kichban file, an occupation or an idea from `kichban/KE-HOACH.md`, or continues an earlier conversation, find its folder and go to the step that matches its state. People usually give only the name or a description, so search `content/*/<name>/`, the titles in `content/*/*/storyboard.json`, and `kichban/KE-HOACH.md`.
 
 | State | Go to |
 |---|---|
 | No `content/<slug>/` yet | Step 1 |
-| `storyboard.json` is `draft`, `kichban/<group>/kichban_<name>_final.md` exists | Step 4 |
+| `storyboard.json` is `draft`, `kichban/<group>/<occupation>/kichban_<name>_final.md` exists | Step 4 |
 | `approved`, no file in `videos/<slug>/renders/` | Step 5 |
 | `approved`, a render exists | Step 6 |
 | `published` | Tell them it is already posted. Changes mean a new video, starting at Step 1. |
@@ -58,7 +75,8 @@ If the input names a video, a kichban file, or continues an earlier conversation
   - An idea covering several groups goes in `tongquan`.
   - If no group fits, propose a new one to them in plain words, e.g. "nhóm Nông nghiệp", and add it to `nhom-nganh.json` only after they agree.
 - **Pick the name:** short, Vietnamese without diacritics, kebab-case, e.g. `hoa-don-lech-1-dong`. The slug is `<group>/<name>`, e.g. `it/hoa-don-lech-1-dong`.
-- **Tell them where it is filed** in one line, e.g. "Video này mình xếp vào nhóm Công nghệ thông tin."
+- **Pick the occupation folder** `kichban/<group>/<n>-<occupation>/` from the group's `top-5-nganh-hot.md`, or `khac/` if none of the five fits. Create `khac/` when first needed.
+- **Tell them where it is filed** in one line, e.g. "Video này mình xếp vào nhóm Công nghệ thông tin, nghề Kỹ sư AI."
 - **Save their message verbatim** to `content/<slug>/y-tuong-goc.md`, with the date. Later steps check against it so their intent isn't lost.
 - **If the idea is only a career name** ("nghề y tá") or a whole field, Step 2 proposes concrete situations.
 
@@ -106,7 +124,7 @@ Then, instead of career-script's step 6:
 1. Write the review file:
 
    ```bash
-   node scripts/kichban.mjs render content/<slug>/storyboard.json kichban/<group>/kichban_<name>_final.md --history "Claude soạn bản đầu từ ý tưởng của bạn"
+   node scripts/kichban.mjs render content/<slug>/storyboard.json kichban/<group>/<occupation>/kichban_<name>_final.md --history "Claude soạn bản đầu từ ý tưởng của bạn"
    ```
 
 2. Fill its "Ghi chú của Claude" section (Edit) in plain Vietnamese:
@@ -116,7 +134,7 @@ Then, instead of career-script's step 6:
 3. Open the file:
 
    ```bash
-   node scripts/kichban.mjs open kichban/<group>/kichban_<name>_final.md
+   node scripts/kichban.mjs open kichban/<group>/<occupation>/kichban_<name>_final.md
    ```
 
 4. In chat, give:
@@ -134,7 +152,7 @@ Stop and wait.
 When they say they are done:
 
 ```bash
-node scripts/kichban.mjs diff content/<slug>/storyboard.json kichban/<group>/kichban_<name>_final.md
+node scripts/kichban.mjs diff content/<slug>/storyboard.json kichban/<group>/<occupation>/kichban_<name>_final.md
 ```
 
 1. **Their edits.** Run `node scripts/kichban.mjs apply …` with the same two paths. Apply copies their edited text into `storyboard.json` and validates it. Then deal with the consequences:

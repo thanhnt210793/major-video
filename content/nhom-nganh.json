@@ -1,5 +1,5 @@
 {
-  "_about": "Career-group folders. A video lives in content/<id>/<name>/, videos/<id>/<name>/ and kichban/<id>/. Add a group here before using its folder; scripts/validate-storyboard.mjs checks storyboard paths against this list. safetySensitive groups follow CLAUDE.md's rules for safety-sensitive careers.",
+  "_about": "Career-group folders. A video lives in content/<id>/<name>/, videos/<id>/<name>/ and kichban/<id>/<occupation>/. Add a group here before using its folder; scripts/validate-storyboard.mjs checks storyboard paths against this list. safetySensitive groups follow CLAUDE.md's rules for safety-sensitive careers.",
   "groups": [
     { "id": "it", "name": "Công nghệ thông tin", "covers": "lập trình, an ninh mạng, dữ liệu, AI, làm game", "safetySensitive": false },
     { "id": "yte", "name": "Y tế và sức khoẻ", "covers": "bác sĩ, điều dưỡng, dược sĩ, kỹ thuật viên xét nghiệm, cấp cứu", "safetySensitive": true },

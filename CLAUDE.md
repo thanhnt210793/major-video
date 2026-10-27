@@ -25,7 +25,7 @@ Remotion is deliberately not used; do not add a second render path.
 | 9, §8, §11 Effort and metrics | `/career-log <slug>` | `content/<slug>/production-log.md` |
 
 - **Non-technical reviewers use `/lam-video`.** It wraps the whole table in seven plain-Vietnamese steps: idea → analysis and suggestions → script → review and approval → video → feedback rounds → sign-off.
-  - The reviewer reads, edits and approves `kichban/<group>/kichban_<name>_final.md`. That file is generated from and synced back to `storyboard.json` by `scripts/kichban.mjs`.
+  - The reviewer reads, edits and approves `kichban/<group>/<occupation>/kichban_<name>_final.md`. That file is generated from and synced back to `storyboard.json` by `scripts/kichban.mjs`.
   - Use this flow whenever someone writes a rough video idea or script without naming a pipeline step. The guide written for them is [kichban/HUONG-DAN.md](kichban/HUONG-DAN.md).
 - A new video always starts with `/career-script` (directly, or through `/lam-video`), even though the HyperFrames `/hyperframes` skill describes itself as the "mandatory entry point" for any video request. Animation work begins only after `storyboard.json` has `"status": "approved"`, and only the user can grant that approval.
 - `/career-build` hands off to `/hyperframes:faceless-explainer` with a pre-written `BRIEF.md` and a list of project overrides. Those overrides win over the HyperFrames workflow (1:1 scene→frame mapping, verbatim narration, VieNeu instead of `audio.mjs` generate).
@@ -47,7 +47,7 @@ Videos are filed by career group. The groups are listed in `content/nhom-nganh.j
 content/<slug>/storyboard.json   source of truth: scenes + research (schema = §7 + status, learningObjective, closingQuestion, hook; per scene optional ttsNarration, voice, sound)
 content/<slug>/…                 y-tuong-goc.md (the reviewer's original idea), script.md, hook-options.md, audio-manifest.json, production-log.md, qa/
 content/nhom-nganh.json          the career-group registry (folder ids, Vietnamese names, safety-sensitive flag)
-kichban/<group>/kichban_<name>_final.md   reviewer-facing script (/lam-video); edits and the approval tick sync back to storyboard.json; kichban/HUONG-DAN.md is the reviewer guide
+kichban/<group>/<occupation>/kichban_<name>_final.md   reviewer-facing script (/lam-video); edits and the approval tick sync back to storyboard.json; kichban/KE-HOACH.md is the plan of upcoming videos per group and occupation (folders <n>-<occupation> follow kichban/<group>/top-5-nganh-hot.md, khac/ for the rest); kichban/HUONG-DAN.md is the reviewer guide
 videos/<slug>/                   HyperFrames project created by `hyperframes init` (must not exist beforehand):
                                  BRIEF.md → STORYBOARD.md/SCRIPT.md → frame.md → compositions/ → renders/
 assets/                          shared library; every file has a row in assets/LICENSES.md
