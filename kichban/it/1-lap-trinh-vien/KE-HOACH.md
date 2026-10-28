@@ -25,5 +25,5 @@ Muốn làm ý tưởng nào, gõ `/lam-video` rồi dán ý tưởng đó vào.
 
 | Video | Trạng thái |
 |---|---|
-| [Lỗi trên hệ thống thật sau khi phát hành](kichban_loi-production-sau-release_final.md) | Kịch bản nháp, chờ duyệt |
+| [Lỗi trên hệ thống thật sau khi phát hành](kichban_loi-production-sau-release_final.md) | Đã có video (đang góp ý, bản xem thử 8) |
 | Lỗi khi chạy thử trên máy (dev-local-port-bug) | Đã có video |

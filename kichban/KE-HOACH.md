@@ -12,7 +12,7 @@ Nghiên cứu và nguồn: [it/top-5-nganh-hot.md](it/top-5-nganh-hot.md)
 
 | # | Nghề | Video | Trạng thái |
 |---|---|---|---|
-| 1 | [Lập trình viên phần mềm (web, mobile, back-end)](it/1-lap-trinh-vien/KE-HOACH.md) | Lỗi trên hệ thống thật sau khi phát hành; Lỗi khi chạy thử trên máy (dev-local-port-bug) | Kịch bản nháp, chờ duyệt; Đã có video |
+| 1 | [Lập trình viên phần mềm (web, mobile, back-end)](it/1-lap-trinh-vien/KE-HOACH.md) | Lỗi trên hệ thống thật sau khi phát hành; Lỗi khi chạy thử trên máy (dev-local-port-bug) | Đã có video (đang góp ý, bản xem thử 8); Đã có video |
 | 2 | [Kỹ sư trí tuệ nhân tạo (AI Engineer)](it/2-ky-su-ai/KE-HOACH.md) | 1 ý tưởng | Ý tưởng |
 | 3 | [Chuyên viên an ninh mạng](it/3-an-ninh-mang/KE-HOACH.md) | 1 ý tưởng | Ý tưởng |
 | 4 | [Chuyên viên phân tích dữ liệu / Kỹ sư dữ liệu](it/4-du-lieu/KE-HOACH.md) | 1 ý tưởng | Ý tưởng |
