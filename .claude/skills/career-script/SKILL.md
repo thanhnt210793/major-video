@@ -32,7 +32,7 @@ One career, one concrete situation that can be shown in about 45 s. If the reque
 
 ## 3. Write the storyboard
 
-Fill the seven template scenes (0–4 hook, 4–11 POV action starts, 11–19 observe the problem, 19–28 analyze/fix, 28–37 result/check, 37–42 takeaway, 42–45 question). Timings may shift, but scenes must stay contiguous and total 30–60 s.
+Fill the seven template scenes (0–4 hook, 4–11 POV action starts, 11–19 observe the problem, 19–28 analyze/fix, 28–37 result/check, 37–42 takeaway, 42–45 question). Timings may shift, but scenes must stay contiguous and total 30–70 s.
 
 Write scenes 2..N first, then scene 1 last with the `career-hook` skill (load it with the Skill tool). The hook is drawn from the story's strongest moment. In draft mode the skill applies its top candidate, adds the `hook` object to the storyboard, and writes the runner-ups to `content/<slug>/hook-options.md`.
 

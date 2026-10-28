@@ -109,7 +109,7 @@ Load `/hyperframes:faceless-explainer` and follow its steps. The workflow finds 
     - Narration starts within ~0.2 s, with one SFX accent.
 
     Before the preview approval, run `npx hyperframes snapshot --at 0,0.5,1,2 --no-end --describe false` and check those four frames against scene 1's `visual`.
-  - `audio.mjs sync-durations` may lengthen frames to fit the real narration. If the total leaves 30–60 s, or drifts more than ~1 s from `durationSeconds`, tighten the narration via `/career-script`. Then update the timings in storyboard.json so it matches the build.
+  - `audio.mjs sync-durations` may lengthen frames to fit the real narration. If the total leaves 30–70 s, or drifts more than ~1 s from `durationSeconds`, tighten the narration via `/career-script`. Then update the timings in storyboard.json so it matches the build.
 - **Step 6 (render).** Render only after the user approves the Studio preview. Name outputs `renders/<name>-<YYYYMMDD>-<n>.mp4` (`<name>` is the slug without its group) so each QA report maps to one render. `--quality draft` is for iteration.
 
 ## 4. After the render

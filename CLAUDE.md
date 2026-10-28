@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this project is
 
-A semi-automated pipeline for 30–60 s vertical Vietnamese career-guidance videos ("Career POV") for TikTok and YouTube Shorts, aimed at secondary-school students (THCS/THPT). The full plan, in Vietnamese, is [ai-career-pov-2d-pipeline.md](ai-career-pov-2d-pipeline.md). Section numbers like "§9" below refer to it.
+A semi-automated pipeline for 30–70 s vertical Vietnamese career-guidance videos ("Career POV") for TikTok and YouTube Shorts, aimed at secondary-school students (THCS/THPT). The full plan, in Vietnamese, is [ai-career-pov-2d-pipeline.md](ai-career-pov-2d-pipeline.md). Section numbers like "§9" below refer to it.
 
 The stack:
 - **HyperFrames** (HTML/CSS/SVG + GSAP → MP4; plugin `hyperframes@claude-plugins-official`) renders the video.
@@ -55,7 +55,7 @@ assets/                          shared library; every file has a row in assets/
   2d/                            shared SVG library (backgrounds, devices, hands, characters, props, icons); README.md lists files, layer recipes and animatable ids; preview.html shows them
   fonts/be-vietnam-pro/          local Vietnamese font (OFL); HyperFrames lint needs a local @font-face
   voice-samples/                 one test sentence in each of the 25 VieNeu presets, for choosing the narrator (git-ignored)
-  audio/music/  audio/sfx/       license-checked audio; sfx/ holds CC0 effects from Freesound and Kenney named <cue>--<source>-<id> (music/ is still empty)
+  audio/music/  audio/sfx/       license-checked audio (CC0 from Freesound, Kenney, OpenGameArt) named <cue>--<source>-<id>; music/ holds tension, comic-suspense and relief beds
 scripts/validate-storyboard.mjs  schema and content-rule validator (also the PostToolUse hook on any storyboard.json)
 scripts/kichban.mjs              storyboard.json ⇄ kichban md: render | diff | apply, plus open (a repo .md in VS Code, an .mp4 in the default player)
 scripts/tts_vieneu.py            storyboard.json → videos/<slug>/assets/voice/NN.wav (NN = 1-based scene order = frame number)
@@ -110,7 +110,7 @@ The HyperFrames skills come from the plugin, and `HYPERFRAMES_SKIP_SKILLS=1` is 
 
 ## Style and audio conventions
 
-- The video is 1080×1920 at 30 fps, 30–60 s (the template is 45 s with 7 scenes). Each scene carries one idea, and the hook lands within the first 1–3 s. Frame 0 is fully composed, with no fade from black, and the hook moment is readable by 1 s. The patterns and rules are in `.claude/skills/career-hook/hook-patterns.md`.
+- The video is 1080×1920 at 30 fps, 30–70 s (the template is 45 s with 7 scenes; the channel owner raised the cap from 60 s on 2026-10-27, since Shorts now allow up to 3 minutes, but shorter still keeps more viewers to the end). Each scene carries one idea, and the hook lands within the first 1–3 s. Frame 0 is fully composed, with no fade from black, and the hook moment is readable by 1 s. The patterns and rules are in `.claude/skills/career-hook/hook-patterns.md`.
 - The visuals are 2D vector POV:
   - Illustrated hands in the foreground, and job UI (editors, dashboards, checklists).
   - Subtle parallax, push-ins, cursor movement and typing.

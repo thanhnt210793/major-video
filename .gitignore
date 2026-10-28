@@ -22,3 +22,6 @@ videos/*/*/renders/
 # Draft/preview audio (regenerable)
 content/*/*/audio/**/*.wav
 content/*/*/audio/**/*.mp4
+
+# Mixed music beds: each video's tools/music-bed.mjs rebuilds them from assets/audio/music
+videos/*/*/assets/bgm/

@@ -17,7 +17,7 @@ The MP4 path and its `content/<slug>/storyboard.json`. Write all outputs under `
 ffprobe -v error -show_entries stream=codec_type,codec_name,width,height,r_frame_rate:format=duration -of json "<mp4>"
 ```
 
-Expect: video 1080×1920, 30 fps, duration 30–60 s and within ~0.1 s of the storyboard's `durationSeconds`, one audio stream.
+Expect: video 1080×1920, 30 fps, duration 30–70 s and within ~0.1 s of the storyboard's `durationSeconds`, one audio stream.
 
 ## 2. Visual scan
 

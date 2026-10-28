@@ -51,7 +51,7 @@ node scripts/build-audio-meta.mjs --storyboard content/<slug>/storyboard.json --
 - Word timings come from `npx hyperframes transcribe` (whisper.cpp, `--language vi`); caption text always comes from `narration`.
 - The default model is `large-v3-turbo`, about 30 s per scene on this machine. `--model small` is faster, but it mishears Vietnamese more often (in testing it heard "tìm" as "tiêm"), which produces false MISMATCH flags.
 - **MISMATCH** lines mean the audio doesn't say the script. VieNeu can add words, especially after English (issue #213). Listen to those frames and regenerate them with `--scene`.
-- `voice … > storyboard …` means the narration is longer than its scene. `sync-durations` will stretch that frame. Keep the total within 30–60 s (see `/career-build`).
+- `voice … > storyboard …` means the narration is longer than its scene. `sync-durations` will stretch that frame. Keep the total within 30–70 s (see `/career-build`).
 - Music must stay under the narration. For ducking or a voiceover carve, use `/hyperframes:hyperframes-audio` rather than just lowering the volume.
 
 ## 5. Audio manifest — `content/<slug>/audio-manifest.json`

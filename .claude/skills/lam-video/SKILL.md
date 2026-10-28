@@ -84,7 +84,7 @@ If the input names a video, a kichban file, an occupation or an idea from `kichb
 
 Judge the idea against the channel:
 - one career and one concrete situation
-- 30–60 s
+- 30–70 s
 - a THCS/THPT audience
 - a first-person POV
 - facts kept separate from fiction

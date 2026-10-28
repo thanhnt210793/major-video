@@ -18,7 +18,7 @@ const CONTENT = resolve(dirname(fileURLToPath(import.meta.url)), "..", "content"
 const RESEARCH_STATUSES = ["verified", "simulation", "unverified"];
 // draft → approved (human approved script; build may start) → published
 const STORYBOARD_STATUSES = ["draft", "approved", "published"];
-const SPEC = { fps: 30, width: 1080, height: 1920, minSeconds: 30, maxSeconds: 60, hookMaxSeconds: 4 };
+const SPEC = { fps: 30, width: 1080, height: 1920, minSeconds: 30, maxSeconds: 70, hookMaxSeconds: 4 };
 const EPS = 1e-6;
 // Pattern ids from .claude/skills/career-hook/hook-patterns.md (career-log compares retention by pattern).
 const HOOK_PATTERNS = [
