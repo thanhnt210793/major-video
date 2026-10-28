@@ -1,8 +1,8 @@
 {
   "title": "POV: Lỗi trên hệ thống thật sau khi phát hành — và người gây lỗi là chính mình",
-  "status": "draft",
+  "status": "approved",
   "language": "vi-VN",
-  "durationSeconds": 59.2,
+  "durationSeconds": 60.6,
   "fps": 30,
   "width": 1080,
   "height": 1920,
@@ -10,21 +10,21 @@
   "closingQuestion": "Nếu là bạn, bạn sẽ nhận lỗi ngay hay đợi sửa xong mới nói?",
   "format": "POV một nghề (lập trình viên) tại văn phòng, dùng lại bối cảnh bàn làm việc và chị Mai của video it/dev-local-port-bug. Giọng hài hước nhẹ, dở khóc dở cười.",
   "hook": {
-    "pattern": "oddly-specific",
-    "promise": "Vì sao bỏ trống ô mã giảm giá lại làm khách không thanh toán được — và ai đã gây ra lỗi đó?",
+    "pattern": "in-medias-res",
+    "promise": "Chuyện gì khiến hàng trăm khách không thanh toán được ngay sau khi phát hành — và ai đã gây ra?",
     "payoffSceneId": "discover",
     "alternatives": [
-      "curiosity-question: Lỗi do chính mình viết… nên nói ngay hay lặng lẽ sửa?",
-      "countdown: Còn mười lăm phút là về… thì sếp gọi."
+      "curiosity-question: Một dòng code… làm cả công ty náo loạn!",
+      "oddly-specific: Không nhập mã giảm giá… là không thanh toán được à?"
     ]
   },
   "scenes": [
     {
       "id": "hook",
       "start": 0,
-      "duration": 3.4,
-      "visual": "Khung đầu tiên (0,0 s): màn hình máy tính đã mở trang thanh toán của một ứng dụng bán hàng chung chung; ô \"Mã giảm giá\" để trống được khoanh đỏ, thông báo đỏ lớn \"Thanh toán thất bại\" đã hiện; hai tay POV đặt trên bàn phím; nhãn \"Thứ Sáu · 16:45\" đã có sẵn. 0,3–0,9 s: máy quay đẩy nhẹ vào ô mã trống và thông báo đỏ (chuyển động duy nhất); thông báo đỏ nhấp sáng một lần cùng tiếng báo lỗi.",
-      "narration": "Không nhập mã giảm giá… là không thanh toán được à?",
+      "duration": 3.6,
+      "visual": "Khung đầu tiên (0,0 s): màn hình máy tính đỏ rực. Trang thanh toán của sàn mua sắm hư cấu \"Giỏ Hời\" giữa đợt sale: banner vàng \"SIÊU SALE THỨ SÁU · GIẢM ĐẾN 50%\" với đồng hồ đếm ngược đang chạy, món hàng \"Tai nghe không dây\" gắn nhãn \"-50%\", ô \"Mã giảm giá\" để trống, và thông báo đỏ lớn \"Thanh toán thất bại\", và các thông báo \"Thanh toán thất bại\" khác đang bật lên chồng lên nhau. Viền đỏ quanh khung hình nhấp nháy như đèn báo động. Ô đếm lớn giữa màn hình \"Đơn thanh toán lỗi\" đã chạy (47 → 120 → 200+). Nhãn \"Thứ Sáu · 16:45\" có sẵn. 0,0–1,0 s: máy quay giật mạnh một nhịp cùng tiếng \"bùm\", rồi đẩy nhanh vào ô đếm. Cuối cảnh, ô đếm thu nhỏ bay về góc trên bên phải.",
+      "narration": "Mười phút sau khi phát hành… hàng trăm khách không thanh toán được!",
       "onScreenText": "Thứ Sáu · 16:45",
       "assets": [
         "desk-office-bg.svg",
@@ -33,21 +33,23 @@
         "pov-hands-keyboard.svg"
       ],
       "sfx": [
-        "error-beep",
-        "tension-hit"
+        "alarm",
+        "braam",
+        "glitch",
+        "error-beep"
       ],
       "factIds": [
         "fact-009"
       ],
-      "sound": "Tiếng báo lỗi \"bíp bíp\" ngắn, rõ đúng lúc thông báo đỏ nhấp sáng, kèm một tiếng \"thụp\" trầm như tim hẫng một nhịp."
+      "sound": "Còi báo động vang ngay từ giây đầu, một tiếng \"bùm\" trầm thật lớn, tiếng nhiễu sóng khi thông báo đỏ bật lên; nhạc nền căng thẳng bắt đầu từ đây."
     },
     {
       "id": "escalate",
-      "start": 3.4,
-      "duration": 5.6,
-      "visual": "Màn hình chat nhóm trên máy tính: tin nhắn từ 10 phút trước \"Đã phát hành 5 tính năng mới\" kèm pháo giấy; ngay dưới, tin nhắn mới dồn lên liên tục, số tin chưa đọc nhảy 3 → 12 → 27; tin cuối của sếp: \"Khách hàng lớn báo không thanh toán được! Họp gấp, cả nhóm vào ngay.\"",
-      "narration": "Mười phút trước, nhóm mình vừa phát hành năm tính năng mới. Giờ thì khách hàng lớn đã báo lên tận sếp.",
-      "onScreenText": "Mới phát hành được 10 phút",
+      "start": 3.6,
+      "duration": 3.6,
+      "visual": "Màn hình chat nhóm trên máy tính: tin nhắn lúc 16:35 \"Đã phát hành 5 tính năng mới cho Siêu Sale Thứ Sáu\" kèm pháo giấy; ngay dưới, thẻ đỏ \"Cảnh báo tự động: thanh toán lỗi tăng vọt\" bật lên, rồi thu nhỏ bay vào ô đỏ \"Đơn thanh toán lỗi\" ở góc trên bên phải (ô đỏ lúc này 212 và tiếp tục tăng); tin nhắn mới dồn lên liên tục, tin cuối của sếp: \"Khách hàng lớn báo không thanh toán được!\" Từ cuối cảnh 1 đến đầu cảnh 7 (đoạn tìm lỗi), ô đỏ luôn nằm ở góc trên bên phải, trong vùng an toàn (dưới thanh trên cùng của app, tránh cột nút bên phải); số chỉ tăng đều, không nhấp nháy, không nảy, không phóng to.",
+      "narration": "Vừa phát hành năm tính năng, khách hàng lớn đã báo lên tận sếp.",
+      "onScreenText": "10 phút sau khi phát hành",
       "assets": [
         "desk-office-bg.svg",
         "monitor.svg",
@@ -55,17 +57,20 @@
         "pov-hands-keyboard.svg"
       ],
       "sfx": [
+        "error-beep",
         "notification"
       ],
       "factIds": [
+        "fact-010",
         "fact-009"
       ],
-      "sound": "Tiếng tin nhắn \"ting ting\" dồn dập, mỗi lúc một nhanh hơn."
+      "sound": "Tiếng cảnh báo \"bíp bíp\" khi thẻ đỏ bật lên, rồi tiếng tin nhắn \"ting ting\" dồn dập, mỗi lúc một nhanh hơn.",
+      "ttsNarration": "Vừa phát hành năm tính năng… khách hàng lớn đã báo lên tận sếp!"
     },
     {
       "id": "meeting",
-      "start": 9,
-      "duration": 4.8,
+      "start": 7.2,
+      "duration": 3.6,
       "assets": [
         "monitor.svg",
         "video-call.svg",
@@ -80,15 +85,15 @@
       "factIds": [
         "fact-009"
       ],
-      "narration": "Sếp gọi họp gấp. Cả nhóm im phăng phắc, ly trà sữa còn chưa kịp uống.",
+      "narration": "Cả nhóm im phăng phắc, ly trà sữa còn chưa kịp uống.",
       "onScreenText": "17:00 · Họp gấp",
-      "visual": "Cuộc họp online gấp hiện trên màn hình: khung lớn của sếp đang họp từ xa (nhãn \"Sếp\", mặt nghiêm); khung nhỏ là cả nhóm — mình, chị Mai, anh Quân — ngồi chung bàn, vào họp bằng một máy; đồng hồ góc màn hình 17:00. Trên bàn, ly trà sữa đầy đá, ống hút còn nguyên vỏ. Máy quay đẩy chậm vào khung của sếp.",
+      "visual": "Cuộc họp online gấp hiện trên màn hình: khung lớn của sếp đang họp từ xa (nhãn \"Sếp\", mặt nghiêm); khung nhỏ là cả nhóm — mình, chị Mai, anh Quân — ngồi chung bàn, vào họp bằng một máy; đồng hồ góc màn hình 17:00. Trên bàn, ly trà sữa đầy đá, ống hút còn nguyên vỏ; đến chữ \"ly trà sữa\", tay POV với tới ly, khựng lại giữa chừng rồi rụt về, đúng lúc máy quay đẩy chậm vào khung của sếp. Ô đỏ góc màn hình tăng đều lên 300.",
       "sound": "Tiếng tin nhắn tắt hẳn; giọng người kể chậm lại một chút, hơi vang như trong phòng họp; dưới giọng là tiếng đồng hồ tích tắc, tiếng tim đập rõ dần và một tiếng nền trầm, kéo dài, căng thẳng."
     },
     {
       "id": "boss",
-      "start": 13.8,
-      "duration": 3.6,
+      "start": 10.8,
+      "duration": 5.3,
       "assets": [
         "monitor.svg",
         "video-call.svg",
@@ -102,40 +107,97 @@
       "factIds": [
         "fact-009"
       ],
-      "narration": "“Khách lớn đang chờ đấy. Bao giờ thì xong?”",
+      "narration": "“Khách lớn đang chờ đấy. Cho em mười phút xem lại code vừa gộp!”",
       "voice": "Thiền Tâm Đức",
       "onScreenText": "Tích tắc… tích tắc…",
-      "visual": "Khung của sếp phóng to gần kín màn hình, sếp nhìn thẳng vào máy quay, giọng điềm tĩnh; nhãn \"Sếp\" vẫn rõ trên khung, biểu tượng micro của sếp bật, có vòng sáng \"đang nói\"; hai tay POV siết nhẹ mép bàn. Chữ \"Tích tắc… tích tắc…\" nhỏ, cạnh biểu tượng đồng hồ, không dùng màu báo lỗi, không che phụ đề hay nhãn \"Sếp\".",
-      "sound": "Giọng sếp (giọng nam trầm, khác giọng người kể), điềm tĩnh, chậm rãi, nghiêm, nghe như qua loa máy tính vì đang họp online; hỏi xong là một nhịp im lặng, chỉ còn tiếng tích tắc, tiếng tim đập và một tiếng \"thụp\" trầm.",
-      "ttsNarration": "Khách lớn đang chờ đấy. Bao giờ thì xong?"
+      "visual": "Khung của sếp phóng to gần kín màn hình, sếp nhìn thẳng vào máy quay, giọng điềm tĩnh mà dứt khoát; nhãn \"Sếp\" vẫn rõ trên khung, biểu tượng micro của sếp bật, có vòng sáng \"đang nói\"; hai tay POV siết nhẹ mép bàn. Chữ \"Tích tắc… tích tắc…\" nhỏ, cạnh biểu tượng đồng hồ, đặt ở phía đối diện ô đỏ, không dùng màu báo lỗi, không che phụ đề hay nhãn \"Sếp\". Đến chữ \"mười phút\", máy quay đẩy nhanh vào khung sếp và ngay dưới chữ \"Tích tắc…\" hiện một ô nhỏ màu cam \"Hạn: 10 phút\" (đồng hồ trên màn hình đang là 17:01). Ô đỏ góc màn hình tăng đều lên 340 (không nảy).",
+      "sound": "Giọng sếp (giọng nam trầm, khác giọng người kể), điềm tĩnh, chậm rãi, nghiêm, nghe như qua loa máy tính vì đang họp online; nói xong là một nhịp im lặng, chỉ còn tiếng tích tắc, tiếng tim đập và một tiếng \"thụp\" trầm.",
+      "ttsNarration": "Khách lớn đang chờ đấy. Cho em mười phút, xem lại code vừa gộp!"
+    },
+    {
+      "id": "mitigate",
+      "start": 16.1,
+      "duration": 5.2,
+      "visual": "Anh Quân (nhãn tên \"Anh Quân · trưởng nhóm\") nói vào cuộc họp, giơ tay chốt. Đến câu \"Sửa lỗi tính sau!\", thanh \"Đang quay về bản cũ…\" bật lên lớn ở giữa màn hình cùng chữ \"Ưu tiên 1: khách dùng lại được\"; cuối cảnh, thanh thu nhỏ về nằm ngay dưới số trong ô đỏ ở góc (lúc này 380) và vẫn chạy chậm, để người xem thấy việc quay về bản cũ đang diễn ra song song với các cảnh sau.",
+      "narration": "“Cứ quay về bản cũ đã, để khách thanh toán lại được ngay. Sửa lỗi tính sau!”",
+      "ttsNarration": "Cứ quay về bản cũ đã, để khách thanh toán lại được ngay. Sửa lỗi tính sau!",
+      "onScreenText": "Ưu tiên 1: khách dùng lại được",
+      "assets": [
+        "monitor.svg",
+        "team-lead.svg"
+      ],
+      "sfx": [
+        "whoosh"
+      ],
+      "factIds": [
+        "fact-001",
+        "fact-002",
+        "fact-009"
+      ],
+      "sound": "Giọng anh Quân (giọng nam miền Nam, khác người kể và sếp), dứt khoát; tiếng \"vút\" khi thanh \"Đang quay về bản cũ…\" bắt đầu chạy; tiếng tích tắc vẫn còn nhưng nhỏ dần.",
+      "voice": "Thái Sơn"
     },
     {
       "id": "works-locally",
-      "start": 17.4,
-      "duration": 3,
-      "visual": "Màn hình chia đôi: bên trái \"Máy của mình\" — trang thanh toán bỏ trống ô mã giảm giá vẫn báo \"Thanh toán thành công\" kèm dấu tick xanh (vẽ bằng SVG); bên phải \"Hệ thống thật\" — cùng thao tác báo đỏ \"Thanh toán thất bại\" kèm dấu X đỏ (vẽ bằng SVG). Hai tay POV giơ lên kiểu \"ơ kìa\".",
-      "narration": "Ơ kìa… trên máy mình vẫn chạy ngon lành mà!",
+      "start": 21.3,
+      "duration": 6,
+      "visual": "Ba nhịp liền nhau. (1) Câu \"Ơ kìa…\": màn hình chia đôi, bên trái nhãn \"Máy của mình\" và một dấu tick xanh lớn, bên phải nhãn \"Hệ thống thật\" và một dấu X đỏ lớn (cả hai vẽ bằng SVG), cùng là trang thanh toán Giỏ Hời bỏ trống ô mã giảm giá; hai tay POV giơ lên kiểu \"ơ kìa\". (2) Câu \"Đoạn này hôm trước mình làm đúng rồi mà nhỉ?\": trình soạn thảo mở đoạn code thanh toán, tay POV cuộn chậm, một dấu \"?\" nhỏ hiện cạnh con trỏ. Chữ \"Cùng thao tác, khác kết quả\" hiện nhỏ phía trên từ nhịp (1) đến hết nhịp (2), tắt khi máy quay liếc sang bàn bên. (3) Câu \"Hay ai sửa đè lên?\": máy quay liếc ngang sang bàn bên: chị Mai đang chăm chú bấm điện thoại kiểm thử, anh Quân đang nhìn thanh quay về bản cũ, cả hai không hay biết gì (không tô đỏ, không có tiếng nhạc doạ nào gắn với họ); rồi liếc về màn hình. Ô góc màn hình nhỏ, mờ (khoảng 70%): số chạy 380 → 410, thanh quay về bản cũ chạy được gần một nửa.",
+      "narration": "Ơ kìa, trên máy mình vẫn chạy ngon lành… Đoạn này hôm trước mình làm đúng rồi mà nhỉ? Hay ai sửa đè lên?",
       "onScreenText": "Cùng thao tác, khác kết quả",
       "assets": [
         "monitor.svg",
         "pov-hands-keyboard.svg"
       ],
       "sfx": [
-        "comedic-spring"
+        "comedic-spring",
+        "scroll-ticks",
+        "whoosh"
       ],
       "factIds": [
         "fact-007",
         "fact-009"
       ],
-      "sound": "Tiếng \"tưng\" như lò xo bật khi hai tay giơ lên \"ơ kìa\"; nền căng thẳng tạm lắng."
+      "sound": "Đây là đoạn tự nói một mình: giọng người kể đọc thường, nhanh hơn cảnh họp một chút, như đang nghĩ thầm (gần micro, nhỏ hơn một chút; câu \"Hay ai sửa đè lên?\" khẽ nhất). Tiếng \"tưng\" như lò xo bật ngay trước câu \"Ơ kìa\"; tiếng cuộn trang lách tách khi đọc code; một tiếng \"vút\" nhỏ khi máy quay liếc sang bàn bên, kiểu nghi ngờ trong phim hài; nền căng thẳng tạm lắng.",
+      "ttsNarration": "Ơ kìa! Trên máy mình vẫn chạy ngon lành… Đoạn này hôm trước mình làm đúng rồi mà nhỉ? Hay ai sửa đè lên?"
+    },
+    {
+      "id": "hunt",
+      "start": 27.3,
+      "duration": 6.5,
+      "narration": "Bản cũ chạy lại rồi, giờ đi tìm lỗi. Lục từng yêu cầu gộp code, dò lịch sử… mười phút thành nửa tiếng, vẫn bí!",
+      "ttsNarration": "Bản cũ chạy lại rồi! Giờ đi tìm lỗi. Lục từng yêu cầu gộp code, dò lịch sử… mười phút thành nửa tiếng, vẫn bí!",
+      "onScreenText": "17:05 → 17:35 · vẫn chưa ra",
+      "visual": "Đoạn cắt nhanh trên màn hình máy tính. (1) 17:05: ô đỏ góc màn hình chạy nốt lên 463 thì dừng, chuyển xám, hiện dấu tick xanh vẽ bằng SVG; một thông báo nhỏ \"Đã quay về bản cũ · khách thanh toán lại được\"; rồi ô đỏ ẩn đi. (2) Danh sách \"Yêu cầu gộp code (Pull request)\" #231–#235 của năm tính năng cho Siêu Sale, mỗi mục có nhãn \"Đã gộp\" (không hiện tên người viết); con trỏ bấm lần lượt từng mục. (3) Màn hình xem thay đổi: các dòng đỏ, xanh lướt nhanh, \"+128 −46\". (4) Đến chữ \"mười phút\": ô tìm kiếm gõ \"maGiamGia\" ra \"37 kết quả\"; đồng hồ trên màn hình chạm 17:11 và ô cam \"Hạn: 10 phút\" của sếp hiện lại phía trên màn hình, không che ô tìm kiếm. (5) Đến chữ \"nửa tiếng\": ô hạn bị gạch ngang và chuyển đỏ, đồng hồ nhảy vùn vụt 17:20 → 17:28 → 17:35, danh sách kết quả lướt nhanh; ly trà sữa bên cạnh tan dần đá suốt cảnh. (6) Đến chữ \"vẫn bí\": hai tay POV đưa lên che mặt, khung hình tối đi một nhịp; rồi bỏ tay xuống, một kết quả tìm kiếm sáng lên, dẫn sang cảnh sau.",
+      "assets": [
+        "monitor.svg",
+        "pov-hands-keyboard.svg",
+        "milk-tea.svg"
+      ],
+      "sfx": [
+        "success-chime",
+        "typing-fast",
+        "scroll-ticks",
+        "whoosh",
+        "clock-tick",
+        "pen-strike",
+        "relief-sigh"
+      ],
+      "factIds": [
+        "fact-001",
+        "fact-002",
+        "fact-011",
+        "fact-005",
+        "fact-009"
+      ],
+      "sound": "Tiếng chuông nhẹ khi bộ đếm dừng; nhạc rón rén tiếp tục và nhanh dần; tiếng gõ phím dồn dập, tiếng cuộn trang, tiếng \"vút\" mỗi lần đổi màn hình, tiếng đồng hồ tích tắc nhanh từ chữ \"mười phút\"; tiếng gạch bút khi ô hạn bị gạch ở chữ \"nửa tiếng\"; đến chữ \"vẫn bí\" nhạc tắt phựt, một tiếng thở dài."
     },
     {
       "id": "discover",
-      "start": 20.4,
-      "duration": 6.2,
-      "visual": "Trình soạn thảo mở phần xem lịch sử thay đổi theo từng dòng; danh sách các dòng sửa trong tuần lướt qua rồi dừng ở dòng `const ma = maGiamGia.trim();` được tô đỏ. Nhãn lớn bằng phông của kênh chỉ vào dòng đó: \"Ô mã để trống → dòng này báo lỗi\". Dòng log nhỏ, mờ bên dưới: `TypeError: Cannot read properties of undefined (reading 'trim')`. Hỏi xong \"Ai viết dòng này vậy?\" thì con trỏ chuột dừng ở chú thích tên người viết, chú thích phóng to: \"minh · thứ Ba\" (chữ \"minh\" dùng phông đơn cách như tên đăng nhập); chữ \"Người viết: minh\" chỉ hiện cùng lúc đó, không hiện sớm hơn. Đến chữ \"Trời ơi\", máy quay giật nhẹ một nhịp, giọt mồ hôi vẽ bằng SVG lăn xuống cạnh tên.",
-      "narration": "Dò lại từng dòng đã sửa trong tuần… Ai viết dòng này vậy? Trời ơi… là mình!",
-      "onScreenText": "Người viết: minh",
+      "start": 33.8,
+      "duration": 4.4,
+      "visual": "Màn hình xem lịch sử thay đổi theo từng dòng, có một cột tên người viết bên trái (tên đăng nhập lan, tuan, hoa…, chữ nhỏ; không có tên mai hay quan), dừng ở dòng `const ma = maGiamGia.trim();` được tô đỏ. Dòng log nhỏ, mờ bên dưới: `TypeError: Cannot read properties of undefined (reading 'trim')`. Hỏi xong \"Ai viết dòng này vậy?\" thì con trỏ chuột dừng ở chú thích tên người viết, chú thích phóng to: \"minh · thứ Ba\" (chữ \"minh\" dùng phông đơn cách như tên đăng nhập). Đến chữ \"Trời ơi\", máy quay giật nhẹ một nhịp, giọt mồ hôi vẽ bằng SVG lăn xuống cạnh tên.",
+      "narration": "Ai viết dòng này vậy? Trời ơi… là mình!",
+      "onScreenText": "Ô mã để trống → dòng này báo lỗi",
       "assets": [
         "monitor.svg",
         "code-editor.svg"
@@ -151,21 +213,20 @@
         "fact-006",
         "fact-009"
       ],
-      "sound": "Tiếng cuộn trang lách tách; hỏi xong \"Ai viết dòng này vậy?\" thì giọng ngắt một nhịp, tên \"minh\" phóng to cùng tiếng đĩa nhạc rít \"két\" rồi khựng lại; câu \"Trời ơi… là mình!\" có tiếng vang nhẹ như đang tự nói trong đầu; nói xong mới vang đoạn nhạc ngắn \"tèn tèn ten\" kiểu phim hài, rồi tiếng tim đập dồn dập dẫn sang cảnh sau."
+      "sound": "Tiếng dồn nén dâng lên; hỏi xong \"Ai viết dòng này vậy?\" thì giọng ngắt một nhịp, tên \"minh\" phóng to cùng tiếng đĩa nhạc rít \"két\" rồi khựng lại; câu \"Trời ơi… là mình!\" có tiếng vang nhẹ như đang tự nói trong đầu; nói xong mới vang đoạn nhạc ngắn \"tèn tèn ten\" kiểu phim hài, rồi tiếng tim đập dồn dập dẫn sang cảnh sau."
     },
     {
       "id": "own-it",
-      "start": 26.6,
-      "duration": 5,
-      "visual": "Xoay ghế sang bàn bên: chị Mai (nhãn tên \"Chị Mai · kiểm thử\") và anh Quân đứng cạnh (nhãn tên \"Anh Quân · trưởng nhóm\") quay sang; bong bóng thoại từ phía người kể: \"Lỗi do em, em đang xem rồi ạ!\". Hai tay POV hơi run.",
-      "narration": "Tim đập thình thịch, nhưng mình báo ngay: “Mọi người ơi, lỗi do em, em đang xem rồi ạ.”",
-      "ttsNarration": "Tim đập thình thịch, nhưng mình báo ngay. Mọi người ơi, lỗi do em, em đang xem rồi ạ.",
+      "start": 38.2,
+      "duration": 3.4,
+      "visual": "Máy quay rời chữ \"minh · thứ Ba\", xoay ghế ngay sang bàn bên: chị Mai và anh Quân (đứng cạnh) quay sang nhìn. Không có bong bóng thoại, vì phụ đề đã mang câu nhận lỗi. Hai tay POV hơi run. Nói xong câu nhận lỗi: anh Quân chỉ gật đầu một cái, bình thản; chị Mai giơ sẵn điện thoại kiểm thử lên. Chữ \"Báo ngay, không giấu\" chỉ hiện ở khoảng 1 giây cuối.",
+      "narration": "Mình báo ngay: “Lỗi do em, em tìm ra rồi ạ!”",
+      "ttsNarration": "Mình báo ngay. Lỗi do em, em tìm ra rồi ạ!",
       "onScreenText": "Báo ngay, không giấu",
       "assets": [
         "desk-office-bg.svg",
         "colleague.svg",
-        "team-lead.svg",
-        "speech-bubble.svg"
+        "team-lead.svg"
       ],
       "sfx": [
         "heartbeat",
@@ -173,40 +234,17 @@
       ],
       "factIds": [
         "fact-008",
+        "fact-004",
         "fact-009"
       ],
-      "sound": "Giọng người kể chậm lại một chút, căng như ở cảnh họp; tiếng tim đập thình thịch rõ nhất cả video nhưng luôn nhỏ hơn giọng đọc, tiếng ghế xoay \"cót két\"; nói xong câu nhận lỗi thì tiếng tim chậm lại."
-    },
-    {
-      "id": "mitigate",
-      "start": 31.6,
-      "duration": 5.6,
-      "visual": "Anh Quân (nhãn tên \"Anh Quân · trưởng nhóm\" hiện cạnh anh suốt lúc anh nói) gật đầu, giơ tay chốt; màn hình hiện thanh tiến trình \"Quay về bản cũ\" chạy đầy, rồi biểu đồ đơn thanh toán lỗi từ đỉnh đỏ rơi về 0, nhãn xanh \"Khách thanh toán lại được\" kèm dấu tick vẽ bằng SVG.",
-      "narration": "“Cứ quay về bản cũ đã, để khách thanh toán lại được ngay. Sửa lỗi tính sau!”",
-      "ttsNarration": "Cứ quay về bản cũ đã, để khách thanh toán lại được ngay. Sửa lỗi tính sau!",
-      "onScreenText": "Ưu tiên 1: khách dùng lại được",
-      "assets": [
-        "monitor.svg",
-        "team-lead.svg"
-      ],
-      "sfx": [
-        "whoosh",
-        "success-chime"
-      ],
-      "factIds": [
-        "fact-001",
-        "fact-002",
-        "fact-009"
-      ],
-      "sound": "Giọng anh Quân (giọng nam miền Nam, khác người kể và sếp), dứt khoát; tiếng \"vút\" khi thanh tiến trình chạy, tiếng chuông nhẹ khi biểu đồ lỗi rơi về 0; nền căng thẳng nhỏ dần rồi tắt.",
-      "voice": "Thái Sơn"
+      "sound": "Giọng người kể dứt khoát, có vang phòng nhẹ; tiếng ghế xoay \"cót két\" ngay đầu cảnh; tiếng tim đập từ cảnh trước vẫn còn, luôn nhỏ hơn giọng đọc, và tắt ngang đúng lúc anh Quân gật đầu."
     },
     {
       "id": "fix-check",
-      "start": 37.2,
-      "duration": 4.2,
-      "visual": "Quay về màn hình: dòng code được sửa thành `const ma = (maGiamGia ?? \"\").trim();`; rồi xoay sang chị Mai đang thử lại trên điện thoại kiểm thử (nhãn nhỏ góc màn hình điện thoại: \"Bản thử · giống hệ thống thật\"): ô mã giảm giá để trống, ngón tay bấm \"Thanh toán\", vòng xoay chờ quay.",
-      "narration": "Mình sửa xong, nhờ chị Mai thử lại đúng trường hợp không nhập mã…",
+      "start": 41.6,
+      "duration": 3.2,
+      "visual": "Xoay ghế sang chị Mai; lướt qua màn hình chính, dòng đã sửa `const ma = (maGiamGia ?? \"\").trim();` sáng xanh khoảng 0,5 s (không quay cảnh gõ phím). Chị Mai thử ứng dụng Giỏ Hời trên điện thoại kiểm thử (nhãn nhỏ \"Bản thử · giống hệ thống thật\"): ô mã để trống, ngón tay bấm \"Thanh toán\", vòng xoay chờ quay. Chữ \"Thử lại với ô mã để trống\" chỉ hiện từ lúc chị Mai cầm máy.",
+      "narration": "Mình sửa xong, nhờ chị Mai thử lại…",
       "onScreenText": "Thử lại với ô mã để trống",
       "assets": [
         "monitor.svg",
@@ -215,18 +253,19 @@
         "phone.svg"
       ],
       "sfx": [
-        "keyboard-typing",
+        "success-chime",
         "tap"
       ],
       "factIds": [
         "fact-009"
       ],
-      "sound": "Tiếng gõ phím lách cách, tiếng chạm màn hình; lúc vòng xoay chờ, mọi âm thanh im bặt, như cả phòng nín thở."
+      "sound": "Tiếng gõ phím lách cách, tiếng chạm màn hình; lúc vòng xoay chờ, mọi âm thanh im bặt, như cả phòng nín thở.",
+      "ttsNarration": "Mình sửa xong, nhờ chị Mai thử lại…"
     },
     {
       "id": "qc-ok",
-      "start": 41.4,
-      "duration": 2.2,
+      "start": 44.8,
+      "duration": 2,
       "assets": [
         "colleague.svg",
         "phone.svg"
@@ -246,8 +285,8 @@
     },
     {
       "id": "release",
-      "start": 43.6,
-      "duration": 6.2,
+      "start": 46.8,
+      "duration": 4.6,
       "assets": [
         "desk-office-bg.svg",
         "monitor.svg",
@@ -265,21 +304,24 @@
         "fact-003",
         "fact-009"
       ],
-      "narration": "Phát hành lại xong, anh Quân báo tin cho khách. Tối đó về muộn một chút, nhưng không ai phải gánh một mình.",
+      "narration": "Phát hành lại xong. Tối đó về muộn một chút, nhưng không ai phải gánh một mình.",
       "onScreenText": "Xong! Cả nhóm cùng xử lý",
-      "visual": "Thanh tiến trình \"Phát hành bản sửa\" chạy đầy, biểu đồ thanh toán thành công vọt lên màu xanh; khung chat hiện tin của anh Quân \"Đã báo tình hình cho khách\", ngay dưới là tin của sếp: \"Cảm ơn cả nhóm nhé!\"; ngoài cửa sổ trời đã tối, đồng hồ 18:45; ba người đập tay, cùng thở phào; ly trà sữa đã tan hết đá, nhạt màu, đặt cạnh bàn phím.",
-      "sound": "Tiếng \"vút\" khi phát hành; sau câu \"…báo tin cho khách\" là tiếng reo vui (không lời) và tiếng đập tay của cả nhóm; nói xong câu cuối là một tiếng thở phào ngắn."
+      "visual": "Màn hình hiện \"Phát hành bản sửa\" kèm dấu tick xanh vẽ bằng SVG (không chạy thanh tiến trình, không có biểu đồ). Rồi cảnh rộng: ngoài cửa sổ trời đã tối, đồng hồ 18:45; ba người đập tay, cùng thở phào (hình chính); trên màn hình phía sau chỉ một cụm chat: tin anh Quân \"Đã báo tình hình cho khách\", ngay dưới là tin sếp \"Cảm ơn cả nhóm nhé!\". Khoảng 1 giây cuối: đẩy vào ly trà sữa đã tan hết đá, nhạt màu, cạnh bàn phím, đúng lúc tiếng thở phào.",
+      "sound": "Tiếng \"vút\" khi phát hành; tiếng reo vui (không lời) và tiếng đập tay của cả nhóm nằm dưới giọng đọc, nhỏ hơn giọng; nói xong câu cuối là một tiếng thở phào ngắn.",
+      "ttsNarration": "Phát hành lại xong! Tối đó về muộn một chút, nhưng không ai phải gánh một mình!"
     },
     {
       "id": "postmortem",
-      "start": 49.8,
-      "duration": 5.6,
-      "visual": "Sáng thứ Hai: tài liệu chung tên \"Báo cáo rút kinh nghiệm\" với ba mục \"Chuyện gì đã xảy ra · Vì sao · Làm gì để không lặp lại\"; dòng \"Ai viết dòng này?\" bị gạch đi, thay bằng \"Thêm bước tự động thử: ô mã để trống\"; một sticker nhỏ cạnh đó: \"Không phải bản kiểm điểm đâu!\".",
+      "start": 51.4,
+      "duration": 5.2,
+      "visual": "Sáng thứ Hai, phòng họp của nhóm; máy quay ở đầu bàn, hai tay POV đặt trên cuốn sổ. Màn hình lớn trên tường chiếu tài liệu chung \"Báo cáo rút kinh nghiệm\" với ba mục \"Chuyện gì đã xảy ra · Vì sao · Làm gì để không lặp lại\". Anh Quân đứng cạnh màn hình; chị Mai và hai đồng nghiệp ngồi quanh bàn, nhìn lên màn hình. Máy quay đẩy chậm về phía màn hình. Đến chữ \"tìm cách\", anh Quân giơ tay chỉ vào màn hình và dòng \"→ Thêm bước tự động thử: ô mã để trống\" hiện ra; đến chữ \"người\", dòng \"Ai viết dòng này?\" bị gạch đi, mấy người quanh bàn gật gù; một sticker nhỏ ngay dưới màn hình: \"Không phải bản kiểm điểm đâu!\".",
       "narration": "Đầu tuần sau, cả nhóm rút kinh nghiệm: tìm cách để lỗi không lặp lại, chứ không tìm người để trách.",
       "onScreenText": "Tìm cách, không tìm người",
       "assets": [
-        "monitor.svg",
-        "doc-postmortem.svg"
+        "meeting-room.svg",
+        "doc-postmortem.svg",
+        "team-lead.svg",
+        "colleague.svg"
       ],
       "sfx": [
         "pen-strike",
@@ -293,9 +335,9 @@
     },
     {
       "id": "question",
-      "start": 55.4,
-      "duration": 3.8,
-      "visual": "Quay lại bàn làm việc buổi sáng, màn hình chạy ổn; thẻ câu hỏi hiện giữa màn hình.",
+      "start": 56.6,
+      "duration": 4,
+      "visual": "Quay lại bàn làm việc buổi sáng, màn hình trang thanh toán Giỏ Hời chạy ổn, banner Siêu Sale vẫn chạy; thẻ câu hỏi hiện giữa màn hình.",
       "narration": "Nếu là bạn, bạn sẽ nhận lỗi ngay, hay đợi sửa xong mới nói?",
       "onScreenText": "Bạn sẽ làm gì? Bình luận nhé!",
       "assets": [
@@ -309,7 +351,8 @@
         "fact-008",
         "fact-009"
       ],
-      "sound": "Yên tĩnh, chỉ một tiếng \"póc\" nhẹ khi thẻ câu hỏi hiện ra."
+      "sound": "Yên tĩnh, chỉ một tiếng \"póc\" nhẹ khi thẻ câu hỏi hiện ra.",
+      "ttsNarration": "Nếu là bạn, bạn sẽ nhận lỗi ngay… hay đợi sửa xong mới nói?"
     }
   ],
   "research": [
@@ -386,13 +429,31 @@
       "notes": "SRE book, Managing Incidents: \"It is better to declare an incident early and then find a simple fix and close out the incident than to have to spin up…\". SRE book, Postmortem Culture (https://sre.google/sre-book/postmortem-culture/): \"If a culture of finger pointing and shaming individuals or teams for doing the \\\"wrong\\\" thing prevails, people will not bring issues to light for fear of punishment.\" Dùng cho cảnh own-it (\"Báo ngay, không giấu\") và câu hỏi kết."
     },
     {
+      "id": "fact-010",
+      "claim": "Ở các công ty như Google và Atlassian, nhóm vận hành dùng hệ thống giám sát để theo dõi lỗi (ví dụ tỉ lệ yêu cầu bị lỗi) và đặt cảnh báo tự động gửi cho người trực khi lỗi vượt ngưỡng.",
+      "sourceUrl": "https://sre.google/sre-book/monitoring-distributed-systems/",
+      "accessedAt": "2026-10-27",
+      "status": "verified",
+      "confidence": "high",
+      "notes": "SRE book, Monitoring Distributed Systems (https://sre.google/sre-book/monitoring-distributed-systems/): \"The four golden signals of monitoring are latency, traffic, errors, and saturation.\"; Errors: \"The rate of requests that fail, either explicitly (e.g., HTTP 500s), implicitly (…), or by policy…\"; \"Monitoring and alerting enables a system to tell us when it's broken, or perhaps to tell us what's about to break.\"; Alert: \"A notification intended to be read by a human and that is pushed to a system such as a bug or ticket queue, an email alias, or a pager.\" SRE Workbook, Alerting on SLOs (https://sre.google/workbook/alerting-on-slos/): \"…alert if the error rate over the previous 10 minutes is ≥ 0.1%\"; \"Detection time: How long it takes to send notifications in various conditions.\" (nên không nói \"biết ngay\"). Atlassian (Nick Wright, 16/02/2016, https://www.atlassian.com/blog/it-teams/inside-atlassian-site-reliability-engineers-incident-management): \"We have a comprehensive set of monitoring systems tuned to detect failures and anomalies.\"; \"These monitoring systems fire alerts to our team via Hipchat notification as well as direct to on-call phone numbers…\". Fact-checker mở các nguồn ngày 27/10/2026. Số 12 → 214 và chữ \"tăng vọt\" là hư cấu (fact-009)."
+    },
+    {
+      "id": "fact-011",
+      "claim": "Trên các nền tảng như GitHub, lập trình viên dùng pull request (yêu cầu gộp code) để đề xuất thay đổi và cho người khác xem lại trước khi gộp vào nhánh chính.",
+      "sourceUrl": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests",
+      "accessedAt": "2026-10-27",
+      "status": "verified",
+      "confidence": "high",
+      "notes": "GitHub Docs (trang \"Pull requests\", mở 27/10/2026): \"Pull requests are proposals to merge code changes into a project.\"; \"A pull request is GitHub's key collaboration feature, letting you discuss and review changes before merging them.\"; mô hình kho chung (nhóm nhỏ, dự án riêng, giống nhóm trong truyện): \"Pull requests are useful in this model because they start code review and general discussion about a set of changes before the changes are merged into the main development branch.\" Màn hình xem thay đổi (cảnh hunt): \"The Files changed tab shows the diff that reviewers use to understand the proposed changes.\" GitLab gọi tính năng tương tự là merge request: \"Merge requests provide a central location for your team to review code, have discussions, and track code changes.\" (https://docs.gitlab.com/user/project/merge_requests/). Lục lại thay đổi gần đây khi tìm lỗi: \"Recent changes to a system can be a productive place to start identifying what's going wrong.\" (https://sre.google/sre-book/effective-troubleshooting/). Số PR #231–#235, +128 −46, 37 kết quả là hư cấu (fact-009). Fact-checker mở các nguồn ngày 27/10/2026."
+    },
+    {
       "id": "fact-009",
-      "claim": "Nhân vật \"mình\" (tên đăng nhập minh), chị Mai (kiểm thử), anh Quân (trưởng nhóm), sếp, khách hàng lớn, ứng dụng bán hàng, tính năng mã giảm giá, việc phát hành năm tính năng mười phút trước, dòng code viết hôm thứ Ba, cuộc họp online gấp và câu hỏi của sếp, câu tự nói \"Ai viết dòng này vậy?\", ly trà sữa, việc chị Mai thử lại trên bản thử giống hệ thống thật và kết quả đạt, việc phát hành lại bản đã sửa, chuyện anh Quân báo tin cho khách, lời cảm ơn của sếp, các giờ 16:45/17:00/18:45, chiều thứ Sáu và đầu tuần sau, số tin nhắn và chuyện về muộn là tình huống hư cấu để dẫn chuyện.",
+      "claim": "Nhân vật \"mình\" (tên đăng nhập minh), chị Mai (kiểm thử), anh Quân (trưởng nhóm), sếp, khách hàng lớn, sàn mua sắm hư cấu \"Giỏ Hời\" và đợt \"Siêu Sale Thứ Sáu\" (tên, sản phẩm, giá đều bịa), tính năng mã giảm giá, việc phát hành năm tính năng mười phút trước, dòng code viết hôm thứ Ba, cảnh báo tự động và bộ đếm đơn thanh toán lỗi (47 → 463) và câu \"hàng trăm khách không thanh toán được\", đoạn tìm lỗi mất nửa tiếng (\"mười phút thành nửa tiếng\"), các pull request #231–#235 và 37 kết quả tìm kiếm, con số +128 −46 trong màn hình xem thay đổi, thời gian quay về bản cũ và kết quả quay về bản cũ (lỗi về 0), phản ứng bình thản của anh Quân khi mình nhận lỗi, cảnh tay với ly trà sữa rồi rụt về, cuộc họp online gấp và hạn mười phút sếp đưa ra, câu \"em tìm ra rồi ạ\", các câu tự nói \"Đoạn này hôm trước mình làm đúng rồi mà nhỉ? Hay ai sửa đè lên?\" và \"Ai viết dòng này vậy?\", cái liếc sang bàn bên, ly trà sữa, việc chị Mai thử lại trên bản thử giống hệ thống thật và kết quả đạt, việc phát hành lại bản đã sửa, chuyện anh Quân báo tin cho khách, lời cảm ơn của sếp, các giờ 16:45/17:00/17:05–17:35/18:45, chiều thứ Sáu và đầu tuần sau, tin nhắn dồn dập, buổi họp rút kinh nghiệm trong phòng họp sáng thứ Hai, giờ phát hành 16:35, các tên đăng nhập lan/tuan/hoa và chuyện về muộn là tình huống hư cấu để dẫn chuyện.",
       "sourceUrl": "",
       "accessedAt": "",
       "status": "simulation",
       "confidence": "",
-      "notes": "Không ngụ ý ngày nào cũng ở lại muộn, làm IT là phải tăng ca hay làm cuối tuần (báo cáo viết đầu tuần sau); không nói \"chuyện này hiếm khi xảy ra\" (không có nguồn); không nêu tên công ty/ứng dụng thật. Vòng 2 (26/10): sếp hỏi tiến độ một cách điềm tĩnh, không quát mắng hay đổ lỗi; áp lực được thể hiện chủ yếu bằng âm thanh (tích tắc, tim đập), không phải bằng lời đe doạ. Lồng tiếng: sếp, anh Quân và chị Mai dùng giọng có sẵn riêng (Thiền Tâm Đức, Thái Sơn, Trúc Ly); câu chốt quay về bản cũ do anh Quân tự nói (vẫn dựa trên fact-001, fact-002)."
+      "notes": "Không ngụ ý ngày nào cũng ở lại muộn, làm IT là phải tăng ca hay làm cuối tuần (báo cáo viết đầu tuần sau); không nói \"chuyện này hiếm khi xảy ra\" (không có nguồn); không nêu tên công ty/ứng dụng thật. Vòng 2 (26/10): sếp hỏi tiến độ một cách điềm tĩnh, không quát mắng hay đổ lỗi; áp lực được thể hiện chủ yếu bằng âm thanh (tích tắc, tim đập), không phải bằng lời đe doạ. Lồng tiếng: sếp, anh Quân và chị Mai dùng giọng có sẵn riêng (Thiền Tâm Đức, Thái Sơn, Trúc Ly); câu chốt quay về bản cũ do anh Quân tự nói (vẫn dựa trên fact-001, fact-002). Vòng 4 (27/10): quay về bản cũ trước rồi mới tìm nguyên nhân (đúng thứ tự trong fact-001, fact-002); ý nghĩ giấu lỗi chỉ thoáng qua và bị gạt đi ngay, không làm mẫu cho việc giấu lỗi. Vòng 5 (27/10): nhân vật thoáng nghi người khác sửa đè lên code, chỉ nghĩ trong đầu, không nói với ai; ngay sau đó phát hiện lỗi là của mình, khớp với bài học \"tìm cách, không tìm người\". Vòng góp ý video 1 (27/10): người duyệt chọn mở đầu B. Hơn trăm đơn lỗi là con số trong truyện, khớp với bộ đếm (dừng ở 463 đơn). Góp ý video vòng 2 (27/10): người duyệt muốn một sàn thương mại điện tử cụ thể đang sale cho gần người xem; dùng tên hư cấu \"Giỏ Hời\" (đã tra: không thấy sàn hay ứng dụng nào trùng tên; tránh chữ \"Vui\" vì có VuiVui.com), không dùng tên/giao diện Shopee, Lazada, Tiki… vì truyện kể ứng dụng bị lỗi. Góp ý video vòng 3 (27/10): người duyệt muốn đoạn tìm lỗi lâu và thật hơn (pull request, lịch sử, bí); chọn lời A và cho phép video ~63 s. Quay về bản cũ giờ xong trong đoạn tìm lỗi (vài phút), còn tìm lỗi mất nửa tiếng. Góp ý video vòng 4 (28/10): người duyệt muốn sếp ra hạn \"cho em mười phút xem lại code vừa gộp\" (chọn phương án B), rồi đoạn tìm lỗi nhắc lại \"mười phút thành nửa tiếng\" cho vui. Sếp vẫn nói điềm tĩnh, không quát hay đe doạ; hạn mười phút là chi tiết hư cấu, không ngụ ý sửa lỗi lúc nào cũng nhanh hay sếp nào cũng ra hạn như vậy. Góp ý video vòng 5 (28/10): người duyệt bỏ đoạn tự nói \"Tim đập thình thịch… Hay là lặng lẽ sửa cho xong? Không!\"; cảnh nhận lỗi chỉ còn \"Mình báo ngay: Lỗi do em, em tìm ra rồi ạ!\" (cắt từ chính lượt đọc cũ). Cảnh rút kinh nghiệm chuyển thành buổi họp của cả nhóm trong phòng họp, tài liệu chiếu trên màn hình lớn."
     }
   ]
 }

@@ -1,0 +1,63 @@
+{
+  "scenes": {
+    "01": {
+      "sceneId": "hook",
+      "voice": "Hải Đăng",
+      "ttsText": "Không nhập mã giảm giá… là không thanh toán được à?",
+      "file": "01.wav"
+    },
+    "02": {
+      "sceneId": "escalate",
+      "voice": "Hải Đăng",
+      "ttsText": "Vừa phát hành năm tính năng, khách hàng lớn đã báo lên tận sếp.",
+      "file": "02.wav"
+    },
+    "06": {
+      "sceneId": "works-locally",
+      "voice": "Hải Đăng",
+      "ttsText": "Ơ kìa, trên máy mình vẫn chạy ngon lành… Đoạn này hôm trước mình làm đúng rồi mà nhỉ? Hay ai sửa đè lên?",
+      "file": "06.wav"
+    },
+    "08": {
+      "sceneId": "own-it",
+      "voice": "Hải Đăng",
+      "ttsText": "Tim đập thình thịch… Hay là lặng lẽ sửa cho xong? Không! Mình báo ngay. Lỗi do em, em tìm ra rồi ạ!",
+      "file": "08.wav"
+    },
+    "09": {
+      "sceneId": "fix-check",
+      "voice": "Hải Đăng",
+      "ttsText": "Khách thanh toán được rồi. Mình sửa xong, nhờ chị Mai thử lại…",
+      "file": "09.wav"
+    },
+    "10": {
+      "sceneId": "qc-ok",
+      "voice": "Trúc Ly",
+      "ttsText": "Ngon lành rồi em ơi!",
+      "file": "10.wav"
+    },
+    "11": {
+      "sceneId": "release",
+      "voice": "Hải Đăng",
+      "ttsText": "Phát hành lại xong. Tối đó về muộn một chút, nhưng không ai phải gánh một mình.",
+      "file": "11.wav"
+    },
+    "12": {
+      "sceneId": "postmortem",
+      "voice": "Hải Đăng",
+      "ttsText": "Đầu tuần sau, cả nhóm rút kinh nghiệm: tìm cách để lỗi không lặp lại, chứ không tìm người để trách.",
+      "file": "12.wav"
+    },
+    "13": {
+      "sceneId": "question",
+      "voice": "Hải Đăng",
+      "ttsText": "Nếu là bạn, bạn sẽ nhận lỗi ngay, hay đợi sửa xong mới nói?",
+      "file": "13.wav"
+    }
+  },
+  "provider": "VieNeu-TTS",
+  "sdkVersion": "3.8.3",
+  "voice": "Hải Đăng",
+  "storyboard": "content\\it\\loi-production-sau-release\\storyboard.json",
+  "updatedAt": "2026-10-27T08:45:56+00:00"
+}

@@ -1,0 +1,496 @@
+{
+  "10": {
+    "sceneId": "fix-check",
+    "voice": "Hải Đăng",
+    "ttsText": "Mình sửa xong, nhờ chị Mai thử lại…",
+    "temperature": 1,
+    "chosen": 2,
+    "candidates": [
+      {
+        "take": 0,
+        "file": "10-t0.wav",
+        "pitch_std_st": 2.27,
+        "pitch_range_st": 5.76,
+        "duration_s": 1.84,
+        "fits": true
+      },
+      {
+        "take": 1,
+        "file": "10-t1.wav",
+        "pitch_std_st": 2.67,
+        "pitch_range_st": 6.9,
+        "duration_s": 1.92,
+        "fits": true
+      },
+      {
+        "take": 2,
+        "file": "10-t2.wav",
+        "pitch_std_st": 3.54,
+        "pitch_range_st": 9.36,
+        "duration_s": 1.92,
+        "fits": true
+      },
+      {
+        "take": 3,
+        "file": "10-t3.wav",
+        "pitch_std_st": 2.59,
+        "pitch_range_st": 7.07,
+        "duration_s": 1.76,
+        "fits": true
+      },
+      {
+        "take": 4,
+        "file": "10-t4.wav",
+        "pitch_std_st": 3.06,
+        "pitch_range_st": 8.6,
+        "duration_s": 2.08,
+        "fits": true
+      }
+    ]
+  },
+  "12": {
+    "sceneId": "release",
+    "voice": "Hải Đăng",
+    "ttsText": "Phát hành lại xong! Tối đó về muộn một chút, nhưng không ai phải gánh một mình!",
+    "temperature": 1,
+    "chosen": 0,
+    "candidates": [
+      {
+        "take": 0,
+        "file": "12-t0.wav",
+        "pitch_std_st": 3.27,
+        "pitch_range_st": 9.12,
+        "duration_s": 4.08,
+        "fits": true
+      },
+      {
+        "take": 1,
+        "file": "12-t1.wav",
+        "pitch_std_st": 2.9,
+        "pitch_range_st": 7.36,
+        "duration_s": 4,
+        "fits": true
+      },
+      {
+        "take": 2,
+        "file": "12-t2.wav",
+        "pitch_std_st": 2.65,
+        "pitch_range_st": 7.4,
+        "duration_s": 3.76,
+        "fits": true
+      },
+      {
+        "take": 3,
+        "file": "12-t3.wav",
+        "pitch_std_st": 3.32,
+        "pitch_range_st": 8.29,
+        "duration_s": 3.84,
+        "fits": true
+      },
+      {
+        "take": 4,
+        "file": "12-t4.wav",
+        "pitch_std_st": 3.14,
+        "pitch_range_st": 7.82,
+        "duration_s": 3.76,
+        "fits": true
+      }
+    ]
+  },
+  "13": {
+    "sceneId": "postmortem",
+    "voice": "Hải Đăng",
+    "ttsText": "Đầu tuần sau, cả nhóm rút kinh nghiệm: tìm cách để lỗi không lặp lại, chứ không tìm người để trách.",
+    "temperature": 1,
+    "chosen": 4,
+    "candidates": [
+      {
+        "take": 0,
+        "file": "13-t0.wav",
+        "pitch_std_st": 3.49,
+        "pitch_range_st": 9.08,
+        "duration_s": 5.04,
+        "fits": true
+      },
+      {
+        "take": 1,
+        "file": "13-t1.wav",
+        "pitch_std_st": 3.24,
+        "pitch_range_st": 7.75,
+        "duration_s": 5.04,
+        "fits": true
+      },
+      {
+        "take": 2,
+        "file": "13-t2.wav",
+        "pitch_std_st": 3.26,
+        "pitch_range_st": 8.61,
+        "duration_s": 5.04,
+        "fits": true
+      },
+      {
+        "take": 3,
+        "file": "13-t3.wav",
+        "pitch_std_st": 2.75,
+        "pitch_range_st": 7.17,
+        "duration_s": 4.72,
+        "fits": true
+      },
+      {
+        "take": 4,
+        "file": "13-t4.wav",
+        "pitch_std_st": 3.63,
+        "pitch_range_st": 9.13,
+        "duration_s": 4.72,
+        "fits": true
+      }
+    ]
+  },
+  "14": {
+    "sceneId": "question",
+    "voice": "Hải Đăng",
+    "ttsText": "Nếu là bạn, bạn sẽ nhận lỗi ngay… hay đợi sửa xong mới nói?",
+    "temperature": 1,
+    "chosen": 3,
+    "candidates": [
+      {
+        "take": 0,
+        "file": "14-t0.wav",
+        "pitch_std_st": 2.81,
+        "pitch_range_st": 6.72,
+        "duration_s": 3.36,
+        "fits": true
+      },
+      {
+        "take": 1,
+        "file": "14-t1.wav",
+        "pitch_std_st": 2.92,
+        "pitch_range_st": 7.89,
+        "duration_s": 3.36,
+        "fits": true
+      },
+      {
+        "take": 2,
+        "file": "14-t2.wav",
+        "pitch_std_st": 3.72,
+        "pitch_range_st": 9.53,
+        "duration_s": 3.12,
+        "fits": true
+      },
+      {
+        "take": 3,
+        "file": "14-t3.wav",
+        "pitch_std_st": 3.83,
+        "pitch_range_st": 10.46,
+        "duration_s": 3.6,
+        "fits": true
+      },
+      {
+        "take": 4,
+        "file": "14-t4.wav",
+        "pitch_std_st": 3.25,
+        "pitch_range_st": 7.35,
+        "duration_s": 3.44,
+        "fits": true
+      }
+    ]
+  },
+  "01": {
+    "sceneId": "hook",
+    "voice": "Hải Đăng",
+    "ttsText": "Mười phút sau khi phát hành… hàng trăm khách không thanh toán được!",
+    "temperature": 1,
+    "chosen": 4,
+    "candidates": [
+      {
+        "take": 0,
+        "file": "01-t0.wav",
+        "pitch_std_st": 3.05,
+        "pitch_range_st": 7.66,
+        "duration_s": 3.2,
+        "fits": true
+      },
+      {
+        "take": 1,
+        "file": "01-t1.wav",
+        "pitch_std_st": 3.19,
+        "pitch_range_st": 8.62,
+        "duration_s": 3.12,
+        "fits": true
+      },
+      {
+        "take": 2,
+        "file": "01-t2.wav",
+        "pitch_std_st": 3.29,
+        "pitch_range_st": 9.39,
+        "duration_s": 3.28,
+        "fits": true
+      },
+      {
+        "take": 3,
+        "file": "01-t3.wav",
+        "pitch_std_st": 3.29,
+        "pitch_range_st": 10.17,
+        "duration_s": 3.12,
+        "fits": true
+      },
+      {
+        "take": 4,
+        "file": "01-t4.wav",
+        "pitch_std_st": 3.36,
+        "pitch_range_st": 9.48,
+        "duration_s": 3.12,
+        "fits": true
+      }
+    ],
+    "note": "take 3 (most lively) failed the Whisper check (unintelligible); take 4 says the script"
+  },
+  "02": {
+    "sceneId": "escalate",
+    "voice": "Hải Đăng",
+    "ttsText": "Vừa phát hành năm tính năng… khách hàng lớn đã báo lên tận sếp!",
+    "temperature": 1,
+    "chosen": 0,
+    "candidates": [
+      {
+        "take": 0,
+        "file": "02-t0.wav",
+        "pitch_std_st": 3.02,
+        "pitch_range_st": 8.11,
+        "duration_s": 3.2,
+        "fits": true
+      },
+      {
+        "take": 1,
+        "file": "02-t1.wav",
+        "pitch_std_st": 2.82,
+        "pitch_range_st": 7.28,
+        "duration_s": 2.96,
+        "fits": true
+      },
+      {
+        "take": 2,
+        "file": "02-t2.wav",
+        "pitch_std_st": 2.73,
+        "pitch_range_st": 7.28,
+        "duration_s": 3.2,
+        "fits": true
+      },
+      {
+        "take": 3,
+        "file": "02-t3.wav",
+        "pitch_std_st": 3.19,
+        "pitch_range_st": 7.4,
+        "duration_s": 3.12,
+        "fits": true
+      },
+      {
+        "take": 4,
+        "file": "02-t4.wav",
+        "pitch_std_st": 3.03,
+        "pitch_range_st": 7.48,
+        "duration_s": 3.2,
+        "fits": true
+      }
+    ]
+  },
+  "06": {
+    "sceneId": "works-locally",
+    "voice": "Hải Đăng",
+    "ttsText": "Ơ kìa! Trên máy mình vẫn chạy ngon lành… Đoạn này hôm trước mình làm đúng rồi mà nhỉ? Hay ai sửa đè lên?",
+    "temperature": 1,
+    "chosen": 2,
+    "candidates": [
+      {
+        "take": 0,
+        "file": "06-t0.wav",
+        "pitch_std_st": 3.32,
+        "pitch_range_st": 8.54,
+        "duration_s": 5.68,
+        "fits": true
+      },
+      {
+        "take": 1,
+        "file": "06-t1.wav",
+        "pitch_std_st": 3.32,
+        "pitch_range_st": 9.14,
+        "duration_s": 5.2,
+        "fits": true
+      },
+      {
+        "take": 2,
+        "file": "06-t2.wav",
+        "pitch_std_st": 3.93,
+        "pitch_range_st": 10.96,
+        "duration_s": 5.6,
+        "fits": true
+      },
+      {
+        "take": 3,
+        "file": "06-t3.wav",
+        "pitch_std_st": 3.24,
+        "pitch_range_st": 8.33,
+        "duration_s": 5.68,
+        "fits": true
+      },
+      {
+        "take": 4,
+        "file": "06-t4.wav",
+        "pitch_std_st": 3.16,
+        "pitch_range_st": 7.88,
+        "duration_s": 5.84,
+        "fits": true
+      }
+    ]
+  },
+  "09": {
+    "sceneId": "own-it",
+    "voice": "Hải Đăng",
+    "ttsText": "Tim đập thình thịch… Hay là lặng lẽ sửa cho xong? Không! Mình báo ngay. Lỗi do em, em tìm ra rồi ạ!",
+    "temperature": 1,
+    "chosen": 1,
+    "candidates": [
+      {
+        "take": 0,
+        "file": "09-t0.wav",
+        "pitch_std_st": 3.59,
+        "pitch_range_st": 9.62,
+        "duration_s": 5.76,
+        "fits": true
+      },
+      {
+        "take": 1,
+        "file": "09-t1.wav",
+        "pitch_std_st": 2.94,
+        "pitch_range_st": 7.92,
+        "duration_s": 5.52,
+        "fits": true
+      },
+      {
+        "take": 2,
+        "file": "09-t2.wav",
+        "pitch_std_st": 2.51,
+        "pitch_range_st": 6.11,
+        "duration_s": 5.68,
+        "fits": true
+      },
+      {
+        "take": 3,
+        "file": "09-t3.wav",
+        "pitch_std_st": 2.67,
+        "pitch_range_st": 6.15,
+        "duration_s": 6.4,
+        "fits": true
+      },
+      {
+        "take": 4,
+        "file": "09-t4.wav",
+        "pitch_std_st": 3.37,
+        "pitch_range_st": 9.53,
+        "duration_s": 5.68,
+        "fits": true
+      }
+    ],
+    "note": "take 0 (most lively) garbled \"báo\"; take 1 says the script"
+  },
+  "07": {
+    "sceneId": "hunt",
+    "voice": "Hải Đăng",
+    "ttsText": "Bản cũ chạy lại rồi! Giờ đi tìm lỗi. Lục từng yêu cầu gộp code, dò lịch sử… mười phút thành nửa tiếng, vẫn bí!",
+    "temperature": 1,
+    "chosen": 4,
+    "candidates": [
+      {
+        "take": 0,
+        "file": "07-t0.wav",
+        "pitch_std_st": 3.44,
+        "pitch_range_st": 8.98,
+        "duration_s": 5.84,
+        "fits": true
+      },
+      {
+        "take": 1,
+        "file": "07-t1.wav",
+        "pitch_std_st": 2.68,
+        "pitch_range_st": 7.03,
+        "duration_s": 5.92,
+        "fits": true
+      },
+      {
+        "take": 2,
+        "file": "07-t2.wav",
+        "pitch_std_st": 3.19,
+        "pitch_range_st": 8.82,
+        "duration_s": 6,
+        "fits": true
+      },
+      {
+        "take": 3,
+        "file": "07-t3.wav",
+        "pitch_std_st": 2.75,
+        "pitch_range_st": 7.19,
+        "duration_s": 5.68,
+        "fits": true
+      },
+      {
+        "take": 4,
+        "file": "07-t4.wav",
+        "pitch_std_st": 3.03,
+        "pitch_range_st": 8.06,
+        "duration_s": 5.84,
+        "fits": true
+      }
+    ],
+    "note": "take 4: the only take Whisper heard with both \"bản cũ\" and \"gộp\" right (take 0, the liveliest, read \"bạn cũ\")"
+  },
+  "04": {
+    "sceneId": "boss",
+    "voice": "Thiền Tâm Đức",
+    "ttsText": "Khách lớn đang chờ đấy. Cho em mười phút, xem lại code vừa gộp!",
+    "temperature": 1,
+    "chosen": 1,
+    "candidates": [
+      {
+        "take": 0,
+        "file": "04-t0.wav",
+        "pitch_std_st": 4.27,
+        "pitch_range_st": 12.04,
+        "duration_s": 4.64,
+        "fits": true
+      },
+      {
+        "take": 1,
+        "file": "04-t1.wav",
+        "pitch_std_st": 4.81,
+        "pitch_range_st": 13.38,
+        "duration_s": 4.48,
+        "fits": true
+      },
+      {
+        "take": 2,
+        "file": "04-t2.wav",
+        "pitch_std_st": 5.39,
+        "pitch_range_st": 14.03,
+        "duration_s": 4.8,
+        "fits": true
+      },
+      {
+        "take": 3,
+        "file": "04-t3.wav",
+        "pitch_std_st": 4.63,
+        "pitch_range_st": 12.8,
+        "duration_s": 4.88,
+        "fits": true
+      },
+      {
+        "take": 4,
+        "file": "04-t4.wav",
+        "pitch_std_st": 4.36,
+        "pitch_range_st": 12.69,
+        "duration_s": 4.64,
+        "fits": true
+      }
+    ],
+    "note": "take 1: best Whisper match and shortest; Thiền Tâm Đức (boss) at temperature 1.0"
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "items": [
+    {
+      "type": "narration",
+      "files": "videos/it/loi-production-sau-release/assets/voice/*.wav",
+      "source": "VieNeu-TTS v3 Turbo, SDK 3.8.3, preset voices Hải Đăng (narrator), Thiền Tâm Đức (sếp), Thái Sơn (anh Quân), Trúc Ly (chị Mai)",
+      "sourceUrl": "https://github.com/pnnbao97/VieNeu-TTS",
+      "license": "Apache-2.0 (code and weights); preset-voice output allowed for commercial use per model card",
+      "attribution": "not required in the audio; credit the project if redistributing the model",
+      "notes": "The meeting, mitigate and discover lines reuse the audition takes the reviewer picked (content/it/loi-production-sau-release/audio/thu-giong/raw/). Treatments and loudness: videos/it/loi-production-sau-release/assets/voice/voice-build.json (14 lines at -16 LUFS)."
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/alarm-bed.mp3",
+      "source": "deleted_user_7709760, Freesound (account deleted, page still CC0)",
+      "sourceUrl": "https://freesound.org/people/deleted_user_7709760/sounds/423929/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/alarm--freesound-423929.mp3; trim 7.2s (looped), fade out 1.2s, -24 LUFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/clock-tick-bed.mp3",
+      "source": "OwlStorm, Freesound (HQ preview MP3)",
+      "sourceUrl": "https://freesound.org/people/OwlStorm/sounds/212181/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/clock-tick--freesound-212181.mp3; trim 14.1s (looped), fade in 0.2s, fade out 5.2s, -28 LUFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/heartbeat-soft.mp3",
+      "source": "Cloud-10, Freesound (HQ preview MP3)",
+      "sourceUrl": "https://freesound.org/people/Cloud-10/sounds/688735/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/heartbeat--freesound-688735.mp3; trim 7.9s (looped), fade in 1s, fade out 0.4s, -26 LUFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/heartbeat-strong.mp3",
+      "source": "Cloud-10, Freesound (HQ preview MP3)",
+      "sourceUrl": "https://freesound.org/people/Cloud-10/sounds/688735/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/heartbeat--freesound-688735.mp3; trim 3.44s (looped), fade in 0.15s, fade out 0.06s, -20 LUFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/clock-fast.mp3",
+      "source": "OwlStorm, Freesound (HQ preview MP3)",
+      "sourceUrl": "https://freesound.org/people/OwlStorm/sounds/212181/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/clock-tick--freesound-212181.mp3; trim 1.8s, fade out 0.3s, -26 LUFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/error-beep.mp3",
+      "source": "Kuru23, Freesound (HQ preview MP3)",
+      "sourceUrl": "https://freesound.org/people/Kuru23/sounds/145287/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/error-beep--freesound-145287.mp3; peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/notification.mp3",
+      "source": "AnthonyRox, Freesound (HQ preview MP3)",
+      "sourceUrl": "https://freesound.org/people/AnthonyRox/sounds/740423/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/notification--freesound-740423.mp3; peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/comedic-spring.mp3",
+      "source": "magnuswaker, Freesound (HQ preview MP3)",
+      "sourceUrl": "https://freesound.org/people/magnuswaker/sounds/540790/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/comedic-spring--freesound-540790.mp3; peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/record-scratch.mp3",
+      "source": "Espinho123, Freesound (HQ preview MP3)",
+      "sourceUrl": "https://freesound.org/people/Espinho123/sounds/647583/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/record-scratch--freesound-647583.mp3; peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/chair-swivel.mp3",
+      "source": "connersaw8, Freesound (HQ preview MP3)",
+      "sourceUrl": "https://freesound.org/people/connersaw8/sounds/125139/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/chair-swivel--freesound-125139.mp3; peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/whoosh.mp3",
+      "source": "lesaucisson, Freesound (HQ preview MP3)",
+      "sourceUrl": "https://freesound.org/people/lesaucisson/sounds/585257/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/whoosh--freesound-585257.mp3; peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/success-chime.mp3",
+      "source": "Fupicat, Freesound (HQ preview MP3)",
+      "sourceUrl": "https://freesound.org/people/Fupicat/sounds/538147/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/success-chime--freesound-538147.mp3; peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/tap.mp3",
+      "source": "vacuumfan7072, Freesound (HQ preview MP3)",
+      "sourceUrl": "https://freesound.org/people/vacuumfan7072/sounds/332713/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/tap--freesound-332713.mp3; peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/high-five.mp3",
+      "source": "121053699, Freesound (HQ preview MP3)",
+      "sourceUrl": "https://freesound.org/people/121053699/sounds/467997/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/high-five--freesound-467997.mp3; peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/pen-strike.mp3",
+      "source": "MasterSuite, Freesound (HQ preview MP3)",
+      "sourceUrl": "https://freesound.org/people/MasterSuite/sounds/667399/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/pen-strike--freesound-667399.mp3; peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/soft-pop.mp3",
+      "source": "Breviceps, Freesound (HQ preview MP3)",
+      "sourceUrl": "https://freesound.org/people/Breviceps/sounds/447910/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/soft-pop--freesound-447910.mp3; peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/glitch.mp3",
+      "source": "tadaizm, Freesound",
+      "sourceUrl": "https://freesound.org/people/tadaizm/sounds/458065/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/glitch--freesound-458065.mp3; peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/phone-buzz.mp3",
+      "source": "Bratok999, Freesound",
+      "sourceUrl": "https://freesound.org/people/Bratok999/sounds/173562/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/phone-buzz--freesound-173562.mp3; peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/gasp.mp3",
+      "source": "Mikes-MultiMedia, Freesound",
+      "sourceUrl": "https://freesound.org/people/Mikes-MultiMedia/sounds/349692/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/gasp--freesound-349692.mp3; peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/impact-whoosh.mp3",
+      "source": "Nic3_one, Freesound",
+      "sourceUrl": "https://freesound.org/people/Nic3_one/sounds/434873/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/impact-whoosh--freesound-434873.mp3; peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/confetti-pop.mp3",
+      "source": "Streety, Freesound",
+      "sourceUrl": "https://freesound.org/people/Streety/sounds/26349/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/confetti-pop--freesound-26349.mp3; peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/confetti-sparkle.mp3",
+      "source": "SkySpeira, Freesound",
+      "sourceUrl": "https://freesound.org/people/SkySpeira/sounds/715067/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/confetti-sparkle--freesound-715067.mp3; peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/braam.mp3",
+      "source": "InMotionAudio, Freesound",
+      "sourceUrl": "https://freesound.org/people/InMotionAudio/sounds/697057/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/braam--freesound-697057.mp3; trim 2.6s, fade out 0.8s, peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/riser.mp3",
+      "source": "syntheffects, Freesound",
+      "sourceUrl": "https://freesound.org/people/syntheffects/sounds/685256/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/riser--freesound-685256.mp3; trim 2.9s, fade out 0.05s, peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/scroll-ticks.mp3",
+      "source": "HunteR4708, Freesound (HQ preview MP3)",
+      "sourceUrl": "https://freesound.org/people/HunteR4708/sounds/256459/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/scroll-ticks--freesound-256459.mp3; trim 1.6s, fade out 0.3s, peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/typing-fast.mp3",
+      "source": "Capt.Jack, Freesound",
+      "sourceUrl": "https://freesound.org/people/Capt.Jack/sounds/813214/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/typing-fast--freesound-813214.mp3; trim 1.8s, fade out 0.3s, peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/dramatic-sting.mp3",
+      "source": "notKlaatu, Freesound (HQ preview MP3)",
+      "sourceUrl": "https://freesound.org/people/notKlaatu/sounds/668130/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/dramatic-sting--freesound-668130.mp3; trim 2s, fade out 0.6s, peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/team-cheer.mp3",
+      "source": "dr_skitz, Freesound (HQ preview MP3)",
+      "sourceUrl": "https://freesound.org/people/dr_skitz/sounds/353923/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/team-cheer--freesound-353923.mp3; trim 2.2s, fade out 0.6s, peak −3 dBFS"
+    },
+    {
+      "type": "sfx",
+      "file": "videos/it/loi-production-sau-release/assets/sfx/relief-sigh.mp3",
+      "source": "EverydayEldritch, Freesound (HQ preview MP3)",
+      "sourceUrl": "https://freesound.org/people/EverydayEldritch/sounds/615223/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "from assets/audio/sfx/relief-sigh--freesound-615223.mp3; trim 1.1s, fade out 0.3s, peak −3 dBFS"
+    },
+    {
+      "type": "music",
+      "file": "assets/audio/music/tension-epic--opengameart-determined-pursuit-epic-orchestra-loop.mp3",
+      "source": "Emma_MA, OpenGameArt (\"Determined Pursuit (Epic Orchestra Loop)\")",
+      "sourceUrl": "https://opengameart.org/content/determined-pursuit-epic-orchestra-loop",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "placed, levelled and ducked under the narration by tools/music-bed.mjs into videos/it/loi-production-sau-release/assets/bgm/bgm.wav"
+    },
+    {
+      "type": "music",
+      "file": "assets/audio/music/comic-suspense--freesound-381531.mp3",
+      "source": "dominictreis, Freesound",
+      "sourceUrl": "https://freesound.org/people/dominictreis/sounds/381531/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "placed, levelled and ducked under the narration by tools/music-bed.mjs into videos/it/loi-production-sau-release/assets/bgm/bgm.wav"
+    },
+    {
+      "type": "music",
+      "file": "assets/audio/music/relief-upbeat--freesound-561190.mp3",
+      "source": "code_box, Freesound",
+      "sourceUrl": "https://freesound.org/people/code_box/sounds/561190/",
+      "license": "CC0 1.0",
+      "attribution": "No",
+      "notes": "placed, levelled and ducked under the narration by tools/music-bed.mjs into videos/it/loi-production-sau-release/assets/bgm/bgm.wav"
+    }
+  ]
+}

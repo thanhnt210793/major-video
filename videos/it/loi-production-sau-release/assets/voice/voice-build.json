@@ -1,0 +1,131 @@
+{
+  "target_lufs": -16,
+  "lines": [
+    {
+      "frame": 1,
+      "file": "assets/voice/01.wav",
+      "source": "content/it/loi-production-sau-release/audio/tts-raw/01.wav",
+      "treatment": "liveliest of 5 takes that passed Whisper, 6% faster",
+      "loudness_in": -20.3,
+      "gain_db": 4.3,
+      "duration_s": 2.95
+    },
+    {
+      "frame": 2,
+      "file": "assets/voice/02.wav",
+      "source": "content/it/loi-production-sau-release/audio/tts-raw/02.wav",
+      "treatment": "liveliest of 5 takes, 6% faster",
+      "loudness_in": -20.3,
+      "gain_db": 4.3,
+      "duration_s": 3.03
+    },
+    {
+      "frame": 3,
+      "file": "assets/voice/03.wav",
+      "source": "content/it/loi-production-sau-release/audio/thu-giong/raw/4-take1-trim.wav",
+      "treatment": "audition take 4-take1 (cut from 1.08 s), room reverb",
+      "loudness_in": -29.4,
+      "gain_db": 13.4,
+      "duration_s": 2.88
+    },
+    {
+      "frame": 4,
+      "file": "assets/voice/04.wav",
+      "source": "content/it/loi-production-sau-release/audio/tts-raw/04.wav",
+      "treatment": "take 1 of 5 (Thiền Tâm Đức; the ten-minute deadline line, round 4), call filter",
+      "loudness_in": -38.6,
+      "gain_db": 22.6,
+      "duration_s": 4.5
+    },
+    {
+      "frame": 5,
+      "file": "assets/voice/05.wav",
+      "source": "content/it/loi-production-sau-release/audio/thu-giong/raw/2B.wav",
+      "treatment": "audition take 2B (Thái Sơn)",
+      "loudness_in": -19.8,
+      "gain_db": 3.8,
+      "duration_s": 4.72
+    },
+    {
+      "frame": 6,
+      "file": "assets/voice/06.wav",
+      "source": "content/it/loi-production-sau-release/audio/tts-raw/06.wav",
+      "treatment": "liveliest of 5 takes, 6% faster, 1 dB under (nghĩ thầm)",
+      "loudness_in": -19.6,
+      "gain_db": 2.6,
+      "duration_s": 5.29
+    },
+    {
+      "frame": 7,
+      "file": "assets/voice/07.wav",
+      "source": "content/it/loi-production-sau-release/audio/tts-raw/07.wav",
+      "treatment": "take 4 of 5 (the only one heard with \"bản cũ\" and \"gộp\" right), 6% faster",
+      "loudness_in": -19,
+      "gain_db": 3,
+      "duration_s": 5.51
+    },
+    {
+      "frame": 8,
+      "file": "assets/voice/08.wav",
+      "source": "content/it/loi-production-sau-release/audio/thu-giong/raw/3-take1.wav",
+      "treatment": "audition take 3-take1 from 1.92 s (\"Dò lại…\" cut, the hunt covers it), 3C acted: 0.81 s gap after \"vậy?\", echo on the punchline",
+      "loudness_in": -22.4,
+      "gain_db": 6.4,
+      "duration_s": 3.52
+    },
+    {
+      "frame": 9,
+      "file": "assets/voice/09.wav",
+      "source": "content/it/loi-production-sau-release/audio/tts-raw/09.wav",
+      "treatment": "take 1 of 5 (the liveliest garbled \"báo\") from 2.98 s (the \"Tim đập thình thịch… Không!\" self-talk cut, round 5), 6% faster + room",
+      "loudness_in": -29.9,
+      "gain_db": 13.9,
+      "duration_s": 2.44
+    },
+    {
+      "frame": 10,
+      "file": "assets/voice/10.wav",
+      "source": "content/it/loi-production-sau-release/audio/tts-raw/10.wav",
+      "treatment": "liveliest of 5 takes that passed Whisper, 6% faster",
+      "loudness_in": -19.1,
+      "gain_db": 3.1,
+      "duration_s": 1.82
+    },
+    {
+      "frame": 11,
+      "file": "assets/voice/11.wav",
+      "source": "content/it/loi-production-sau-release/audio/tts-raw/11.wav",
+      "treatment": "Trúc Ly (chị Mai)",
+      "loudness_in": -18.4,
+      "gain_db": 2.4,
+      "duration_s": 1.28
+    },
+    {
+      "frame": 12,
+      "file": "assets/voice/12.wav",
+      "source": "content/it/loi-production-sau-release/audio/tts-raw/12.wav",
+      "treatment": "liveliest of 5 takes, 6% faster",
+      "loudness_in": -19.3,
+      "gain_db": 3.3,
+      "duration_s": 3.85
+    },
+    {
+      "frame": 13,
+      "file": "assets/voice/13.wav",
+      "source": "content/it/loi-production-sau-release/audio/tts-raw/13.wav",
+      "treatment": "liveliest of 5 takes, 6% faster",
+      "loudness_in": -19.9,
+      "gain_db": 3.9,
+      "duration_s": 4.47
+    },
+    {
+      "frame": 14,
+      "file": "assets/voice/14.wav",
+      "source": "content/it/loi-production-sau-release/audio/tts-raw/14.wav",
+      "treatment": "liveliest of 5 takes, 6% faster",
+      "loudness_in": -19.8,
+      "gain_db": 3.8,
+      "duration_s": 3.4
+    }
+  ]
+}

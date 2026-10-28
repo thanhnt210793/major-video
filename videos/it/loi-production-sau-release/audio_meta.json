@@ -1,0 +1,1697 @@
+{
+  "bgm": {
+    "path": "assets/bgm/bgm.wav",
+    "volume": 1
+  },
+  "bgm_pending": false,
+  "voices": [
+    {
+      "frame": 1,
+      "path": "assets/voice/01.wav",
+      "duration_s": 2.955,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Mười",
+          "start": 0.07,
+          "end": 0.37
+        },
+        {
+          "id": "w1",
+          "text": "phút",
+          "start": 0.37,
+          "end": 0.61
+        },
+        {
+          "id": "w2",
+          "text": "sau",
+          "start": 0.61,
+          "end": 0.73
+        },
+        {
+          "id": "w3",
+          "text": "khi",
+          "start": 0.82,
+          "end": 0.99
+        },
+        {
+          "id": "w4",
+          "text": "phát",
+          "start": 0.99,
+          "end": 1.22
+        },
+        {
+          "id": "w5",
+          "text": "hành…",
+          "start": 1.23,
+          "end": 1.6
+        },
+        {
+          "id": "w6",
+          "text": "hàng",
+          "start": 1.63,
+          "end": 1.74
+        },
+        {
+          "id": "w7",
+          "text": "trăm",
+          "start": 1.8,
+          "end": 1.89
+        },
+        {
+          "id": "w8",
+          "text": "khách",
+          "start": 1.97,
+          "end": 2.13
+        },
+        {
+          "id": "w9",
+          "text": "không",
+          "start": 2.16,
+          "end": 2.35
+        },
+        {
+          "id": "w10",
+          "text": "thanh",
+          "start": 2.35,
+          "end": 2.56
+        },
+        {
+          "id": "w11",
+          "text": "toán",
+          "start": 2.56,
+          "end": 2.72
+        },
+        {
+          "id": "w12",
+          "text": "được!",
+          "start": 2.72,
+          "end": 2.78
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "path": "assets/voice/02.wav",
+      "duration_s": 3.027,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Vừa",
+          "start": 0.04,
+          "end": 0.13
+        },
+        {
+          "id": "w1",
+          "text": "phát",
+          "start": 0.13,
+          "end": 0.25
+        },
+        {
+          "id": "w2",
+          "text": "hành",
+          "start": 0.31,
+          "end": 0.49
+        },
+        {
+          "id": "w3",
+          "text": "năm",
+          "start": 0.49,
+          "end": 0.63
+        },
+        {
+          "id": "w4",
+          "text": "tính",
+          "start": 0.63,
+          "end": 0.81
+        },
+        {
+          "id": "w5",
+          "text": "năng,",
+          "start": 0.81,
+          "end": 1.1
+        },
+        {
+          "id": "w6",
+          "text": "khách",
+          "start": 1.34,
+          "end": 1.54
+        },
+        {
+          "id": "w7",
+          "text": "hàng",
+          "start": 1.64,
+          "end": 1.81
+        },
+        {
+          "id": "w8",
+          "text": "lớn",
+          "start": 1.81,
+          "end": 1.99
+        },
+        {
+          "id": "w9",
+          "text": "đã",
+          "start": 2,
+          "end": 2.13
+        },
+        {
+          "id": "w10",
+          "text": "báo",
+          "start": 2.13,
+          "end": 2.32
+        },
+        {
+          "id": "w11",
+          "text": "lên",
+          "start": 2.32,
+          "end": 2.48
+        },
+        {
+          "id": "w12",
+          "text": "tận",
+          "start": 2.52,
+          "end": 2.71
+        },
+        {
+          "id": "w13",
+          "text": "sếp.",
+          "start": 2.72,
+          "end": 2.83
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "path": "assets/voice/03.wav",
+      "duration_s": 2.885,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Cả",
+          "start": 0.06,
+          "end": 0.14
+        },
+        {
+          "id": "w1",
+          "text": "nhóm",
+          "start": 0.14,
+          "end": 0.38
+        },
+        {
+          "id": "w2",
+          "text": "im",
+          "start": 0.42,
+          "end": 0.56
+        },
+        {
+          "id": "w3",
+          "text": "phăng",
+          "start": 0.56,
+          "end": 0.91
+        },
+        {
+          "id": "w4",
+          "text": "phắc,",
+          "start": 0.91,
+          "end": 1.19
+        },
+        {
+          "id": "w5",
+          "text": "ly",
+          "start": 1.19,
+          "end": 1.32
+        },
+        {
+          "id": "w6",
+          "text": "trà",
+          "start": 1.42,
+          "end": 1.54
+        },
+        {
+          "id": "w7",
+          "text": "sữa",
+          "start": 1.54,
+          "end": 1.76
+        },
+        {
+          "id": "w8",
+          "text": "còn",
+          "start": 1.76,
+          "end": 1.92
+        },
+        {
+          "id": "w9",
+          "text": "chưa",
+          "start": 1.92,
+          "end": 2.13
+        },
+        {
+          "id": "w10",
+          "text": "kịp",
+          "start": 2.13,
+          "end": 2.28
+        },
+        {
+          "id": "w11",
+          "text": "uống.",
+          "start": 2.28,
+          "end": 2.68
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "path": "assets/voice/04.wav",
+      "duration_s": 4.5,
+      "words": [
+        {
+          "id": "w0",
+          "text": "“Khách",
+          "start": 0.06,
+          "end": 0.36
+        },
+        {
+          "id": "w1",
+          "text": "lớn",
+          "start": 0.36,
+          "end": 0.57
+        },
+        {
+          "id": "w2",
+          "text": "đang",
+          "start": 0.57,
+          "end": 0.78
+        },
+        {
+          "id": "w3",
+          "text": "chờ",
+          "start": 0.9,
+          "end": 1.07
+        },
+        {
+          "id": "w4",
+          "text": "đấy.",
+          "start": 1.07,
+          "end": 1.38
+        },
+        {
+          "id": "w5",
+          "text": "Cho",
+          "start": 1.77,
+          "end": 1.79
+        },
+        {
+          "id": "w6",
+          "text": "em",
+          "start": 1.79,
+          "end": 1.97
+        },
+        {
+          "id": "w7",
+          "text": "mười",
+          "start": 1.97,
+          "end": 2.38
+        },
+        {
+          "id": "w8",
+          "text": "phút",
+          "start": 2.53,
+          "end": 2.88
+        },
+        {
+          "id": "w9",
+          "text": "xem",
+          "start": 3.05,
+          "end": 3.15
+        },
+        {
+          "id": "w10",
+          "text": "lại",
+          "start": 3.15,
+          "end": 3.42
+        },
+        {
+          "id": "w11",
+          "text": "code",
+          "start": 3.42,
+          "end": 3.74
+        },
+        {
+          "id": "w12",
+          "text": "vừa",
+          "start": 3.88,
+          "end": 4.06
+        },
+        {
+          "id": "w13",
+          "text": "gộp!”",
+          "start": 4.06,
+          "end": 4.4
+        }
+      ]
+    },
+    {
+      "frame": 5,
+      "path": "assets/voice/05.wav",
+      "duration_s": 4.72,
+      "words": [
+        {
+          "id": "w0",
+          "text": "“Cứ",
+          "start": 0,
+          "end": 0.237
+        },
+        {
+          "id": "w1",
+          "text": "quay",
+          "start": 0.237,
+          "end": 0.553
+        },
+        {
+          "id": "w2",
+          "text": "về",
+          "start": 0.553,
+          "end": 0.711
+        },
+        {
+          "id": "w3",
+          "text": "bản",
+          "start": 0.711,
+          "end": 0.948
+        },
+        {
+          "id": "w4",
+          "text": "cũ",
+          "start": 0.948,
+          "end": 1.106
+        },
+        {
+          "id": "w5",
+          "text": "đã,",
+          "start": 1.106,
+          "end": 1.343
+        },
+        {
+          "id": "w6",
+          "text": "để",
+          "start": 1.667,
+          "end": 1.771
+        },
+        {
+          "id": "w7",
+          "text": "khách",
+          "start": 1.771,
+          "end": 2.033
+        },
+        {
+          "id": "w8",
+          "text": "thanh",
+          "start": 2.033,
+          "end": 2.296
+        },
+        {
+          "id": "w9",
+          "text": "toán",
+          "start": 2.296,
+          "end": 2.505
+        },
+        {
+          "id": "w10",
+          "text": "lại",
+          "start": 2.505,
+          "end": 2.662
+        },
+        {
+          "id": "w11",
+          "text": "được",
+          "start": 2.662,
+          "end": 2.872
+        },
+        {
+          "id": "w12",
+          "text": "ngay.",
+          "start": 2.872,
+          "end": 3.134
+        },
+        {
+          "id": "w13",
+          "text": "Sửa",
+          "start": 3.612,
+          "end": 3.833
+        },
+        {
+          "id": "w14",
+          "text": "lỗi",
+          "start": 3.833,
+          "end": 4.055
+        },
+        {
+          "id": "w15",
+          "text": "tính",
+          "start": 4.055,
+          "end": 4.351
+        },
+        {
+          "id": "w16",
+          "text": "sau!”",
+          "start": 4.351,
+          "end": 4.72
+        }
+      ]
+    },
+    {
+      "frame": 6,
+      "path": "assets/voice/06.wav",
+      "duration_s": 5.293,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Ơ",
+          "start": 0.1,
+          "end": 0.25
+        },
+        {
+          "id": "w1",
+          "text": "kìa,",
+          "start": 0.35,
+          "end": 0.64
+        },
+        {
+          "id": "w2",
+          "text": "trên",
+          "start": 0.75,
+          "end": 0.77
+        },
+        {
+          "id": "w3",
+          "text": "máy",
+          "start": 1.08,
+          "end": 1.16
+        },
+        {
+          "id": "w4",
+          "text": "mình",
+          "start": 1.16,
+          "end": 1.4
+        },
+        {
+          "id": "w5",
+          "text": "vẫn",
+          "start": 1.4,
+          "end": 1.54
+        },
+        {
+          "id": "w6",
+          "text": "chạy",
+          "start": 1.6,
+          "end": 1.82
+        },
+        {
+          "id": "w7",
+          "text": "ngon",
+          "start": 1.82,
+          "end": 2.06
+        },
+        {
+          "id": "w8",
+          "text": "lành…",
+          "start": 2.06,
+          "end": 2.44
+        },
+        {
+          "id": "w9",
+          "text": "Đoạn",
+          "start": 2.44,
+          "end": 2.64
+        },
+        {
+          "id": "w10",
+          "text": "này",
+          "start": 2.64,
+          "end": 2.79
+        },
+        {
+          "id": "w11",
+          "text": "hôm",
+          "start": 2.79,
+          "end": 2.94
+        },
+        {
+          "id": "w12",
+          "text": "trước",
+          "start": 2.94,
+          "end": 3.2
+        },
+        {
+          "id": "w13",
+          "text": "mình",
+          "start": 3.2,
+          "end": 3.4
+        },
+        {
+          "id": "w14",
+          "text": "làm",
+          "start": 3.4,
+          "end": 3.53
+        },
+        {
+          "id": "w15",
+          "text": "đúng",
+          "start": 3.58,
+          "end": 3.74
+        },
+        {
+          "id": "w16",
+          "text": "rồi",
+          "start": 3.77,
+          "end": 3.9
+        },
+        {
+          "id": "w17",
+          "text": "mà",
+          "start": 3.9,
+          "end": 4
+        },
+        {
+          "id": "w18",
+          "text": "nhỉ?",
+          "start": 4,
+          "end": 4.31
+        },
+        {
+          "id": "w19",
+          "text": "Hay",
+          "start": 4.38,
+          "end": 4.45
+        },
+        {
+          "id": "w20",
+          "text": "ai",
+          "start": 4.45,
+          "end": 4.54
+        },
+        {
+          "id": "w21",
+          "text": "sửa",
+          "start": 4.54,
+          "end": 4.63
+        },
+        {
+          "id": "w22",
+          "text": "đè",
+          "start": 4.69,
+          "end": 4.74
+        },
+        {
+          "id": "w23",
+          "text": "lên?",
+          "start": 4.74,
+          "end": 5.1
+        }
+      ]
+    },
+    {
+      "frame": 7,
+      "path": "assets/voice/07.wav",
+      "duration_s": 5.514,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Bản",
+          "start": 0.05,
+          "end": 0.16
+        },
+        {
+          "id": "w1",
+          "text": "cũ",
+          "start": 0.16,
+          "end": 0.32
+        },
+        {
+          "id": "w2",
+          "text": "chạy",
+          "start": 0.32,
+          "end": 0.53
+        },
+        {
+          "id": "w3",
+          "text": "lại",
+          "start": 0.53,
+          "end": 0.69
+        },
+        {
+          "id": "w4",
+          "text": "rồi,",
+          "start": 0.69,
+          "end": 0.94
+        },
+        {
+          "id": "w5",
+          "text": "giờ",
+          "start": 1.27,
+          "end": 1.31
+        },
+        {
+          "id": "w6",
+          "text": "đi",
+          "start": 1.31,
+          "end": 1.47
+        },
+        {
+          "id": "w7",
+          "text": "tìm",
+          "start": 1.47,
+          "end": 1.69
+        },
+        {
+          "id": "w8",
+          "text": "lỗi.",
+          "start": 1.69,
+          "end": 1.99
+        },
+        {
+          "id": "w9",
+          "text": "Lục",
+          "start": 2.14,
+          "end": 2.26
+        },
+        {
+          "id": "w10",
+          "text": "từng",
+          "start": 2.26,
+          "end": 2.5
+        },
+        {
+          "id": "w11",
+          "text": "yêu",
+          "start": 2.5,
+          "end": 2.63
+        },
+        {
+          "id": "w12",
+          "text": "cầu",
+          "start": 2.7,
+          "end": 2.83
+        },
+        {
+          "id": "w13",
+          "text": "gộp",
+          "start": 2.87,
+          "end": 2.95
+        },
+        {
+          "id": "w14",
+          "text": "code,",
+          "start": 3.06,
+          "end": 3.14
+        },
+        {
+          "id": "w15",
+          "text": "dò",
+          "start": 3.27,
+          "end": 3.34
+        },
+        {
+          "id": "w16",
+          "text": "lịch",
+          "start": 3.34,
+          "end": 3.47
+        },
+        {
+          "id": "w17",
+          "text": "sử…",
+          "start": 3.59,
+          "end": 3.76
+        },
+        {
+          "id": "w18",
+          "text": "mười",
+          "start": 3.97,
+          "end": 4.11
+        },
+        {
+          "id": "w19",
+          "text": "phút",
+          "start": 4.11,
+          "end": 4.29
+        },
+        {
+          "id": "w20",
+          "text": "thành",
+          "start": 4.29,
+          "end": 4.52
+        },
+        {
+          "id": "w21",
+          "text": "nửa",
+          "start": 4.52,
+          "end": 4.64
+        },
+        {
+          "id": "w22",
+          "text": "tiếng,",
+          "start": 4.64,
+          "end": 4.87
+        },
+        {
+          "id": "w23",
+          "text": "vẫn",
+          "start": 4.87,
+          "end": 5
+        },
+        {
+          "id": "w24",
+          "text": "bí!",
+          "start": 5.02,
+          "end": 5.3
+        }
+      ]
+    },
+    {
+      "frame": 8,
+      "path": "assets/voice/08.wav",
+      "duration_s": 3.52,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Ai",
+          "start": 0.07,
+          "end": 0.09
+        },
+        {
+          "id": "w1",
+          "text": "viết",
+          "start": 0.09,
+          "end": 0.27
+        },
+        {
+          "id": "w2",
+          "text": "dòng",
+          "start": 0.27,
+          "end": 0.45
+        },
+        {
+          "id": "w3",
+          "text": "này",
+          "start": 0.45,
+          "end": 0.59
+        },
+        {
+          "id": "w4",
+          "text": "vậy?",
+          "start": 0.59,
+          "end": 0.89
+        },
+        {
+          "id": "w5",
+          "text": "Trời",
+          "start": 1.86,
+          "end": 1.9
+        },
+        {
+          "id": "w6",
+          "text": "ơi…",
+          "start": 1.93,
+          "end": 2.56
+        },
+        {
+          "id": "w7",
+          "text": "là",
+          "start": 2.56,
+          "end": 2.7
+        },
+        {
+          "id": "w8",
+          "text": "mình!",
+          "start": 2.7,
+          "end": 3.2
+        }
+      ]
+    },
+    {
+      "frame": 9,
+      "path": "assets/voice/09.wav",
+      "duration_s": 2.442,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Mình",
+          "start": 0.05,
+          "end": 0.38
+        },
+        {
+          "id": "w1",
+          "text": "báo",
+          "start": 0.38,
+          "end": 0.627
+        },
+        {
+          "id": "w2",
+          "text": "ngay:",
+          "start": 0.627,
+          "end": 0.957
+        },
+        {
+          "id": "w3",
+          "text": "“Lỗi",
+          "start": 0.957,
+          "end": 1.204
+        },
+        {
+          "id": "w4",
+          "text": "do",
+          "start": 1.204,
+          "end": 1.369
+        },
+        {
+          "id": "w5",
+          "text": "em,",
+          "start": 1.369,
+          "end": 1.533
+        },
+        {
+          "id": "w6",
+          "text": "em",
+          "start": 1.533,
+          "end": 1.698
+        },
+        {
+          "id": "w7",
+          "text": "tìm",
+          "start": 1.698,
+          "end": 1.946
+        },
+        {
+          "id": "w8",
+          "text": "ra",
+          "start": 1.946,
+          "end": 2.11
+        },
+        {
+          "id": "w9",
+          "text": "rồi",
+          "start": 2.11,
+          "end": 2.358
+        },
+        {
+          "id": "w10",
+          "text": "ạ!”",
+          "start": 2.358,
+          "end": 2.44
+        }
+      ]
+    },
+    {
+      "frame": 10,
+      "path": "assets/voice/10.wav",
+      "duration_s": 1.824,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Mình",
+          "start": 0.06,
+          "end": 0.22
+        },
+        {
+          "id": "w1",
+          "text": "sửa",
+          "start": 0.31,
+          "end": 0.43
+        },
+        {
+          "id": "w2",
+          "text": "xong,",
+          "start": 0.43,
+          "end": 0.71
+        },
+        {
+          "id": "w3",
+          "text": "nhờ",
+          "start": 0.92,
+          "end": 0.97
+        },
+        {
+          "id": "w4",
+          "text": "chị",
+          "start": 0.98,
+          "end": 1.14
+        },
+        {
+          "id": "w5",
+          "text": "Mai",
+          "start": 1.14,
+          "end": 1.31
+        },
+        {
+          "id": "w6",
+          "text": "thử",
+          "start": 1.31,
+          "end": 1.47
+        },
+        {
+          "id": "w7",
+          "text": "lại…",
+          "start": 1.47,
+          "end": 1.68
+        }
+      ]
+    },
+    {
+      "frame": 11,
+      "path": "assets/voice/11.wav",
+      "duration_s": 1.28,
+      "words": [
+        {
+          "id": "w0",
+          "text": "“Ngon",
+          "start": 0.05,
+          "end": 0.19
+        },
+        {
+          "id": "w1",
+          "text": "lành",
+          "start": 0.19,
+          "end": 0.36
+        },
+        {
+          "id": "w2",
+          "text": "rồi",
+          "start": 0.41,
+          "end": 0.53
+        },
+        {
+          "id": "w3",
+          "text": "em",
+          "start": 0.53,
+          "end": 0.63
+        },
+        {
+          "id": "w4",
+          "text": "ơi!”",
+          "start": 0.63,
+          "end": 0.9
+        }
+      ]
+    },
+    {
+      "frame": 12,
+      "path": "assets/voice/12.wav",
+      "duration_s": 3.853,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Phát",
+          "start": 0.1,
+          "end": 0.2
+        },
+        {
+          "id": "w1",
+          "text": "hành",
+          "start": 0.2,
+          "end": 0.4
+        },
+        {
+          "id": "w2",
+          "text": "lại",
+          "start": 0.4,
+          "end": 0.48
+        },
+        {
+          "id": "w3",
+          "text": "xong.",
+          "start": 0.59,
+          "end": 0.79
+        },
+        {
+          "id": "w4",
+          "text": "Tối",
+          "start": 0.95,
+          "end": 1.08
+        },
+        {
+          "id": "w5",
+          "text": "đó",
+          "start": 1.11,
+          "end": 1.21
+        },
+        {
+          "id": "w6",
+          "text": "về",
+          "start": 1.21,
+          "end": 1.34
+        },
+        {
+          "id": "w7",
+          "text": "muộn",
+          "start": 1.34,
+          "end": 1.59
+        },
+        {
+          "id": "w8",
+          "text": "một",
+          "start": 1.59,
+          "end": 1.79
+        },
+        {
+          "id": "w9",
+          "text": "chút,",
+          "start": 1.79,
+          "end": 2.06
+        },
+        {
+          "id": "w10",
+          "text": "nhưng",
+          "start": 2.26,
+          "end": 2.37
+        },
+        {
+          "id": "w11",
+          "text": "không",
+          "start": 2.37,
+          "end": 2.64
+        },
+        {
+          "id": "w12",
+          "text": "ai",
+          "start": 2.64,
+          "end": 2.74
+        },
+        {
+          "id": "w13",
+          "text": "phải",
+          "start": 2.74,
+          "end": 2.95
+        },
+        {
+          "id": "w14",
+          "text": "gánh",
+          "start": 2.95,
+          "end": 3.16
+        },
+        {
+          "id": "w15",
+          "text": "một",
+          "start": 3.16,
+          "end": 3.32
+        },
+        {
+          "id": "w16",
+          "text": "mình.",
+          "start": 3.32,
+          "end": 3.58
+        }
+      ]
+    },
+    {
+      "frame": 13,
+      "path": "assets/voice/13.wav",
+      "duration_s": 4.466,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Đầu",
+          "start": 0.06,
+          "end": 0.18
+        },
+        {
+          "id": "w1",
+          "text": "tuần",
+          "start": 0.18,
+          "end": 0.4
+        },
+        {
+          "id": "w2",
+          "text": "sau,",
+          "start": 0.49,
+          "end": 0.72
+        },
+        {
+          "id": "w3",
+          "text": "cả",
+          "start": 0.72,
+          "end": 0.74
+        },
+        {
+          "id": "w4",
+          "text": "nhóm",
+          "start": 0.95,
+          "end": 1.09
+        },
+        {
+          "id": "w5",
+          "text": "rút",
+          "start": 1.09,
+          "end": 1.23
+        },
+        {
+          "id": "w6",
+          "text": "kinh",
+          "start": 1.27,
+          "end": 1.52
+        },
+        {
+          "id": "w7",
+          "text": "nghiệm:",
+          "start": 1.52,
+          "end": 2.1
+        },
+        {
+          "id": "w8",
+          "text": "tìm",
+          "start": 2.1,
+          "end": 2.21
+        },
+        {
+          "id": "w9",
+          "text": "cách",
+          "start": 2.25,
+          "end": 2.46
+        },
+        {
+          "id": "w10",
+          "text": "để",
+          "start": 2.46,
+          "end": 2.56
+        },
+        {
+          "id": "w11",
+          "text": "lỗi",
+          "start": 2.56,
+          "end": 2.71
+        },
+        {
+          "id": "w12",
+          "text": "không",
+          "start": 2.71,
+          "end": 2.98
+        },
+        {
+          "id": "w13",
+          "text": "lặp",
+          "start": 2.98,
+          "end": 3.11
+        },
+        {
+          "id": "w14",
+          "text": "lại,",
+          "start": 3.36,
+          "end": 3.42
+        },
+        {
+          "id": "w15",
+          "text": "chứ",
+          "start": 3.43,
+          "end": 3.5
+        },
+        {
+          "id": "w16",
+          "text": "không",
+          "start": 3.55,
+          "end": 3.66
+        },
+        {
+          "id": "w17",
+          "text": "tìm",
+          "start": 3.72,
+          "end": 3.78
+        },
+        {
+          "id": "w18",
+          "text": "người",
+          "start": 3.78,
+          "end": 3.95
+        },
+        {
+          "id": "w19",
+          "text": "để",
+          "start": 3.95,
+          "end": 4.01
+        },
+        {
+          "id": "w20",
+          "text": "trách.",
+          "start": 4.01,
+          "end": 4.29
+        }
+      ]
+    },
+    {
+      "frame": 14,
+      "path": "assets/voice/14.wav",
+      "duration_s": 3.401,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Nếu",
+          "start": 0.05,
+          "end": 0.18
+        },
+        {
+          "id": "w1",
+          "text": "là",
+          "start": 0.18,
+          "end": 0.28
+        },
+        {
+          "id": "w2",
+          "text": "bạn,",
+          "start": 0.28,
+          "end": 0.61
+        },
+        {
+          "id": "w3",
+          "text": "bạn",
+          "start": 0.73,
+          "end": 0.8
+        },
+        {
+          "id": "w4",
+          "text": "sẽ",
+          "start": 0.8,
+          "end": 0.92
+        },
+        {
+          "id": "w5",
+          "text": "nhận",
+          "start": 1,
+          "end": 1.16
+        },
+        {
+          "id": "w6",
+          "text": "lỗi",
+          "start": 1.16,
+          "end": 1.34
+        },
+        {
+          "id": "w7",
+          "text": "ngay,",
+          "start": 1.34,
+          "end": 1.71
+        },
+        {
+          "id": "w8",
+          "text": "hay",
+          "start": 1.82,
+          "end": 2.03
+        },
+        {
+          "id": "w9",
+          "text": "đợi",
+          "start": 2.1,
+          "end": 2.24
+        },
+        {
+          "id": "w10",
+          "text": "sửa",
+          "start": 2.24,
+          "end": 2.44
+        },
+        {
+          "id": "w11",
+          "text": "xong",
+          "start": 2.52,
+          "end": 2.73
+        },
+        {
+          "id": "w12",
+          "text": "mới",
+          "start": 2.73,
+          "end": 2.94
+        },
+        {
+          "id": "w13",
+          "text": "nói?",
+          "start": 2.94,
+          "end": 3.16
+        }
+      ]
+    }
+  ],
+  "sfx": [
+    {
+      "frame": 1,
+      "file": "assets/sfx/alarm-bed.mp3",
+      "offset_s": 0,
+      "duration_s": 7.2,
+      "volume": 1
+    },
+    {
+      "frame": 1,
+      "file": "assets/sfx/braam.mp3",
+      "offset_s": 0.03,
+      "duration_s": 2.6,
+      "volume": 0.8
+    },
+    {
+      "frame": 1,
+      "file": "assets/sfx/glitch.mp3",
+      "offset_s": 0.32,
+      "duration_s": 0.48,
+      "volume": 0.55
+    },
+    {
+      "frame": 1,
+      "file": "assets/sfx/glitch.mp3",
+      "offset_s": 1.98,
+      "duration_s": 0.48,
+      "volume": 0.45
+    },
+    {
+      "frame": 1,
+      "file": "assets/sfx/error-beep.mp3",
+      "offset_s": 0.25,
+      "duration_s": 0.37,
+      "volume": 0.22
+    },
+    {
+      "frame": 1,
+      "file": "assets/sfx/error-beep.mp3",
+      "offset_s": 0.55,
+      "duration_s": 0.37,
+      "volume": 0.22
+    },
+    {
+      "frame": 1,
+      "file": "assets/sfx/error-beep.mp3",
+      "offset_s": 0.85,
+      "duration_s": 0.37,
+      "volume": 0.22
+    },
+    {
+      "frame": 1,
+      "file": "assets/sfx/error-beep.mp3",
+      "offset_s": 1.15,
+      "duration_s": 0.37,
+      "volume": 0.22
+    },
+    {
+      "frame": 2,
+      "file": "assets/sfx/error-beep.mp3",
+      "offset_s": 0.35,
+      "duration_s": 0.37,
+      "volume": 0.35
+    },
+    {
+      "frame": 2,
+      "file": "assets/sfx/phone-buzz.mp3",
+      "offset_s": 1.5,
+      "duration_s": 1.43,
+      "volume": 0.55
+    },
+    {
+      "frame": 2,
+      "file": "assets/sfx/notification.mp3",
+      "offset_s": 1.6,
+      "duration_s": 0.32,
+      "volume": 0.3
+    },
+    {
+      "frame": 2,
+      "file": "assets/sfx/notification.mp3",
+      "offset_s": 1.88,
+      "duration_s": 0.32,
+      "volume": 0.3
+    },
+    {
+      "frame": 2,
+      "file": "assets/sfx/notification.mp3",
+      "offset_s": 2.16,
+      "duration_s": 0.32,
+      "volume": 0.3
+    },
+    {
+      "frame": 2,
+      "file": "assets/sfx/notification.mp3",
+      "offset_s": 2.47,
+      "duration_s": 0.32,
+      "volume": 0.4
+    },
+    {
+      "frame": 2,
+      "file": "assets/sfx/glitch.mp3",
+      "offset_s": 2.47,
+      "duration_s": 0.48,
+      "volume": 0.4
+    },
+    {
+      "frame": 2,
+      "file": "assets/sfx/gasp.mp3",
+      "offset_s": 2.52,
+      "duration_s": 1.61,
+      "volume": 0.5
+    },
+    {
+      "frame": 3,
+      "file": "assets/sfx/clock-tick-bed.mp3",
+      "offset_s": 0,
+      "duration_s": 14.1,
+      "volume": 1
+    },
+    {
+      "frame": 3,
+      "file": "assets/sfx/heartbeat-soft.mp3",
+      "offset_s": 1,
+      "duration_s": 7.9,
+      "volume": 1
+    },
+    {
+      "frame": 4,
+      "file": "assets/sfx/impact-whoosh.mp3",
+      "offset_s": 1.85,
+      "duration_s": 1.12,
+      "volume": 0.6
+    },
+    {
+      "frame": 4,
+      "file": "assets/sfx/braam.mp3",
+      "offset_s": 4.55,
+      "duration_s": 2.6,
+      "volume": 0.75
+    },
+    {
+      "frame": 5,
+      "file": "assets/sfx/whoosh.mp3",
+      "offset_s": 3.61,
+      "duration_s": 0.45,
+      "volume": 0.45
+    },
+    {
+      "frame": 6,
+      "file": "assets/sfx/comedic-spring.mp3",
+      "offset_s": 0,
+      "duration_s": 1.13,
+      "volume": 0.5
+    },
+    {
+      "frame": 6,
+      "file": "assets/sfx/scroll-ticks.mp3",
+      "offset_s": 2.44,
+      "duration_s": 1.6,
+      "volume": 0.35
+    },
+    {
+      "frame": 6,
+      "file": "assets/sfx/whoosh.mp3",
+      "offset_s": 4.38,
+      "duration_s": 0.45,
+      "volume": 0.35
+    },
+    {
+      "frame": 7,
+      "file": "assets/sfx/success-chime.mp3",
+      "offset_s": 0.7,
+      "duration_s": 1.6,
+      "volume": 0.45
+    },
+    {
+      "frame": 7,
+      "file": "assets/sfx/whoosh.mp3",
+      "offset_s": 2.14,
+      "duration_s": 0.45,
+      "volume": 0.35
+    },
+    {
+      "frame": 7,
+      "file": "assets/sfx/typing-fast.mp3",
+      "offset_s": 2.24,
+      "duration_s": 1.8,
+      "volume": 0.35
+    },
+    {
+      "frame": 7,
+      "file": "assets/sfx/whoosh.mp3",
+      "offset_s": 3.27,
+      "duration_s": 0.45,
+      "volume": 0.3
+    },
+    {
+      "frame": 7,
+      "file": "assets/sfx/scroll-ticks.mp3",
+      "offset_s": 3.27,
+      "duration_s": 1.6,
+      "volume": 0.35
+    },
+    {
+      "frame": 7,
+      "file": "assets/sfx/whoosh.mp3",
+      "offset_s": 3.97,
+      "duration_s": 0.45,
+      "volume": 0.3
+    },
+    {
+      "frame": 7,
+      "file": "assets/sfx/clock-fast.mp3",
+      "offset_s": 3.97,
+      "duration_s": 1.8,
+      "volume": 0.9
+    },
+    {
+      "frame": 7,
+      "file": "assets/sfx/pen-strike.mp3",
+      "offset_s": 4.52,
+      "duration_s": 0.49,
+      "volume": 0.5
+    },
+    {
+      "frame": 7,
+      "file": "assets/sfx/relief-sigh.mp3",
+      "offset_s": 5.17,
+      "duration_s": 1.1,
+      "volume": 0.55
+    },
+    {
+      "frame": 7,
+      "file": "assets/sfx/riser.mp3",
+      "offset_s": 4.54,
+      "duration_s": 2.9,
+      "volume": 0.55
+    },
+    {
+      "frame": 8,
+      "file": "assets/sfx/record-scratch.mp3",
+      "offset_s": 0.91,
+      "duration_s": 0.56,
+      "volume": 0.75
+    },
+    {
+      "frame": 8,
+      "file": "assets/sfx/dramatic-sting.mp3",
+      "offset_s": 3.25,
+      "duration_s": 2,
+      "volume": 0.6
+    },
+    {
+      "frame": 8,
+      "file": "assets/sfx/heartbeat-strong.mp3",
+      "offset_s": 3.5,
+      "duration_s": 3.44,
+      "volume": 1
+    },
+    {
+      "frame": 9,
+      "file": "assets/sfx/chair-swivel.mp3",
+      "offset_s": 0.1,
+      "duration_s": 0.56,
+      "volume": 0.5
+    },
+    {
+      "frame": 10,
+      "file": "assets/sfx/typing-fast.mp3",
+      "offset_s": 0.11,
+      "duration_s": 1.8,
+      "volume": 0.35
+    },
+    {
+      "frame": 10,
+      "file": "assets/sfx/tap.mp3",
+      "offset_s": 1.79,
+      "duration_s": 0.11,
+      "volume": 0.55
+    },
+    {
+      "frame": 11,
+      "file": "assets/sfx/success-chime.mp3",
+      "offset_s": 0.05,
+      "duration_s": 1.6,
+      "volume": 0.5
+    },
+    {
+      "frame": 11,
+      "file": "assets/sfx/confetti-pop.mp3",
+      "offset_s": 0.1,
+      "duration_s": 0.61,
+      "volume": 0.55
+    },
+    {
+      "frame": 11,
+      "file": "assets/sfx/confetti-sparkle.mp3",
+      "offset_s": 0.18,
+      "duration_s": 1.76,
+      "volume": 0.45
+    },
+    {
+      "frame": 12,
+      "file": "assets/sfx/whoosh.mp3",
+      "offset_s": 0.1,
+      "duration_s": 0.45,
+      "volume": 0.4
+    },
+    {
+      "frame": 12,
+      "file": "assets/sfx/team-cheer.mp3",
+      "offset_s": 1.7,
+      "duration_s": 2.2,
+      "volume": 0.35
+    },
+    {
+      "frame": 12,
+      "file": "assets/sfx/high-five.mp3",
+      "offset_s": 1.75,
+      "duration_s": 0.59,
+      "volume": 0.6
+    },
+    {
+      "frame": 12,
+      "file": "assets/sfx/confetti-pop.mp3",
+      "offset_s": 1.75,
+      "duration_s": 0.61,
+      "volume": 0.45
+    },
+    {
+      "frame": 12,
+      "file": "assets/sfx/confetti-sparkle.mp3",
+      "offset_s": 1.83,
+      "duration_s": 1.76,
+      "volume": 0.4
+    },
+    {
+      "frame": 12,
+      "file": "assets/sfx/relief-sigh.mp3",
+      "offset_s": 3.63,
+      "duration_s": 1.1,
+      "volume": 0.5
+    },
+    {
+      "frame": 13,
+      "file": "assets/sfx/pen-strike.mp3",
+      "offset_s": 3.58,
+      "duration_s": 0.49,
+      "volume": 0.55
+    },
+    {
+      "frame": 13,
+      "file": "assets/sfx/soft-pop.mp3",
+      "offset_s": 4,
+      "duration_s": 0.24,
+      "volume": 0.4
+    },
+    {
+      "frame": 14,
+      "file": "assets/sfx/soft-pop.mp3",
+      "offset_s": 0.3,
+      "duration_s": 0.24,
+      "volume": 0.4
+    }
+  ]
+}

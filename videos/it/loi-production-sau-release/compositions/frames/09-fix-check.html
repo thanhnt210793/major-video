@@ -1,0 +1,305 @@
+<template>
+<style>
+
+@font-face{font-family:"Be Vietnam Pro";font-weight:400;font-style:normal;font-display:block;src:url("assets/fonts/BeVietnamPro-Regular.ttf") format("truetype");}
+@font-face{font-family:"Be Vietnam Pro";font-weight:500;font-style:normal;font-display:block;src:url("assets/fonts/BeVietnamPro-Medium.ttf") format("truetype");}
+@font-face{font-family:"Be Vietnam Pro";font-weight:600;font-style:normal;font-display:block;src:url("assets/fonts/BeVietnamPro-SemiBold.ttf") format("truetype");}
+@font-face{font-family:"Be Vietnam Pro";font-weight:700;font-style:normal;font-display:block;src:url("assets/fonts/BeVietnamPro-Bold.ttf") format("truetype");}
+@font-face{font-family:"Be Vietnam Pro";font-weight:800;font-style:normal;font-display:block;src:url("assets/fonts/BeVietnamPro-ExtraBold.ttf") format("truetype");}
+@font-face{font-family:"JetBrains Mono";font-weight:100 800;font-style:normal;font-display:block;src:url("assets/fonts/JetBrainsMono-Variable.ttf") format("truetype");}
+#root{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;font-family:"Be Vietnam Pro";color:#F5EFE4;}
+.f09-ground{position:absolute;inset:0;background:#0F1E33;}
+.f09-zoom{position:absolute;inset:0;}
+.f09-pan{position:absolute;left:0;top:0;width:2400px;height:1920px;}
+.f09-wall{position:absolute;left:0;top:0;width:2400px;height:1920px;}
+.f09-deskband{position:absolute;left:0;top:1150px;width:2400px;height:770px;background:#22344F;border-top:6px solid #2C4262;}
+.f09-screen{position:absolute;left:68px;top:258px;width:944px;height:724px;border-radius:8px;overflow:hidden;background:linear-gradient(160deg,#16314F,#0E1D31);}
+.f09-menubar{position:absolute;left:0;right:0;top:0;height:34px;padding:0 18px;display:flex;justify-content:space-between;align-items:center;font-size:19px;font-weight:600;color:#F5EFE4;background:rgba(7,13,23,0.55);z-index:5;}
+.f09-app{position:absolute;left:0;top:34px;width:944px;height:690px;overflow:hidden;background:#12233A;}
+.f09-apptitle{position:absolute;left:44px;top:34px;font-size:44px;font-weight:800;}
+.f09-cardx{position:absolute;left:44px;right:44px;padding:18px 26px;border-radius:16px;background:rgba(245,239,228,0.06);border:2px solid rgba(245,239,228,0.12);display:flex;flex-direction:column;gap:10px;}
+.f09-ghtop{position:absolute;left:0;right:0;top:0;height:72px;background:#14B8A6;display:flex;align-items:center;gap:12px;padding:0 24px;color:#0B1424;}
+.f09-ghtop b{font-size:36px;font-weight:800;}
+.f09-ghsearch{margin-left:auto;width:340px;height:44px;border-radius:22px;background:rgba(255,255,255,0.88);color:#5C6B82;font-size:22px;font-weight:600;display:flex;align-items:center;padding:0 18px;}
+.f09-ghsale{position:absolute;left:24px;right:24px;top:86px;height:112px;border-radius:16px;background:linear-gradient(90deg,#F2A93B,#FFD166);color:#3A1400;display:flex;flex-direction:column;justify-content:center;padding:0 26px;}
+.f09-ghsale b{font-size:46px;font-weight:800;letter-spacing:0.02em;line-height:1.1;}
+.f09-ghsale span{font-size:26px;font-weight:700;}
+.f09-ghsale i{font-style:normal;font-variant-numeric:tabular-nums;background:#3A1400;color:#FFD166;padding:0 8px;border-radius:6px;}
+.f09-ghitem{position:absolute;left:24px;right:24px;top:212px;height:112px;border-radius:16px;background:rgba(245,239,228,0.06);border:2px solid rgba(245,239,228,0.12);display:flex;align-items:center;gap:20px;padding:0 20px;}
+.f09-ghitem b{display:block;font-size:30px;font-weight:700;}
+.f09-ghitem span{display:block;font-size:28px;margin-top:4px;}
+.f09-ghitem em{font-style:normal;color:#FF8A80;font-weight:800;}
+.f09-ghitem s{color:#8796A9;margin-left:12px;}
+.f09-ghbadge{margin-left:auto;font-style:normal;background:#E5534B;color:#FFFFFF;font-size:30px;font-weight:800;padding:6px 14px;border-radius:10px;}
+.f09-minibrand{position:absolute;left:30px;right:30px;top:92px;height:44px;border-radius:10px;background:#14B8A6;color:#0B1424;font-size:24px;font-weight:800;display:flex;align-items:center;gap:8px;padding:0 12px;}
+.f09-pg{position:absolute;left:30px;right:30px;top:92px;height:40px;border-radius:10px;background:#14B8A6;color:#0B1424;font-size:24px;font-weight:800;display:flex;align-items:center;gap:8px;padding:0 12px;}
+.f09-row{display:flex;justify-content:space-between;font-size:28px;color:#B8C4D3;}
+.f09-row b{color:#F5EFE4;}
+.f09-lbl{position:absolute;left:44px;font-size:30px;font-weight:700;}
+.f09-input{position:absolute;left:44px;right:44px;height:84px;border-radius:14px;border:3px solid rgba(245,239,228,0.25);background:#0B1424;display:flex;align-items:center;padding:0 24px;font-size:28px;}
+.f09-btn{position:absolute;left:44px;right:44px;height:80px;border-radius:14px;background:#14B8A6;color:#0B1424;font-size:32px;font-weight:800;display:flex;align-items:center;justify-content:center;}
+.f09-banner{position:absolute;left:44px;right:44px;height:100px;border-radius:16px;background:rgba(229,83,75,0.18);border:3px solid #E5534B;color:#FF8A80;font-size:44px;font-weight:800;display:flex;align-items:center;justify-content:center;gap:18px;}
+.f09-msg{position:absolute;left:30px;right:30px;min-height:76px;padding:14px 18px;border-radius:16px;background:rgba(245,239,228,0.05);display:flex;gap:16px;align-items:flex-start;}
+.f09-msg i{flex:0 0 52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-style:normal;font-weight:800;font-size:24px;color:#F5EFE4;}
+.f09-msg b{font-size:24px;font-weight:800;}
+.f09-msg small{font-size:18px;font-weight:500;color:#8796A9;margin-left:8px;}
+.f09-msg p{margin:4px 0 0;font-size:27px;font-weight:500;}
+.f09-calltop{position:absolute;left:20px;top:22px;font-size:24px;font-weight:700;color:#B8C4D3;display:flex;align-items:center;gap:10px;}
+.f09-tile{position:absolute;border-radius:16px;overflow:hidden;background:#1B2E4A;}
+.f09-ring{position:absolute;inset:0;border-radius:16px;border:6px solid #14B8A6;opacity:0;}
+.f09-name{position:absolute;left:14px;bottom:12px;display:flex;align-items:center;gap:8px;padding:6px 16px;border-radius:100px;background:rgba(7,13,23,0.75);font-size:28px;font-weight:800;}
+.f09-half{position:absolute;top:20px;width:442px;height:650px;border-radius:18px;border:4px solid;}
+.f09-halflbl{position:absolute;left:0;right:0;top:26px;text-align:center;font-size:38px;font-weight:800;}
+.f09-mini{position:absolute;left:30px;right:30px;top:110px;display:flex;flex-direction:column;gap:14px;}
+.f09-minifield{height:64px;border-radius:12px;border:2px solid rgba(245,239,228,0.25);display:flex;align-items:center;padding:0 16px;font-size:22px;color:#B8C4D3;}
+.f09-minifield i{margin-left:6px;}
+.f09-minibtn{height:60px;border-radius:12px;background:#14B8A6;color:#0B1424;font-size:24px;font-weight:800;display:flex;align-items:center;justify-content:center;}
+.f09-halficon{position:absolute;left:0;right:0;top:340px;display:flex;justify-content:center;}
+.f09-tabs{position:absolute;left:0;right:0;top:0;height:58px;display:flex;gap:4px;padding:10px 14px 0;background:#16263D;font-size:22px;font-weight:600;color:#8796A9;}
+.f09-tabs span{padding:10px 18px;border-radius:10px 10px 0 0;}
+.f09-tabon{background:#0B1424;color:#F5EFE4;}
+.f09-code{position:absolute;left:0;right:0;font-family:"JetBrains Mono";font-size:27px;}
+.f09-cl{height:56px;line-height:56px;white-space:pre;padding-left:14px;color:#D8DEE8;}
+.f09-ln{display:inline-block;width:56px;color:#5C6B82;}
+.f09-bclip{position:absolute;left:0;right:0;top:62px;height:470px;overflow:hidden;}
+.f09-bscroll{position:absolute;left:0;right:0;top:0;}
+.f09-brow{position:absolute;left:0;right:0;height:44px;line-height:44px;white-space:pre;font-family:"JetBrains Mono";font-size:22px;color:#D8DEE8;display:flex;}
+.f09-who{flex:0 0 210px;padding-left:14px;color:#8796A9;background:rgba(245,239,228,0.04);border-right:2px solid rgba(245,239,228,0.1);}
+.f09-bcode{padding-left:14px;}
+.f09-bbad{background:rgba(229,83,75,0.22);}
+.f09-log{position:absolute;left:20px;right:20px;bottom:20px;padding:12px 16px;border-radius:10px;background:rgba(229,83,75,0.1);font-family:"JetBrains Mono";font-size:19px;color:#FF8A80;opacity:0.75;}
+.f09-fg{position:absolute;inset:0;}
+.f09-alarm{position:absolute;inset:0;background:radial-gradient(ellipse at center, rgba(229,83,75,0) 42%, rgba(229,83,75,0.65) 100%);opacity:0;}
+.f09-flash{position:absolute;inset:0;background:#FFFFFF;opacity:0;}
+.f09-cf{position:absolute;left:530px;top:700px;width:22px;height:12px;border-radius:3px;opacity:0;}
+.f09-bigc{position:absolute;left:0;right:0;margin:0 auto;width:fit-content;top:1020px;padding:18px 44px 22px;border-radius:26px;background:rgba(36,10,12,0.92);border:5px solid #E5534B;text-align:center;box-shadow:0 0 60px rgba(229,83,75,0.45);}
+.f09-bigc span{display:block;font-size:34px;font-weight:800;letter-spacing:0.06em;color:#F5EFE4;}
+.f09-bigc b{display:block;font-size:150px;line-height:1;font-weight:800;color:#FF8A80;font-variant-numeric:tabular-nums;}
+.f09-tz{position:absolute;right:24px;width:520px;height:64px;border-radius:14px;background:#3A1014;border:3px solid #E5534B;display:flex;align-items:center;gap:12px;padding:0 16px;font-size:26px;font-weight:800;color:#FF8A80;box-shadow:0 8px 20px rgba(0,0,0,0.45);}
+.f09-tag{position:absolute;left:0;right:0;margin:0 auto;width:fit-content;top:100px;white-space:nowrap;font-size:40px;font-weight:800;padding:14px 32px;border-radius:100px;background:#1B2E4A;border:3px solid #14B8A6;color:#F5EFE4;}
+.f09-hud{position:absolute;right:30px;top:188px;white-space:nowrap;padding:8px 18px 10px;border-radius:18px;background:rgba(36,10,12,0.88);border:3px solid #E5534B;}
+.f09-hudtop{display:flex;align-items:center;gap:14px;font-size:24px;font-weight:700;color:#F5EFE4;}
+.f09-hudtop b{margin-left:auto;min-width:76px;text-align:right;font-size:40px;font-weight:800;color:#FF8A80;font-variant-numeric:tabular-nums;}
+.f09-hudbarwrap{margin-top:6px;height:12px;border-radius:7px;background:rgba(245,239,228,0.15);overflow:hidden;}
+.f09-hudbar{height:100%;width:100%;border-radius:7px;background:#14B8A6;transform-origin:0 50%;transform:scaleX(0);}
+.f09-card{position:absolute;left:70px;right:70px;padding:26px 32px;border-radius:22px;background:#1B2E4A;border:3px solid #14B8A6;text-align:center;}
+.f09-card b{display:block;font-size:46px;font-weight:800;line-height:1.25;}
+.f09-card small{display:block;margin-top:8px;font-size:32px;font-weight:600;color:#B8C4D3;}
+.f09-bubble{position:absolute;padding:24px 34px;border-radius:30px;background:#F5EFE4;color:#0F1E33;font-size:42px;font-weight:800;white-space:nowrap;box-shadow:0 14px 30px rgba(0,0,0,0.35);}
+.f09-sticker{position:absolute;padding:16px 26px;border-radius:16px;background:#F2A93B;color:#0F1E33;font-size:36px;font-weight:800;white-space:nowrap;box-shadow:0 12px 26px rgba(0,0,0,0.4);}
+.f09-toast{position:absolute;left:90px;right:90px;padding:18px 24px;border-radius:18px;background:rgba(245,239,228,0.96);color:#0F1E33;display:flex;gap:16px;align-items:center;box-shadow:0 12px 26px rgba(0,0,0,0.4);}
+.f09-toast i{flex:0 0 56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-style:normal;font-weight:800;font-size:26px;color:#F5EFE4;}
+.f09-toast b{display:block;font-size:24px;font-weight:800;}
+.f09-toast span{display:block;font-size:30px;font-weight:700;}
+.f09-phone{position:absolute;left:40px;top:480px;width:380px;height:760px;border-radius:50px;background:#0B1424;border:8px solid #2C4262;box-shadow:0 20px 40px rgba(0,0,0,0.5);overflow:hidden;}
+.f09-phone .f09-pt{position:absolute;left:10px;right:10px;top:16px;text-align:center;font-size:28px;line-height:1.2;font-weight:800;color:#F2A93B;}
+.f09-phone .f09-pl{position:absolute;left:30px;top:146px;font-size:28px;font-weight:700;}
+.f09-phone .f09-pf{position:absolute;left:30px;right:30px;top:186px;height:68px;border-radius:12px;border:3px solid rgba(245,239,228,0.25);font-size:26px;color:#7C8AA0;display:flex;align-items:center;padding:0 14px;}
+.f09-phone .f09-pb{position:absolute;left:30px;right:30px;top:280px;height:72px;border-radius:12px;background:#14B8A6;color:#0B1424;font-size:28px;font-weight:800;display:flex;align-items:center;justify-content:center;}
+
+
+</style>
+<div id="root" data-composition-id="09-fix-check" data-width="1080" data-height="1920" data-duration="4">
+  <div id="f09-ground" class="f09-ground clip" data-start="0" data-duration="4" data-track-index="0"></div>
+  <div id="f09-zoom" class="f09-zoom clip" data-start="0" data-duration="4" data-track-index="1">
+    <div id="f09-beat" style="position:absolute;inset:0;transform-origin:540px 960px;">
+    <div id="f09-pan" class="f09-pan">
+      <div id="f09-wall" class="f09-wall">
+<svg width="2400" height="1920" viewBox="0 0 2400 1920" style="position:absolute;left:0;top:0;">
+  <defs>
+    <linearGradient id="f09-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2D48"/><stop offset="1" stop-color="#0F1E33"/></linearGradient>
+    <radialGradient id="f09-sun" cx="0.38" cy="0.12" r="0.5"><stop offset="0" stop-color="#F5EFE4" stop-opacity="0.13"/><stop offset="1" stop-color="#F5EFE4" stop-opacity="0"/></radialGradient>
+    <linearGradient id="f09-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2A93B" stop-opacity="0.35"/><stop offset="1" stop-color="#14B8A6" stop-opacity="0.12"/></linearGradient>
+    <linearGradient id="f09-nightsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#050A14"/><stop offset="1" stop-color="#0E1A33"/></linearGradient>
+  </defs>
+  <rect width="2400" height="1920" fill="url(#f09-wall)"/>
+  <rect width="2400" height="1920" fill="url(#f09-sun)"/>
+  <g transform="translate(760 110)">
+    <rect width="330" height="430" rx="12" fill="url(#f09-sky)"/>
+    <g id="f09-night" opacity="0"><rect width="330" height="430" rx="12" fill="url(#f09-nightsky)"/>
+      <circle cx="40" cy="60" r="3" fill="#F5EFE4" fill-opacity="0.8"/><circle cx="120" cy="40" r="3" fill="#F5EFE4" fill-opacity="0.8"/><circle cx="220" cy="90" r="3" fill="#F5EFE4" fill-opacity="0.8"/><circle cx="280" cy="30" r="3" fill="#F5EFE4" fill-opacity="0.8"/><circle cx="70" cy="170" r="3" fill="#F5EFE4" fill-opacity="0.8"/><circle cx="250" cy="200" r="3" fill="#F5EFE4" fill-opacity="0.8"/><circle cx="160" cy="140" r="3" fill="#F5EFE4" fill-opacity="0.8"/>
+      <circle cx="250" cy="110" r="26" fill="#F5EFE4" fill-opacity="0.85"/><circle cx="262" cy="102" r="24" fill="#0B1528"/></g>
+    <rect width="330" height="430" rx="12" fill="none" stroke="#F5EFE4" stroke-opacity="0.14" stroke-width="4"/>
+    <path d="M165 0v430 M0 215h330" stroke="#F5EFE4" stroke-opacity="0.14" stroke-width="4"/></g>
+  <g transform="translate(1500 380)"><rect x="0" y="80" width="300" height="16" rx="6" fill="#2C4262"/><rect x="40" y="10" width="70" height="70" rx="12" fill="#14B8A6" fill-opacity="0.5"/><path d="M75 10 C 60 -30 90 -40 75 -60 M75 10 C 95 -20 110 -10 120 -40 M75 10 C 50 -10 40 -30 30 -35" stroke="#3FB68B" stroke-width="10" fill="none" stroke-linecap="round"/><rect x="150" y="30" width="110" height="50" rx="6" fill="#F5EFE4" fill-opacity="0.18"/></g>
+</svg></div>
+      <div class="f09-deskband"></div>
+      
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" style="position:absolute;left:0;top:0;">
+  <rect x="490" y="996" width="100" height="120" fill="#0A1424"/>
+  <ellipse cx="540" cy="1120" rx="170" ry="26" fill="#0A1424"/>
+  <rect x="50" y="240" width="980" height="760" rx="22" fill="#070D17" stroke="#F5EFE4" stroke-opacity="0.14" stroke-width="3"/>
+</svg>
+      <div id="f09-screen" class="f09-screen"><div class="f09-menubar" data-layout-ignore><span style="font-weight:700;">Lịch sử thay đổi</span><span id="f09-clock">Thứ Sáu 17:30</span></div>
+<div id="f09-app-blame" class="f09-app" style="background:#0B1424;">
+  <div class="f09-tabs" data-layout-ignore><span class="f09-tabon">Lịch sử thay đổi · thanh-toan.js</span></div>
+  <div class="f09-bclip" data-layout-ignore><div id="f09-bscroll" class="f09-bscroll">
+    <div id="f09-br-0" class="f09-brow" style="top:0px;"><span class="f09-who" id="f09-who-0">lan · thứ Hai</span><span class="f09-bcode">import { tinhTong } from "./gio-hang";</span></div><div id="f09-br-1" class="f09-brow" style="top:44px;"><span class="f09-who" id="f09-who-1">tuan · thứ Hai</span><span class="f09-bcode">import { layMucGiam } from "./khuyen-mai";</span></div><div id="f09-br-2" class="f09-brow" style="top:88px;"><span class="f09-who" id="f09-who-2">hoa · thứ Hai</span><span class="f09-bcode">&nbsp;</span></div><div id="f09-br-3" class="f09-brow" style="top:132px;"><span class="f09-who" id="f09-who-3">lan · thứ Hai</span><span class="f09-bcode">export function hienThiDon(donHang) {</span></div><div id="f09-br-4" class="f09-brow" style="top:176px;"><span class="f09-who" id="f09-who-4">tuan · thứ Hai</span><span class="f09-bcode">  return veDon(donHang);</span></div><div id="f09-br-5" class="f09-brow" style="top:220px;"><span class="f09-who" id="f09-who-5">lan · thứ Hai</span><span class="f09-bcode">}</span></div><div id="f09-br-6" class="f09-brow" style="top:264px;"><span class="f09-who" id="f09-who-6">hoa · thứ Ba</span><span class="f09-bcode">&nbsp;</span></div><div id="f09-br-7" class="f09-brow" style="top:308px;"><span class="f09-who" id="f09-who-7">tuan · thứ Ba</span><span class="f09-bcode">export function thanhToan(donHang, maGiamGia) {</span></div><div id="f09-br-8" class="f09-brow" style="top:352px;"><span class="f09-who" id="f09-who-8">hoa · thứ Ba</span><span class="f09-bcode">  const tong = tinhTong(donHang);</span></div><div id="f09-br-9" class="f09-brow f09-bbad" style="top:396px;"><span class="f09-who" id="f09-who-9">minh · thứ Ba</span><span class="f09-bcode">  const ma = maGiamGia.trim();</span></div><div id="f09-br-10" class="f09-brow" style="top:440px;"><span class="f09-who" id="f09-who-10">lan · thứ Ba</span><span class="f09-bcode">  const giam = ma ? layMucGiam(ma) : 0;</span></div><div id="f09-br-11" class="f09-brow" style="top:484px;"><span class="f09-who" id="f09-who-11">tuan · thứ Tư</span><span class="f09-bcode">  return taoThanhToan(tong - giam);</span></div><div id="f09-br-12" class="f09-brow" style="top:528px;"><span class="f09-who" id="f09-who-12">tuan · thứ Tư</span><span class="f09-bcode">}</span></div>
+  </div></div>
+  <div class="f09-log" data-layout-ignore>TypeError: Cannot read properties of undefined (reading 'trim')</div>
+</div></div>
+      <svg width="1080" height="1920" viewBox="0 0 1080 1920" style="position:absolute;left:0;top:0;">
+    <polygon points="160,1300 920,1300 980,1560 100,1560" fill="#16263D" stroke="#0A1424" stroke-width="4" stroke-linejoin="round"/>
+    <polygon id="f09-key-0-0" points="186.0,1309.4 225.1,1309.4 218.0,1344.7 178.0,1344.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-0-1" points="237.5,1309.4 276.6,1309.4 270.6,1344.7 230.6,1344.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-0-2" points="288.9,1309.4 328.0,1309.4 323.2,1344.7 283.2,1344.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-0-3" points="340.4,1309.4 379.5,1309.4 375.8,1344.7 335.8,1344.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-0-4" points="391.8,1309.4 430.9,1309.4 428.5,1344.7 388.5,1344.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-0-5" points="443.3,1309.4 482.4,1309.4 481.1,1344.7 441.1,1344.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-0-6" points="494.7,1309.4 533.8,1309.4 533.7,1344.7 493.7,1344.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-0-7" points="546.2,1309.4 585.3,1309.4 586.3,1344.7 546.3,1344.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-0-8" points="597.6,1309.4 636.7,1309.4 638.9,1344.7 598.9,1344.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-0-9" points="649.1,1309.4 688.2,1309.4 691.5,1344.7 651.5,1344.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-0-10" points="700.5,1309.4 739.6,1309.4 744.2,1344.7 704.2,1344.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-0-11" points="752.0,1309.4 791.1,1309.4 796.8,1344.7 756.8,1344.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-0-12" points="803.4,1309.4 842.5,1309.4 849.4,1344.7 809.4,1344.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-0-13" points="854.9,1309.4 894.0,1309.4 902.0,1344.7 862.0,1344.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-1-0" points="174.2,1361.4 214.6,1361.4 207.5,1396.7 166.2,1396.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-1-1" points="227.4,1361.4 267.8,1361.4 261.8,1396.7 220.5,1396.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-1-2" points="280.6,1361.4 321.0,1361.4 316.2,1396.7 274.9,1396.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-1-3" points="333.7,1361.4 374.1,1361.4 370.5,1396.7 329.2,1396.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-1-4" points="386.9,1361.4 427.3,1361.4 424.8,1396.7 383.5,1396.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-1-5" points="440.0,1361.4 480.5,1361.4 479.1,1396.7 437.9,1396.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-1-6" points="493.2,1361.4 533.6,1361.4 533.5,1396.7 492.2,1396.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-1-7" points="546.4,1361.4 586.8,1361.4 587.8,1396.7 546.5,1396.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-1-8" points="599.5,1361.4 640.0,1361.4 642.1,1396.7 600.9,1396.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-1-9" points="652.7,1361.4 693.1,1361.4 696.5,1396.7 655.2,1396.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-1-10" points="705.9,1361.4 746.3,1361.4 750.8,1396.7 709.5,1396.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-1-11" points="759.0,1361.4 799.4,1361.4 805.1,1396.7 763.8,1396.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-1-12" points="812.2,1361.4 852.6,1361.4 859.5,1396.7 818.2,1396.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-1-13" points="865.4,1361.4 905.8,1361.4 913.8,1396.7 872.5,1396.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-2-0" points="162.4,1413.4 204.1,1413.4 197.0,1448.7 154.4,1448.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-2-1" points="217.3,1413.4 259.0,1413.4 253.0,1448.7 210.5,1448.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-2-2" points="272.2,1413.4 313.9,1413.4 309.1,1448.7 266.5,1448.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-2-3" points="327.1,1413.4 368.8,1413.4 365.1,1448.7 322.5,1448.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-2-4" points="381.9,1413.4 423.7,1413.4 421.2,1448.7 378.6,1448.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-2-5" points="436.8,1413.4 478.5,1413.4 477.2,1448.7 434.6,1448.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-2-6" points="491.7,1413.4 533.4,1413.4 533.3,1448.7 490.7,1448.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-2-7" points="546.6,1413.4 588.3,1413.4 589.3,1448.7 546.7,1448.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-2-8" points="601.5,1413.4 643.2,1413.4 645.4,1448.7 602.8,1448.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-2-9" points="656.3,1413.4 698.1,1413.4 701.4,1448.7 658.8,1448.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-2-10" points="711.2,1413.4 752.9,1413.4 757.5,1448.7 714.9,1448.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-2-11" points="766.1,1413.4 807.8,1413.4 813.5,1448.7 770.9,1448.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-2-12" points="821.0,1413.4 862.7,1413.4 869.5,1448.7 827.0,1448.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-2-13" points="875.9,1413.4 917.6,1413.4 925.6,1448.7 883.0,1448.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-3-0" points="150.6,1465.4 193.6,1465.4 186.5,1500.7 142.6,1500.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-3-1" points="207.2,1465.4 250.2,1465.4 244.3,1500.7 200.4,1500.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-3-2" points="263.8,1465.4 306.8,1465.4 302.0,1500.7 258.1,1500.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-3-3" points="320.4,1465.4 363.4,1465.4 359.8,1500.7 315.9,1500.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-3-4" points="377.0,1465.4 420.0,1465.4 417.5,1500.7 373.7,1500.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-3-5" points="433.6,1465.4 476.6,1465.4 475.3,1500.7 431.4,1500.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-3-6" points="490.2,1465.4 533.2,1465.4 533.1,1500.7 489.2,1500.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-3-7" points="546.8,1465.4 589.8,1465.4 590.8,1500.7 546.9,1500.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-3-8" points="603.4,1465.4 646.4,1465.4 648.6,1500.7 604.7,1500.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-3-9" points="660.0,1465.4 703.0,1465.4 706.3,1500.7 662.5,1500.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-3-10" points="716.6,1465.4 759.6,1465.4 764.1,1500.7 720.2,1500.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-3-11" points="773.2,1465.4 816.2,1465.4 821.9,1500.7 778.0,1500.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-3-12" points="829.8,1465.4 872.8,1465.4 879.6,1500.7 835.7,1500.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-3-13" points="886.4,1465.4 929.4,1465.4 937.4,1500.7 893.5,1500.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/><polygon id="f09-key-4-0" points="335.9,1517.4 744.1,1517.4 748.2,1552.7 331.8,1552.7" fill="#2E4566" stroke="#0A1424" stroke-width="2"/>
+    <g transform="translate(1000 1380)"><ellipse cx="40" cy="70" rx="44" ry="66" fill="#16263D" stroke="#0A1424" stroke-width="4"/><path d="M40 8v46" stroke="#0A1424" stroke-width="4"/></g>
+  </svg>
+      
+<svg id="f09-tea" width="200" height="300" viewBox="0 0 200 300" style="position:absolute;left:800px;top:1010px;overflow:visible;">
+  <ellipse cx="100" cy="282" rx="70" ry="12" fill="#0A1424" fill-opacity="0.5"/>
+  <path d="M34 40 L166 40 L150 280 L50 280 Z" fill="#F5EFE4" fill-opacity="0.16" stroke="#F5EFE4" stroke-opacity="0.55" stroke-width="4" stroke-linejoin="round"/>
+  <path id="f09-tea-fill" d="M40 90 L160 90 L150 276 L50 276 Z" fill="#B07A4F"/>
+  <path id="f09-tea-pale" d="M40 90 L160 90 L150 276 L50 276 Z" fill="#D9C2A5" opacity="0"/>
+  <g id="f09-tea-ice" fill="#F5EFE4" fill-opacity="0.75" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="2">
+    <rect x="52" y="78" width="38" height="34" rx="8" transform="rotate(-12 71 95)"/><rect x="102" y="74" width="40" height="36" rx="8" transform="rotate(10 122 92)"/>
+    <rect x="76" y="118" width="36" height="32" rx="8" transform="rotate(6 94 134)"/><rect x="118" y="124" width="30" height="28" rx="8" transform="rotate(-8 133 138)"/></g>
+  <g fill="#2A1A12"><circle cx="66" cy="258" r="9"/><circle cx="86" cy="262" r="9"/><circle cx="106" cy="258" r="9"/><circle cx="126" cy="262" r="9"/><circle cx="76" cy="244" r="9"/><circle cx="98" cy="246" r="9"/><circle cx="120" cy="244" r="9"/><circle cx="140" cy="252" r="9"/><circle cx="58" cy="248" r="9"/></g>
+  <rect x="26" y="28" width="148" height="18" rx="8" fill="#F5EFE4" fill-opacity="0.9"/>
+  <g transform="rotate(-24 100 20)"><rect x="40" y="10" width="150" height="16" rx="8" fill="#F5EFE4"/><path d="M60 10 v16 M80 10 v16 M100 10 v16 M120 10 v16 M140 10 v16 M160 10 v16" stroke="#14B8A6" stroke-width="5"/></g>
+</svg>
+      
+<svg width="1280" height="1920" viewBox="1220 0 1280 1920" style="position:absolute;left:1220px;top:0;">
+  <rect x="1700" y="700" width="320" height="520" rx="60" fill="#16263D"/>
+  <path d="M1690 1180 C 1700 980 1760 900 1860 890 C 1960 900 2020 980 2030 1180 Z" fill="#F5EFE4"/>
+  <path d="M1810 892 L1860 960 L1910 892" stroke="#B8C4D3" stroke-width="6" fill="none" stroke-linejoin="round"/>
+  <path d="M1772 880 C 1772 940 1948 940 1948 880" stroke="#14B8A6" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <rect x="1752" y="858" width="40" height="56" rx="16" fill="#14B8A6"/><rect x="1928" y="858" width="40" height="56" rx="16" fill="#14B8A6"/>
+  <g id="f09-mai-head">
+    <rect x="1838" y="790" width="44" height="70" rx="18" fill="#D9A07A"/>
+    <path d="M1738 700 C 1738 560 1982 560 1982 700 L1982 800 C 1960 815 1930 790 1925 760 L1795 760 C 1790 790 1760 815 1738 800 Z" fill="#2A2320"/>
+    <ellipse cx="1860" cy="712" rx="104" ry="112" fill="#D9A07A" stroke="#BF845F" stroke-width="3"/>
+    <path d="M1752 680 C 1760 600 1820 580 1880 590 C 1940 600 1972 640 1968 700 C 1930 650 1860 640 1800 660 C 1780 668 1764 676 1752 680 Z" fill="#2A2320"/>
+    <g id="f09-mai-eyes"><ellipse cx="1822" cy="716" rx="11" ry="14" fill="#1A1412"/><ellipse cx="1898" cy="716" rx="11" ry="14" fill="#1A1412"/></g>
+    <path d="M1808 690 q14 -10 28 0 M1884 690 q14 -10 28 0" stroke="#1A1412" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="1800" cy="756" rx="16" ry="9" fill="#E5534B" fill-opacity="0.25"/><ellipse cx="1920" cy="756" rx="16" ry="9" fill="#E5534B" fill-opacity="0.25"/>
+    <path id="f09-mai-smile" d="M1832 770 q28 22 56 0" stroke="#7A3B2E" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path id="f09-mai-laugh" d="M1826 764 q34 40 68 0 z" fill="#7A3B2E" opacity="0"/>
+    <g id="f09-mai-talk" opacity="0"><ellipse cx="1860" cy="776" rx="16" ry="12" fill="#7A3B2E"/></g>
+  </g>
+  <path d="M1712 1000 C 1690 1060 1690 1120 1720 1160 L1800 1164" stroke="#F5EFE4" stroke-width="54" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="1812" cy="1160" rx="34" ry="22" fill="#D9A07A" stroke="#BF845F" stroke-width="3"/>
+  <g id="f09-mai-armr">
+    <path d="M2008 1000 C 2034 1060 2040 1110 2030 1150 L2090 1150" stroke="#F5EFE4" stroke-width="54" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="2098" cy="1146" rx="32" ry="22" fill="#D9A07A" stroke="#BF845F" stroke-width="3"/>
+  </g>
+  <g id="f09-mai-phone" opacity="0"><rect x="2066" y="990" width="70" height="128" rx="12" fill="#0B1424" stroke="#F5EFE4" stroke-opacity="0.6" stroke-width="4"/><rect x="2074" y="1002" width="54" height="100" rx="6" fill="#14B8A6" fill-opacity="0.45"/></g>
+  <g id="f09-mai-thumb" opacity="0"><path d="M2030 1170 L2074 992" stroke="#F5EFE4" stroke-width="50" stroke-linecap="round"/><rect x="2030" y="930" width="92" height="70" rx="26" fill="#D9A07A" stroke="#BF845F" stroke-width="3"/><path d="M2048 948 h58 M2048 966 h58 M2048 984 h58" stroke="#BF845F" stroke-width="3" stroke-linecap="round"/><rect x="2036" y="858" width="30" height="86" rx="15" fill="#D9A07A" stroke="#BF845F" stroke-width="3" transform="rotate(-12 2051 944)"/></g>
+  <g id="f09-mai-palm" opacity="0"><path d="M2010 1080 L2040 860" stroke="#F5EFE4" stroke-width="50" stroke-linecap="round"/><rect x="2002" y="760" width="86" height="100" rx="30" fill="#D9A07A" stroke="#BF845F" stroke-width="3"/><rect x="2006" y="712" width="18" height="60" rx="9" fill="#D9A07A" stroke="#BF845F" stroke-width="3"/><rect x="2027" y="704" width="18" height="60" rx="9" fill="#D9A07A" stroke="#BF845F" stroke-width="3"/><rect x="2048" y="704" width="18" height="60" rx="9" fill="#D9A07A" stroke="#BF845F" stroke-width="3"/><rect x="2069" y="712" width="18" height="60" rx="9" fill="#D9A07A" stroke="#BF845F" stroke-width="3"/></g>
+  <rect x="1400" y="1150" width="1000" height="40" fill="#2C4262"/>
+  <g transform="translate(1530 1060)"><rect width="70" height="86" rx="10" fill="#F5EFE4" fill-opacity="0.85"/><path d="M70 22 c 26 0 26 40 0 40" stroke="#F5EFE4" stroke-opacity="0.85" stroke-width="9" fill="none"/></g>
+</svg>
+      
+<svg width="420" height="1920" viewBox="2040 0 420 1920" style="position:absolute;left:2040px;top:0;">
+  <path d="M2120 1150 C 2120 900 2160 820 2250 812 C 2340 820 2380 900 2380 1150 Z" fill="#1E4E5C"/>
+  <path d="M2216 816 L2250 870 L2284 816" stroke="#F5EFE4" stroke-opacity="0.85" stroke-width="7" fill="none" stroke-linejoin="round"/>
+  <path d="M2226 830 L2250 1010 L2274 830" stroke="#F2A93B" stroke-width="6" fill="none"/><rect x="2232" y="1004" width="36" height="46" rx="6" fill="#F5EFE4"/>
+  <g id="f09-quan-head">
+    <rect x="2228" y="740" width="44" height="80" rx="16" fill="#C98F68"/>
+    <ellipse cx="2250" cy="660" rx="88" ry="98" fill="#C98F68" stroke="#AE7652" stroke-width="3"/>
+    <path d="M2162 640 C 2160 560 2212 536 2256 540 C 2312 544 2344 578 2340 640 C 2320 604 2290 590 2250 592 C 2210 594 2180 610 2162 640 Z" fill="#1A1412"/>
+    <g id="f09-quan-eyes"><ellipse cx="2218" cy="664" rx="9" ry="12" fill="#1A1412"/><ellipse cx="2282" cy="664" rx="9" ry="12" fill="#1A1412"/></g>
+    <rect x="2190" y="644" width="56" height="40" rx="12" fill="none" stroke="#0A1424" stroke-width="5"/><rect x="2254" y="644" width="56" height="40" rx="12" fill="none" stroke="#0A1424" stroke-width="5"/><path d="M2246 660 h8" stroke="#0A1424" stroke-width="5"/>
+    <path id="f09-quan-mouth" d="M2228 716 q22 10 44 0" stroke="#5A2E22" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <g id="f09-quan-talk" opacity="0"><ellipse cx="2250" cy="720" rx="15" ry="11" fill="#5A2E22"/></g>
+  </g>
+  <g id="f09-quan-armdown"><path d="M2140 900 C 2112 980 2110 1060 2124 1130" stroke="#1E4E5C" stroke-width="56" fill="none" stroke-linecap="round"/><ellipse cx="2126" cy="1140" rx="30" ry="24" fill="#C98F68" stroke="#AE7652" stroke-width="3"/></g>
+  <g id="f09-quan-armup" opacity="0"><path d="M2140 900 C 2090 840 2084 760 2096 700" stroke="#1E4E5C" stroke-width="56" fill="none" stroke-linecap="round"/><rect x="2056" y="600" width="80" height="96" rx="28" fill="#C98F68" stroke="#AE7652" stroke-width="3"/><rect x="2058" y="556" width="17" height="58" rx="8" fill="#C98F68" stroke="#AE7652" stroke-width="3"/><rect x="2077" y="548" width="17" height="58" rx="8" fill="#C98F68" stroke="#AE7652" stroke-width="3"/><rect x="2096" y="548" width="17" height="58" rx="8" fill="#C98F68" stroke="#AE7652" stroke-width="3"/><rect x="2115" y="556" width="17" height="58" rx="8" fill="#C98F68" stroke="#AE7652" stroke-width="3"/></g>
+  <path d="M2360 900 C 2388 980 2390 1060 2376 1130" stroke="#1E4E5C" stroke-width="56" fill="none" stroke-linecap="round"/><ellipse cx="2374" cy="1140" rx="30" ry="24" fill="#C98F68" stroke="#AE7652" stroke-width="3"/>
+</svg>
+      
+    </div>
+    </div>
+  </div>
+  <div id="f09-fg" class="f09-fg clip" data-start="0" data-duration="4" data-track-index="2"><svg width="1080" height="2020" viewBox="0 0 1080 2020" style="position:absolute;left:0;top:0;">
+    <g id="f09-hand-l"><g transform="">
+    <path d="M70 1980 L210 1600 L350 1650 L250 1980 Z" fill="#1B2E4A"/>
+    <path d="M134 1792 L290 1830" stroke="#14B8A6" stroke-opacity="0.55" stroke-width="14" stroke-linecap="round"/>
+    <path d="M200 1610 C 190 1520 270 1440 360 1440 C 440 1440 480 1500 450 1570 C 420 1640 310 1680 200 1610 Z" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/>
+    <rect x="290" y="1416" width="36" height="64" rx="18" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/><rect x="332" y="1402" width="36" height="64" rx="18" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/><rect x="374" y="1402" width="36" height="64" rx="18" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/><rect x="416" y="1416" width="36" height="64" rx="18" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/>
+    <rect x="430" y="1500" width="34" height="80" rx="17" fill="#E8B48F" stroke="#CF9572" stroke-width="3" transform="rotate(-50 447 1540)"/>
+  </g></g><g id="f09-hand-r"><g transform="translate(1500 0) scale(-1 1)">
+    <path d="M490 1980 L630 1600 L770 1650 L670 1980 Z" fill="#1B2E4A"/>
+    <path d="M554 1792 L710 1830" stroke="#14B8A6" stroke-opacity="0.55" stroke-width="14" stroke-linecap="round"/>
+    <path d="M620 1610 C 610 1520 690 1440 780 1440 C 860 1440 900 1500 870 1570 C 840 1640 730 1680 620 1610 Z" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/>
+    <rect x="710" y="1416" width="36" height="64" rx="18" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/><rect x="752" y="1402" width="36" height="64" rx="18" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/><rect x="794" y="1402" width="36" height="64" rx="18" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/><rect x="836" y="1416" width="36" height="64" rx="18" fill="#E8B48F" stroke="#CF9572" stroke-width="3"/>
+    <rect x="850" y="1500" width="34" height="80" rx="17" fill="#E8B48F" stroke="#CF9572" stroke-width="3" transform="rotate(-50 867 1540)"/>
+  </g></g><g id="f09-palm" opacity="0">
+    <path d="M760 1980 L700 1320" stroke="#1B2E4A" stroke-width="120" stroke-linecap="round"/>
+    <rect x="610" y="1150" width="180" height="200" rx="60" fill="#E8B48F" stroke="#CF9572" stroke-width="4"/>
+    <rect x="614" y="1050" width="40" height="124" rx="20" fill="#E8B48F" stroke="#CF9572" stroke-width="4"/><rect x="658" y="1032" width="40" height="124" rx="20" fill="#E8B48F" stroke="#CF9572" stroke-width="4"/><rect x="702" y="1032" width="40" height="124" rx="20" fill="#E8B48F" stroke="#CF9572" stroke-width="4"/><rect x="746" y="1050" width="40" height="124" rx="20" fill="#E8B48F" stroke="#CF9572" stroke-width="4"/>
+    <rect x="770" y="1200" width="40" height="110" rx="20" fill="#E8B48F" stroke="#CF9572" stroke-width="4" transform="rotate(35 790 1255)"/></g>
+  </svg></div>
+  <div id="f09-ov" class="f09-fg clip" data-layout-allow-overlap data-start="0" data-duration="4" data-track-index="3"><div id="f09-alarm" class="f09-alarm"></div>
+<div id="f09-hud" class="f09-hud" style="opacity:0;">
+  <div class="f09-hudtop"><span>Đơn thanh toán lỗi</span><b id="f09-hudnum">12</b><span id="f09-hudtick" style="display:inline-block;opacity:0;margin-left:6px;"><svg width="40" height="40" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#3FB68B"/><path d="M6.5 12.5l3.5 3.5 7.5-8" stroke="#0F1E33" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  <div id="f09-hudbarwrap" class="f09-hudbarwrap" style="opacity:0;"><div id="f09-hudbar" class="f09-hudbar"></div></div>
+</div><div id="f09-tagOld" class="f09-tag" style="opacity:0;opacity:1;">Báo ngay, không giấu</div><div id="f09-fixcard" class="f09-card" style="top:330px;opacity:0;padding:20px 24px;"><small style="margin:0 0 10px;color:#3FB68B;font-weight:800;">Đã sửa</small><div style="font-family:'JetBrains Mono';font-size:30px;white-space:nowrap;background:rgba(63,182,139,0.18);border-radius:10px;padding:10px;">const ma = (maGiamGia ?? "").trim();</div></div><div id="f09-phone" class="f09-phone" style="opacity:0;">
+  <div class="f09-pt">Bản thử<br>giống hệ thống thật</div>
+  <div class="f09-pg"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M2.5 4h2.6l2.2 10.2h10.4l2-7.2H6.4" fill="none" stroke="#0B1424" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="18.8" r="1.7" fill="#0B1424"/><circle cx="16.8" cy="18.8" r="1.7" fill="#0B1424"/><path d="M11 9.5l1.6 1.6 3.2-3.2" fill="none" stroke="#0B1424" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Giỏ Hời</div>
+  <div class="f09-pl">Mã giảm giá</div><div class="f09-pf">(để trống)</div><div class="f09-pb">Thanh toán</div>
+  <svg id="f09-spin" width="110" height="110" viewBox="0 0 50 50" style="position:absolute;left:135px;top:420px;opacity:0;"><circle cx="25" cy="25" r="20" fill="none" stroke="rgba(245,239,228,0.2)" stroke-width="6"/><path d="M25 5 a20 20 0 0 1 20 20" fill="none" stroke="#14B8A6" stroke-width="6" stroke-linecap="round"/></svg>
+  <div id="f09-pok" style="position:absolute;left:0;right:0;top:390px;display:flex;flex-direction:column;align-items:center;gap:16px;opacity:0;"><svg width="130" height="130" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#3FB68B"/><path d="M6.5 12.5l3.5 3.5 7.5-8" stroke="#0F1E33" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><div style="font-size:30px;font-weight:800;color:#3FB68B;">Thanh toán thành công</div></div>
+  <div id="f09-finger" style="position:absolute;left:190px;top:330px;width:70px;height:70px;border-radius:50%;background:rgba(245,239,228,0.35);opacity:0;"></div>
+</div><div id="f09-tag" class="f09-tag" style="opacity:0;top:1300px;font-size:36px;">Thử lại với ô mã để trống</div><div id="f09-flash" class="f09-flash"></div></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script>
+(function () {
+  const P = "f09-";
+  const $ = (s) => document.getElementById(P + s);
+  const tl = gsap.timeline({ paused: true });
+  const PAR = 0.55;
+  gsap.set($("zoom"), { scale: 1, transformOrigin: "540px 760px" });
+  gsap.set($("pan"), { x: -1320 });
+  gsap.set($("wall"), { x: 594 });
+  gsap.set($("fg"), { y: 315 });
+  const pan = (to, at, dur = 0.8) => {
+    tl.to($("pan"), { x: -to, duration: dur, ease: "power2.inOut" }, at);
+    tl.to($("wall"), { x: to * (1 - PAR), duration: dur, ease: "power2.inOut" }, at);
+    tl.to($("zoom"), { filter: "blur(6px)", duration: dur * 0.45, ease: "power1.in" }, at);
+    tl.to($("zoom"), { filter: "blur(0px)", duration: dur * 0.55, ease: "power1.out" }, at + dur * 0.45);
+  };
+  const hands = (to, at, dur = 0.5) => tl.to($("fg"), { y: to * 900, duration: dur, ease: to ? "power2.in" : "power3.out" }, at);
+  const zoom = (sc, at, dur = 1.0, ease = "power2.inOut") => tl.to($("zoom"), { scale: sc, duration: dur, ease: ease }, at);
+  const origin = (x, y, at) => tl.set($("zoom"), { transformOrigin: x + "px " + y + "px" }, at);
+  const pop = (el, at, from = 0.6) => tl.fromTo(el, { opacity: 0, scale: from }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, at);
+  const fadeIn = (el, at, dur = 0.35) => tl.fromTo(el, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: dur, ease: "power3.out" }, at);
+  const fadeOut = (el, at, dur = 0.3) => tl.to(el, { opacity: 0, duration: dur, ease: "power1.out" }, at);
+  const show = (el, at) => tl.set(el, { opacity: 1 }, at);
+  const hide = (el, at) => tl.set(el, { opacity: 0 }, at);
+  // shake / flash / alarm / heartbeat pulse / confetti (all seek-safe timeline tweens)
+  const shake = (at, amp, n) => { amp = amp || 16; n = n || 3; tl.fromTo($("beat"), { x: 0, y: 0 }, { x: amp, y: -amp * 0.6, duration: 0.035, repeat: 2 * n - 1, yoyo: true, ease: "none", immediateRender: false }, at); tl.set($("beat"), { x: 0, y: 0 }, at + 0.035 * 2 * n + 0.01); };
+  const flash = (color, at, peak, dur) => { tl.set($("flash"), { backgroundColor: color }, at); tl.fromTo($("flash"), { opacity: peak || 0.55 }, { opacity: 0, duration: dur || 0.35, ease: "power2.out", immediateRender: false }, at); };
+  const alarm = (t0, t1, lo, hi, period) => { lo = lo == null ? 0.15 : lo; hi = hi || 0.55; period = period || 0.5; for (let t = t0; t < t1 - 0.05; t += period) { tl.to($("alarm"), { opacity: hi, duration: period * 0.4, ease: "sine.out" }, t); tl.to($("alarm"), { opacity: lo, duration: period * 0.6, ease: "sine.in" }, t + period * 0.4); } };
+  const heart = (t0, t1, period, amp) => { period = period || 0.62; amp = amp || 0.014; for (let t = t0; t < t1 - 0.05; t += period) { tl.to($("beat"), { scale: 1 + amp, duration: 0.08, ease: "power2.out" }, t); tl.to($("beat"), { scale: 1, duration: 0.24, ease: "power2.in" }, t + 0.08); } };
+  const confetti = (at, ox, oy) => { [[260,-160,0],[-263,33,53],[40,-522,106],[335,190,159],[-343,-208,212],[375,-351,265],[-140,259,318],[-157,-401,11],[410,-41,64],[-492,3,117],[139,-399,170],[128,166,223],[-454,-370,276],[313,-216,329],[-240,114,22],[-67,-568,75],[239,0,128],[-409,-146,181],[358,-446,234],[-13,82,287],[-257,-405,340],[493,-108,33],[-241,-25,86],[85,-465,139],[244,178,192],[-272,-229,245],[346,-289,298],[-183,194,351]].forEach(function (p, i) { const el = $("cf-" + i); if (!el) return; tl.fromTo(el, { opacity: 1, x: ox || 0, y: oy || 0, rotation: 0 }, { x: (ox || 0) + p[0], y: (oy || 0) + p[1], rotation: p[2] + 360, duration: 0.9, ease: "power3.out", immediateRender: false }, at); tl.to(el, { y: "+=" + 260, opacity: 0, duration: 0.8, ease: "power1.in" }, at + 0.85); }); };
+  gsap.set($("alarm"), { opacity: 0 });
+  // counter: whole numbers in even steps (seek-safe, no easing on the number)
+  const count = (from, to, t0, t1, id) => { const steps = Math.max(1, Math.round((t1 - t0) / 0.2)); for (let k = 0; k <= steps; k++) tl.set($(id || "hudnum"), { textContent: String(Math.round(from + (to - from) * k / steps)) }, t0 + (t1 - t0) * k / steps); };
+  const bar = (to, at, dur) => tl.to($("hudbar"), { scaleX: to, duration: dur, ease: "none" }, at);
+  // mouth flaps on each spoken word: [start, end] pairs
+  const talk = (openId, closedId, words) => { words.forEach(function (w) { tl.set($(openId), { opacity: 1 }, w[0]); if (closedId) tl.set($(closedId), { opacity: 0 }, w[0]); tl.set($(openId), { opacity: 0 }, Math.min(w[1], w[0] + 0.16)); if (closedId) tl.set($(closedId), { opacity: 1 }, Math.min(w[1], w[0] + 0.16)); }); };
+  gsap.set($("hud"), { opacity: 0.7 });
+  gsap.set($("hudnum"), { textContent: "458" });
+  gsap.set($("hudbarwrap"), { opacity: 1 });
+  gsap.set($("hudbar"), { scaleX: 0.92 });
+
+  fadeOut($("tagOld"), 0.5, 0.3);
+  tl.set($("mai-phone"), { opacity: 1, y: -60 }, 0);
+  tl.to($("hud"), { opacity: 1, duration: 0.25 }, 0);
+  count(458, 463, 0, 0.7); bar(1, 0, 0.8); flash("#3FB68B", 0.8, 0.35, 0.5);
+  tl.to($("hudnum"), { color: "#8796A9", duration: 0.2 }, 0.8);
+  tl.to($("hud"), { borderColor: "#8796A9", duration: 0.2 }, 0.8);
+  pop($("hudtick"), 0.85, 0.5);
+  fadeOut($("hud"), 1.5, 0.35);
+  fadeIn($("fixcard"), 1.4);
+  fadeOut($("fixcard"), 2.9, 0.25);
+  tl.fromTo($("phone"), { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 2.3);
+  fadeIn($("tag"), 2.5);
+  tl.fromTo($("finger"), { opacity: 0, scale: 1.4 }, { opacity: 1, scale: 1, duration: 0.15 }, 2.9);
+  tl.to($("finger"), { opacity: 0, duration: 0.2 }, 3.1);
+  tl.set($("spin"), { opacity: 1 }, 3.1);
+  tl.fromTo($("spin"), { rotation: 0, transformOrigin: "50% 50%" }, { rotation: 900, duration: 4, ease: "none" }, 3.1);
+  window.__timelines["09-fix-check"] = tl;
+})();
+</script>
+</template>

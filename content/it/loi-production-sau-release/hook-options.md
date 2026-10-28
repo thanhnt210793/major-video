@@ -1,12 +1,31 @@
 # Phương án mở đầu (0–4 giây) — it/loi-production-sau-release
 
-Chế độ: **bản nháp**. Phương án đứng đầu đã được đưa vào cảnh 1. Người duyệt có thể đổi sang một trong hai phương án dự phòng khi duyệt kịch bản.
+## Cập nhật 27/10 — sau bản xem thử 1
+
+Người duyệt thấy mở đầu `oddly-specific` dưới đây "không hấp dẫn" và muốn lỗi trông như "kinh thiên động địa". Mình đưa ra hai phương án mới, người duyệt chọn **B**. Mở đầu đang dùng:
+
+- **Mẫu:** `in-medias-res`. Vào thẳng sự cố, đánh vào thiệt hại.
+- **Khung đầu (0,0 s):** màn hình đỏ rực, các thông báo "Thanh toán thất bại" chồng lên nhau, viền đỏ nhấp nháy như đèn báo động, ô đếm lớn "Đơn thanh toán lỗi" đang chạy.
+- **Chữ trên màn hình:** "Thứ Sáu · 16:45".
+- **Lời đọc:** "Mười phút sau khi phát hành… hàng trăm khách không thanh toán được!" (16 âm tiết, đọc nhanh hơn 6%; khoảng 3 s).
+- **Âm thanh:** còi báo động, tiếng "bùm" trầm, tiếng nhiễu sóng, nhạc nền căng thẳng.
+- **Điều hứa hẹn:** chuyện gì khiến hàng trăm khách không thanh toán được, và ai đã gây ra? Cảnh trả lời: `discover`.
+- **Phương án không chọn:** A, `curiosity-question`, "Một dòng code… làm cả công ty náo loạn!".
+
+**Sau bản xem thử 4 (27/10):** cảnh `hunt` mới (dò pull request, xem thay đổi, tìm kiếm, "nửa tiếng trôi qua, vẫn bí!") nằm trước `discover`. Mở đầu giữ nguyên. Lời giải cho điều hứa hẹn đến muộn hơn, ở khoảng 33 s thay vì 26 s. Nhưng cảnh `hunt` tự giữ người xem: bộ đếm dừng ở 463 ngay đầu cảnh, có một câu hỏi mới ("lỗi nằm ở đâu?"), và đồng hồ chạy 17:05 → 17:35.
+
+**Sau bản xem thử 6 (28/10):** sếp ra hạn ("Cho em mười phút xem lại code vừa gộp!") thay cho câu hỏi "Bao giờ thì xong?". Cảnh `hunt` nhắc lại: "mười phút thành nửa tiếng". Mở đầu giữ nguyên. Hạn mười phút là một điều hứa hẹn nhỏ thứ hai, vì người xem chờ xem có kịp không. Cảnh `hunt` trả lời ngay là không kịp (ô hạn bị gạch đỏ), rồi `discover` trả lời điều hứa hẹn chính.
+
+Phần dưới đây là bản phân tích lúc soạn kịch bản (vòng 1), giữ lại để tham khảo.
+
+Chế độ lúc đó: **bản nháp**. Phương án đứng đầu khi ấy đã được đưa vào cảnh 1.
 
 ## Chất liệu từ câu chuyện
 
 - **Khoảnh khắc lạ và cụ thể nhất:** khách nào **bỏ trống ô mã giảm giá** thì không thanh toán được, còn khách có mã thì vẫn bình thường (lời giải ở cảnh `discover`). Ngoài ra còn có:
   - chú thích "minh · thứ Ba" cạnh dòng gây lỗi (cảnh `discover`);
-  - 27 tin nhắn chưa đọc (cảnh `escalate`);
+  - cảnh báo tự động và tin nhắn dồn dập, bộ đếm đơn lỗi tăng dần (cảnh `escalate` → `own-it`);
+  - đoạn tự nói "Đoạn này hôm trước mình làm đúng rồi mà nhỉ? Hay ai sửa đè lên?" (cảnh `works-locally`);
   - ly trà sữa chưa kịp uống rồi tan hết đá (cảnh `meeting` → `release`);
   - "trên máy mình vẫn chạy" (cảnh `works-locally`).
 - **Điều đang bị đe doạ:** khách hàng lớn không thanh toán được, chuyện đã lên tới sếp, lại đúng chiều thứ Sáu (cảnh `escalate` → `release`).
